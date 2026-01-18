@@ -1,0 +1,21 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: #222;
+  color: white;
+}
+
+.user-section {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.logout-btn {
+  background: crimson;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  cursor: pointer;
+}
