@@ -9,6 +9,7 @@ function Home() {
   const [loading, setLoading] = useState(true);
   const [selectedNote, setSelectedNote] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     getNotes();
@@ -16,36 +17,89 @@ function Home() {
 
   const getNotes = () => {
     setLoading(true);
+    setError(null);
     api.get("/api/notes/")
       .then(res => {
-        setNotes(res.data);
-        setLoading(false);
+        console.log("Full API Response:", res);
+        console.log("Response Data:", res.data);
+        
+        // Handle different response structures
+        let notesData = [];
+        
+        if (Array.isArray(res.data)) {
+          // Case 1: Direct array
+          notesData = res.data;
+          console.log("Direct array received");
+        } 
+        else if (res.data && Array.isArray(res.data.results)) {
+          // Case 2: Paginated response {results: [...]}
+          notesData = res.data.results;
+          console.log("Paginated response received");
+        }
+        else if (res.data && Array.isArray(res.data.data)) {
+          // Case 3: Wrapped in data property {data: [...]}
+          notesData = res.data.data;
+          console.log("Data-wrapped response received");
+        }
+        else if (typeof res.data === 'object' && res.data !== null) {
+          // Case 4: Try to extract any array from object
+          for (const key in res.data) {
+            if (Array.isArray(res.data[key])) {
+              notesData = res.data[key];
+              console.log(`Found array in property: ${key}`);
+              break;
+            }
+          }
+        }
+        
+        console.log("Final notes data:", notesData);
+        setNotes(notesData);
       })
       .catch(err => {
-        alert(err);
+        console.error("API Error:", err);
+        console.error("Error response:", err.response?.data);
+        setError("Failed to load notes. Please try again.");
+        setNotes([]); // Ensure notes is always an array
+      })
+      .finally(() => {
         setLoading(false);
       });
   };
 
   const createNote = (e) => {
     e.preventDefault();
-    api.post("/api/notes/", { title, content }).then(() => {
-      resetForm();
-      getNotes();
-    });
+    api.post("/api/notes/", { title, content })
+      .then(() => {
+        resetForm();
+        getNotes();
+      })
+      .catch(err => {
+        console.error("Create error:", err);
+        alert("Failed to create note");
+      });
   };
 
   const updateNote = (e) => {
     e.preventDefault();
-    api.put(`/api/notes/update/${selectedNote.id}/`, { title, content }).then(() => {
-      resetForm();
-      getNotes();
-    });
+    api.put(`/api/notes/update/${selectedNote.id}/`, { title, content })
+      .then(() => {
+        resetForm();
+        getNotes();
+      })
+      .catch(err => {
+        console.error("Update error:", err);
+        alert("Failed to update note");
+      });
   };
 
   const deleteNote = (id) => {
     if (window.confirm("Are you sure you want to delete this note?")) {
-      api.delete(`/api/notes/delete/${id}/`).then(() => getNotes());
+      api.delete(`/api/notes/delete/${id}/`)
+        .then(() => getNotes())
+        .catch(err => {
+          console.error("Delete error:", err);
+          alert("Failed to delete note");
+        });
     }
   };
 
@@ -63,6 +117,88 @@ function Home() {
     setSelectedNote(null);
     setIsEditing(false);
     setShowForm(false);
+  };
+
+  // Safe render function for notes
+  const renderNotes = () => {
+    // Ensure notes is always an array
+    const safeNotes = Array.isArray(notes) ? notes : [];
+    
+    if (safeNotes.length === 0) {
+      return (
+        <div className="p-8 text-center">
+          <div className="text-gray-400 text-5xl mb-4">📝</div>
+          <h3 className="text-xl font-semibold text-gray-700">No notes found</h3>
+          <p className="text-gray-500 mt-2">Create your first note to get started!</p>
+        </div>
+      );
+    }
+
+    return (
+      <div className="overflow-x-auto">
+        <table className="w-full">
+          <thead className="bg-gradient-to-r from-gray-50 to-gray-100">
+            <tr>
+              <th className="py-4 px-6 text-left text-sm font-semibold text-gray-700">#</th>
+              <th className="py-4 px-6 text-left text-sm font-semibold text-gray-700">Title & Content</th>
+              <th className="py-4 px-6 text-left text-sm font-semibold text-gray-700">Status</th>
+              <th className="py-4 px-6 text-left text-sm font-semibold text-gray-700">Last Updated</th>
+              <th className="py-4 px-6 text-left text-sm font-semibold text-gray-700">Actions</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-100">
+            {safeNotes.map((note, index) => (
+              <tr key={note.id || index} className="hover:bg-blue-50/30 transition-colors">
+                <td className="py-4 px-6 text-gray-600 font-medium">{index + 1}</td>
+                <td className="py-4 px-6">
+                  <div>
+                    <h3 className="font-semibold text-gray-900">{note.title || 'Untitled'}</h3>
+                    <p className="text-sm text-gray-600 mt-1 line-clamp-2">{note.content || 'No content'}</p>
+                  </div>
+                </td>
+                <td className="py-4 px-6">
+                  <span className={`px-3 py-1 rounded-full text-xs font-medium ${
+                    (note.status === 'Active' || !note.status)
+                      ? 'bg-green-100 text-green-800' 
+                      : 'bg-gray-100 text-gray-800'
+                  }`}>
+                    {note.status || 'Active'}
+                  </span>
+                </td>
+                <td className="py-4 px-6 text-gray-600">
+                  {note.updated_at 
+                    ? new Date(note.updated_at).toLocaleDateString()
+                    : 'N/A'
+                  }
+                </td>
+                <td className="py-4 px-6">
+                  <div className="flex gap-2">
+                    <button
+                      onClick={() => editNote(note)}
+                      className="p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+                      title="Edit"
+                    >
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                      </svg>
+                    </button>
+                    <button
+                      onClick={() => deleteNote(note.id)}
+                      className="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                      title="Delete"
+                    >
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                      </svg>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
   };
 
   return (
@@ -88,6 +224,18 @@ function Home() {
             {showForm ? "Cancel" : "+ Create New Note"}
           </button>
         </div>
+
+        {/* Error Message */}
+        {error && (
+          <div className="mb-6 p-4 bg-red-50 border border-red-200 text-red-700 rounded-xl">
+            <div className="flex items-center">
+              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+              </svg>
+              <span>{error}</span>
+            </div>
+          </div>
+        )}
 
         {/* Create/Edit Form */}
         {showForm && (
@@ -149,73 +297,8 @@ function Home() {
               <div className="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-600"></div>
               <p className="text-gray-600 mt-2">Loading notes...</p>
             </div>
-          ) : notes.length === 0 ? (
-            <div className="p-8 text-center">
-              <div className="text-gray-400 text-5xl mb-4">📝</div>
-              <h3 className="text-xl font-semibold text-gray-700">No notes found</h3>
-              <p className="text-gray-500 mt-2">Create your first note to get started!</p>
-            </div>
           ) : (
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead className="bg-gradient-to-r from-gray-50 to-gray-100">
-                  <tr>
-                    <th className="py-4 px-6 text-left text-sm font-semibold text-gray-700">#</th>
-                    <th className="py-4 px-6 text-left text-sm font-semibold text-gray-700">Title & Content</th>
-                    <th className="py-4 px-6 text-left text-sm font-semibold text-gray-700">Status</th>
-                    <th className="py-4 px-6 text-left text-sm font-semibold text-gray-700">Last Updated</th>
-                    <th className="py-4 px-6 text-left text-sm font-semibold text-gray-700">Actions</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-100">
-                  {notes.map((note, index) => (
-                    <tr key={note.id} className="hover:bg-blue-50/30 transition-colors">
-                      <td className="py-4 px-6 text-gray-600 font-medium">{index + 1}</td>
-                      <td className="py-4 px-6">
-                        <div>
-                          <h3 className="font-semibold text-gray-900">{note.title}</h3>
-                          <p className="text-sm text-gray-600 mt-1 line-clamp-2">{note.content}</p>
-                        </div>
-                      </td>
-                      <td className="py-4 px-6">
-                        <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                          note.status === 'Active' || !note.status
-                            ? 'bg-green-100 text-green-800' 
-                            : 'bg-gray-100 text-gray-800'
-                        }`}>
-                          {note.status || 'Active'}
-                        </span>
-                      </td>
-                      <td className="py-4 px-6 text-gray-600">
-                        {new Date(note.updated_at || Date.now()).toLocaleDateString()}
-                      </td>
-                      <td className="py-4 px-6">
-                        <div className="flex gap-2">
-                          <button
-                            onClick={() => editNote(note)}
-                            className="p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
-                            title="Edit"
-                          >
-                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                            </svg>
-                          </button>
-                          <button
-                            onClick={() => deleteNote(note.id)}
-                            className="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
-                            title="Delete"
-                          >
-                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                            </svg>
-                          </button>
-                        </div>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+            renderNotes()
           )}
         </div>
       </div>

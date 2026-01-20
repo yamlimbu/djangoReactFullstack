@@ -1,0 +1,1537 @@
+INFO 2026-01-18 23:01:56,219 autoreload 19096 31756 Watching for file changes with StatReloader
+INFO 2026-01-18 23:08:27,455 autoreload 34044 28644 Watching for file changes with StatReloader
+INFO 2026-01-18 23:14:52,498 autoreload 27644 26904 Watching for file changes with StatReloader
+INFO 2026-01-18 23:16:04,502 autoreload 27644 26904 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py changed, reloading.
+INFO 2026-01-18 23:16:05,065 autoreload 31848 19180 Watching for file changes with StatReloader
+INFO 2026-01-18 23:16:11,500 basehttp 31848 11592 "GET / HTTP/1.1" 200 11
+INFO 2026-01-18 23:16:13,216 basehttp 31848 11592 "GET / HTTP/1.1" 200 11
+INFO 2026-01-18 23:16:25,036 autoreload 31848 19180 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py changed, reloading.
+INFO 2026-01-18 23:16:25,604 autoreload 28596 34084 Watching for file changes with StatReloader
+INFO 2026-01-18 23:16:38,744 autoreload 28596 34084 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py changed, reloading.
+INFO 2026-01-18 23:16:39,335 autoreload 33012 34724 Watching for file changes with StatReloader
+INFO 2026-01-18 23:22:02,757 autoreload 20304 20220 Watching for file changes with StatReloader
+INFO 2026-01-18 23:35:51,373 autoreload 35720 30592 Watching for file changes with StatReloader
+INFO 2026-01-18 23:35:56,326 basehttp 35720 30436 "GET / HTTP/1.1" 200 11
+WARNING 2026-01-18 23:35:58,212 log 35720 30436 Method Not Allowed: /api/token/
+INFO 2026-01-18 23:35:58,213 basehttp 35720 30436 - Broken pipe from ('127.0.0.1', 64452)
+WARNING 2026-01-18 23:36:00,511 log 35720 33324 Method Not Allowed: /api/token/
+WARNING 2026-01-18 23:36:00,511 basehttp 35720 33324 "GET /api/token/ HTTP/1.1" 405 7672
+INFO 2026-01-18 23:36:05,486 basehttp 35720 33324 "POST /api/token/ HTTP/1.1" 200 8116
+INFO 2026-01-18 23:36:29,747 basehttp 35720 13876 "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2026-01-18 23:36:29,757 basehttp 35720 9396 "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2026-01-18 23:36:29,824 basehttp 35720 9396 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:36:30,002 basehttp 35720 9396 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:36:55,815 basehttp 35720 9396 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:36:55,879 basehttp 35720 9396 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:36:57,317 basehttp 35720 9396 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:36:57,371 basehttp 35720 9396 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:36:57,928 basehttp 35720 9396 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:36:57,975 basehttp 35720 9396 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:36:58,528 basehttp 35720 9396 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:36:58,589 basehttp 35720 9396 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:37:02,696 basehttp 35720 9396 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:37:02,750 basehttp 35720 9396 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:37:14,262 basehttp 35720 9396 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:37:14,325 basehttp 35720 9396 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:37:18,134 basehttp 35720 9396 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:37:18,206 basehttp 35720 9396 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:37:44,996 basehttp 35720 9396 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:37:45,054 basehttp 35720 9396 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:38:27,863 autoreload 35720 30592 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\urls.py changed, reloading.
+INFO 2026-01-18 23:38:28,569 autoreload 15848 30048 Watching for file changes with StatReloader
+INFO 2026-01-18 23:38:31,071 basehttp 15848 31236 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:38:31,135 basehttp 15848 31236 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:38:31,400 basehttp 15848 31236 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:38:31,455 basehttp 15848 31236 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:38:33,294 basehttp 15848 31236 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:38:33,359 basehttp 15848 31236 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:38:33,950 basehttp 15848 31236 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:38:34,018 basehttp 15848 31236 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:38:34,581 basehttp 15848 31236 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:38:34,638 basehttp 15848 31236 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:38:35,312 basehttp 15848 31236 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:38:35,371 basehttp 15848 31236 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:38:40,008 autoreload 15848 30048 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\urls.py changed, reloading.
+INFO 2026-01-18 23:38:40,577 autoreload 31740 11608 Watching for file changes with StatReloader
+INFO 2026-01-18 23:38:48,208 autoreload 31740 11608 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\urls.py changed, reloading.
+INFO 2026-01-18 23:38:48,850 autoreload 27236 31076 Watching for file changes with StatReloader
+INFO 2026-01-18 23:38:51,695 basehttp 27236 4804 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:38:51,751 basehttp 27236 4804 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:38:52,764 basehttp 27236 4804 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:38:52,833 basehttp 27236 4804 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:38:53,445 basehttp 27236 4804 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:38:53,498 basehttp 27236 4804 "GET /api/notes/ HTTP/1.1" 200 620
+INFO 2026-01-18 23:38:58,714 basehttp 27236 24028 "GET /api/notes/ HTTP/1.1" 200 9397
+INFO 2026-01-18 23:39:05,369 basehttp 27236 24028 "POST /api/notes/ HTTP/1.1" 201 9522
+INFO 2026-01-18 23:39:10,128 basehttp 27236 24028 "GET /api/notes/?format=json HTTP/1.1" 200 158
+INFO 2026-01-18 23:39:27,697 basehttp 27236 4804 "POST /api/token/ HTTP/1.1" 200 483
+INFO 2026-01-18 23:39:30,256 basehttp 27236 4804 "GET /api/notes/ HTTP/1.1" 200 491
+INFO 2026-01-18 23:39:30,310 basehttp 27236 4804 "GET /api/notes/ HTTP/1.1" 200 491
+INFO 2026-01-18 23:39:31,013 basehttp 27236 4804 "GET /api/notes/ HTTP/1.1" 200 491
+INFO 2026-01-18 23:39:31,084 basehttp 27236 4804 "GET /api/notes/ HTTP/1.1" 200 491
+INFO 2026-01-18 23:39:31,598 basehttp 27236 4804 "GET /api/notes/ HTTP/1.1" 200 491
+INFO 2026-01-18 23:39:31,666 basehttp 27236 4804 "GET /api/notes/ HTTP/1.1" 200 491
+INFO 2026-01-18 23:39:32,464 basehttp 27236 4804 "GET /api/notes/ HTTP/1.1" 200 491
+INFO 2026-01-18 23:39:32,530 basehttp 27236 4804 "GET /api/notes/ HTTP/1.1" 200 491
+INFO 2026-01-18 23:43:43,452 autoreload 27236 31076 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py changed, reloading.
+INFO 2026-01-18 23:43:44,267 autoreload 30396 30764 Watching for file changes with StatReloader
+INFO 2026-01-18 23:45:35,330 basehttp 30396 27156 "GET /api/notes/ HTTP/1.1" 200 9529
+INFO 2026-01-18 23:45:38,255 basehttp 30396 27156 "GET /api/notes/ HTTP/1.1" 200 9529
+INFO 2026-01-18 23:46:55,025 basehttp 30396 30936 "OPTIONS /api/notes/ HTTP/1.1" 200 0
+INFO 2026-01-18 23:46:55,028 basehttp 30396 30936 "OPTIONS /api/notes/ HTTP/1.1" 200 0
+INFO 2026-01-18 23:46:55,096 basehttp 30396 26432 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-18 23:46:55,101 basehttp 30396 30936 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-18 23:47:01,017 basehttp 30396 30936 "OPTIONS /api/notes/ HTTP/1.1" 200 0
+INFO 2026-01-18 23:47:01,025 basehttp 30396 26432 "OPTIONS /api/notes/ HTTP/1.1" 200 0
+INFO 2026-01-18 23:47:01,121 basehttp 30396 30936 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-18 23:47:01,126 basehttp 30396 26432 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-18 23:47:06,062 basehttp 30396 26432 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-18 23:47:06,135 basehttp 30396 26432 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-18 23:47:17,550 basehttp 30396 26432 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-18 23:47:17,603 basehttp 30396 26432 "GET /api/notes/ HTTP/1.1" 200 441
+WARNING 2026-01-18 23:47:23,938 log 30396 2972 Not Found: /health/
+WARNING 2026-01-18 23:47:23,939 basehttp 30396 2972 "GET /health/ HTTP/1.1" 404 3165
+INFO 2026-01-18 23:47:29,442 basehttp 30396 2972 "GET /api/health/ HTTP/1.1" 200 5524
+INFO 2026-01-18 23:49:09,528 basehttp 30396 2972 "GET /api/user/stats HTTP/1.1" 301 0
+WARNING 2026-01-18 23:49:09,832 log 30396 19112 Unauthorized: /api/user/stats/
+WARNING 2026-01-18 23:49:09,832 basehttp 30396 19112 "GET /api/user/stats/ HTTP/1.1" 401 5138
+WARNING 2026-01-18 23:49:23,834 log 30396 19112 Not Found: /api/test
+WARNING 2026-01-18 23:49:23,834 basehttp 30396 19112 "GET /api/test HTTP/1.1" 404 6060
+WARNING 2026-01-18 23:49:28,334 log 30396 19112 Not Found: /api/stats
+WARNING 2026-01-18 23:49:28,334 basehttp 30396 19112 "GET /api/stats HTTP/1.1" 404 6063
+INFO 2026-01-19 21:51:49,344 autoreload 11592 31228 Watching for file changes with StatReloader
+INFO 2026-01-19 21:51:57,107 basehttp 11592 34016 "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2026-01-19 21:51:58,064 basehttp 11592 34016 "POST /api/token/ HTTP/1.1" 200 483
+INFO 2026-01-19 21:52:02,801 basehttp 11592 34016 "OPTIONS /api/notes/ HTTP/1.1" 200 0
+INFO 2026-01-19 21:52:03,011 basehttp 11592 34016 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-19 21:52:03,069 basehttp 11592 34016 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-19 22:08:23,109 basehttp 11592 36428 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-19 22:08:23,167 basehttp 11592 36428 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-19 22:08:25,687 basehttp 11592 36428 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-19 22:08:25,743 basehttp 11592 36428 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-19 22:14:37,520 autoreload 11592 31228 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-01-19 22:14:38,278 autoreload 35412 25364 Watching for file changes with StatReloader
+INFO 2026-01-19 22:14:57,914 autoreload 35412 25364 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-01-19 22:14:58,593 autoreload 30224 35360 Watching for file changes with StatReloader
+INFO 2026-01-19 22:15:44,830 autoreload 30224 35360 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\urls.py changed, reloading.
+INFO 2026-01-19 22:15:45,481 autoreload 38056 34668 Watching for file changes with StatReloader
+INFO 2026-01-19 22:16:01,562 autoreload 38056 34668 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\urls.py changed, reloading.
+INFO 2026-01-19 22:16:02,289 autoreload 37288 35624 Watching for file changes with StatReloader
+INFO 2026-01-19 22:16:54,555 autoreload 37288 35624 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py changed, reloading.
+INFO 2026-01-19 22:16:55,312 autoreload 764 20660 Watching for file changes with StatReloader
+INFO 2026-01-19 22:17:05,597 autoreload 764 20660 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\urls.py changed, reloading.
+INFO 2026-01-19 22:17:06,272 autoreload 35632 35704 Watching for file changes with StatReloader
+INFO 2026-01-19 22:17:35,630 autoreload 35632 35704 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\urls.py changed, reloading.
+INFO 2026-01-19 22:17:36,372 autoreload 39332 39044 Watching for file changes with StatReloader
+INFO 2026-01-19 22:18:01,442 autoreload 39332 39044 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\urls.py changed, reloading.
+INFO 2026-01-19 22:18:02,103 autoreload 14776 37524 Watching for file changes with StatReloader
+INFO 2026-01-19 22:18:21,405 autoreload 14776 37524 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\urls.py changed, reloading.
+INFO 2026-01-19 22:18:22,141 autoreload 37568 34668 Watching for file changes with StatReloader
+WARNING 2026-01-19 22:19:44,830 log 37568 36820 Not Found: /health/
+WARNING 2026-01-19 22:19:44,831 basehttp 37568 36820 "GET /health/ HTTP/1.1" 404 3346
+WARNING 2026-01-19 22:20:50,806 log 37568 36820 Not Found: /health/
+WARNING 2026-01-19 22:20:50,808 basehttp 37568 36820 "GET /health/ HTTP/1.1" 404 3346
+INFO 2026-01-19 22:21:34,539 basehttp 37568 37512 "GET /api/health/ HTTP/1.1" 200 5524
+INFO 2026-01-19 22:21:34,680 basehttp 37568 39524 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2026-01-19 22:21:34,682 basehttp 37568 28908 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2026-01-19 22:21:34,686 basehttp 37568 37512 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2026-01-19 22:21:34,694 basehttp 37568 39524 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2026-01-19 22:21:34,717 basehttp 37568 37512 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2026-01-19 22:21:34,724 basehttp 37568 39524 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2026-01-19 22:21:34,757 basehttp 37568 28908 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2026-01-19 22:21:34,761 basehttp 37568 39524 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2026-01-19 22:21:34,769 basehttp 37568 37512 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2026-01-19 22:21:34,777 basehttp 37568 37512 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2026-01-19 22:21:34,779 basehttp 37568 39524 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2026-01-19 22:21:34,782 basehttp 37568 28908 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+WARNING 2026-01-19 22:21:34,871 log 37568 28908 Not Found: /favicon.ico
+WARNING 2026-01-19 22:21:34,873 basehttp 37568 28908 "GET /favicon.ico HTTP/1.1" 404 3358
+INFO 2026-01-19 22:21:35,031 basehttp 37568 31348 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2026-01-19 22:21:35,034 basehttp 37568 32216 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2026-01-19 22:21:35,036 basehttp 37568 31348 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2026-01-19 22:21:35,038 basehttp 37568 32216 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2026-01-19 22:21:35,040 basehttp 37568 32216 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2026-01-19 22:21:35,041 basehttp 37568 31348 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2026-01-19 22:21:35,043 basehttp 37568 32216 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+WARNING 2026-01-19 22:22:06,701 log 37568 28908 Unauthorized: /api/notes/
+WARNING 2026-01-19 22:22:06,702 basehttp 37568 28908 "GET /api/notes/ HTTP/1.1" 401 5156
+INFO 2026-01-19 22:22:12,163 basehttp 37568 28908 "GET /api/health/ HTTP/1.1" 200 5524
+WARNING 2026-01-19 22:23:15,005 log 37568 36036 Not Found: /health/
+WARNING 2026-01-19 22:23:15,006 basehttp 37568 36036 "GET /health/ HTTP/1.1" 404 3346
+WARNING 2026-01-19 22:23:49,954 log 37568 28908 Unauthorized: /api/youtube/analytics/
+WARNING 2026-01-19 22:23:49,955 basehttp 37568 28908 "GET /api/youtube/analytics/ HTTP/1.1" 401 5234
+WARNING 2026-01-19 22:26:24,867 log 37568 12876 Not Found: /health/
+WARNING 2026-01-19 22:26:24,867 basehttp 37568 12876 "GET /health/ HTTP/1.1" 404 3346
+INFO 2026-01-19 22:26:38,456 basehttp 37568 6556 "POST /api/token/ HTTP/1.1" 200 486
+INFO 2026-01-19 22:26:40,969 basehttp 37568 28760 "GET /api/test/ HTTP/1.1" 200 223
+INFO 2026-01-19 22:26:44,040 basehttp 37568 2120 "GET /api/youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 623
+INFO 2026-01-19 22:26:47,357 basehttp 37568 18464 "GET /api/youtube/search/channels/?q=python&max_results=3 HTTP/1.1" 200 1230
+INFO 2026-01-19 22:26:50,342 basehttp 37568 38060 "GET /api/youtube/search/videos/?q=django&max_results=3 HTTP/1.1" 200 1444
+INFO 2026-01-19 22:26:52,437 basehttp 37568 22476 "GET /api/notes/ HTTP/1.1" 200 2
+INFO 2026-01-19 22:29:01,941 basehttp 37568 10312 "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO 2026-01-19 22:29:01,990 basehttp 37568 10312 "POST /api/token/refresh/ HTTP/1.1" 200 483
+WARNING 2026-01-19 22:35:34,959 log 37568 39240 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:35:34,960 basehttp 37568 39240 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:35:34,965 log 37568 39240 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:35:34,966 basehttp 37568 39240 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:35:40,893 log 37568 39240 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:35:40,895 basehttp 37568 39240 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:35:40,902 log 37568 39240 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:35:40,902 basehttp 37568 39240 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:35:42,994 log 37568 39240 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:35:42,995 basehttp 37568 39240 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:35:43,000 log 37568 39240 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:35:43,003 basehttp 37568 39240 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:35:49,116 log 37568 39240 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:35:49,118 basehttp 37568 39240 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:35:49,125 log 37568 39240 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:35:49,127 basehttp 37568 39240 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:35:51,502 log 37568 39240 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:35:51,502 basehttp 37568 39240 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:35:52,172 log 37568 39240 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:35:52,173 basehttp 37568 39240 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:35:52,797 log 37568 39240 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:35:52,798 basehttp 37568 39240 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+INFO 2026-01-19 22:36:43,232 autoreload 37568 34668 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-01-19 22:36:43,930 autoreload 5976 35248 Watching for file changes with StatReloader
+WARNING 2026-01-19 22:36:48,877 log 5976 6292 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:36:48,879 basehttp 5976 6292 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:36:48,885 log 5976 6292 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:36:48,886 basehttp 5976 6292 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:36:51,317 log 5976 6292 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:36:51,318 basehttp 5976 6292 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:36:51,328 log 5976 6292 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:36:51,329 basehttp 5976 6292 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:37:16,805 log 5976 6292 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:37:16,806 basehttp 5976 6292 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:37:16,813 log 5976 6292 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:37:16,814 basehttp 5976 6292 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:37:21,415 log 5976 6292 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:37:21,420 basehttp 5976 6292 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:37:21,438 log 5976 6292 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:37:21,444 basehttp 5976 6292 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:37:24,961 log 5976 6292 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:37:24,962 basehttp 5976 6292 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:37:24,968 log 5976 6292 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:37:24,969 basehttp 5976 6292 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+INFO 2026-01-19 22:38:46,461 autoreload 5976 35248 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-01-19 22:38:47,522 autoreload 21100 35524 Watching for file changes with StatReloader
+WARNING 2026-01-19 22:48:45,205 log 21100 23180 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:48:45,205 basehttp 21100 23180 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:48:45,212 log 21100 23180 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:48:45,212 basehttp 21100 23180 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:48:46,484 log 21100 23180 Unauthorized: /api/notes/
+WARNING 2026-01-19 22:48:46,484 basehttp 21100 23180 "GET /api/notes/ HTTP/1.1" 401 58
+WARNING 2026-01-19 22:48:46,487 log 21100 23180 Unauthorized: /api/notes/
+WARNING 2026-01-19 22:48:46,487 basehttp 21100 23180 "GET /api/notes/ HTTP/1.1" 401 58
+WARNING 2026-01-19 22:48:49,273 log 21100 23180 Unauthorized: /api/notes/
+WARNING 2026-01-19 22:48:49,274 basehttp 21100 23180 "GET /api/notes/ HTTP/1.1" 401 58
+WARNING 2026-01-19 22:48:49,276 log 21100 23180 Unauthorized: /api/notes/
+WARNING 2026-01-19 22:48:49,277 basehttp 21100 23180 "GET /api/notes/ HTTP/1.1" 401 58
+WARNING 2026-01-19 22:48:54,782 log 21100 23180 Unauthorized: /api/notes/
+WARNING 2026-01-19 22:48:54,783 basehttp 21100 23180 "GET /api/notes/ HTTP/1.1" 401 58
+WARNING 2026-01-19 22:48:54,786 log 21100 23180 Unauthorized: /api/notes/
+WARNING 2026-01-19 22:48:54,787 basehttp 21100 23180 "GET /api/notes/ HTTP/1.1" 401 58
+INFO 2026-01-19 22:49:33,010 basehttp 21100 23180 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-19 22:49:36,157 basehttp 21100 23180 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-19 22:49:36,349 basehttp 21100 23180 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-19 22:49:39,133 basehttp 21100 23180 "OPTIONS /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 0
+WARNING 2026-01-19 22:49:39,137 log 21100 23180 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:49:39,138 basehttp 21100 23180 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:49:39,144 log 21100 23180 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:49:39,145 basehttp 21100 23180 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:49:41,042 log 21100 23180 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:49:41,043 basehttp 21100 23180 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:49:41,050 log 21100 23180 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:49:41,051 basehttp 21100 23180 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:49:47,222 log 21100 23180 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:49:47,223 basehttp 21100 23180 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:49:47,836 log 21100 23180 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:49:47,837 basehttp 21100 23180 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:49:50,853 log 21100 23180 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:49:50,854 basehttp 21100 23180 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:49:51,429 log 21100 23180 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:49:51,430 basehttp 21100 23180 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:49:51,973 log 21100 23180 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:49:51,974 basehttp 21100 23180 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:50:12,932 log 21100 23180 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:50:12,933 basehttp 21100 23180 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+INFO 2026-01-19 22:51:38,960 basehttp 21100 23180 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-19 22:51:47,975 basehttp 21100 23180 "GET /api/notes/ HTTP/1.1" 200 441
+WARNING 2026-01-19 22:51:49,857 log 21100 23180 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:51:49,858 basehttp 21100 23180 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:51:49,864 log 21100 23180 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:51:49,865 basehttp 21100 23180 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:51:51,945 log 21100 23180 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:51:51,946 basehttp 21100 23180 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:51:51,950 log 21100 23180 Not Found: /youtube/analytics/
+WARNING 2026-01-19 22:51:51,951 basehttp 21100 23180 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+INFO 2026-01-19 22:55:19,787 autoreload 21100 35524 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\urls.py changed, reloading.
+INFO 2026-01-19 22:55:20,491 autoreload 24392 38920 Watching for file changes with StatReloader
+INFO 2026-01-19 22:55:39,181 autoreload 24392 38920 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py changed, reloading.
+INFO 2026-01-19 22:55:39,943 autoreload 28832 34416 Watching for file changes with StatReloader
+INFO 2026-01-19 22:55:46,597 autoreload 28832 34416 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py changed, reloading.
+INFO 2026-01-19 22:55:47,378 autoreload 34264 15608 Watching for file changes with StatReloader
+INFO 2026-01-19 22:55:49,769 autoreload 34264 15608 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\urls.py changed, reloading.
+INFO 2026-01-19 22:55:50,433 autoreload 1896 19592 Watching for file changes with StatReloader
+INFO 2026-01-19 22:56:01,075 autoreload 1896 19592 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\urls.py changed, reloading.
+INFO 2026-01-19 22:56:01,831 autoreload 15236 19808 Watching for file changes with StatReloader
+INFO 2026-01-19 22:56:04,558 autoreload 15236 19808 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py changed, reloading.
+INFO 2026-01-19 22:56:05,350 autoreload 15508 19020 Watching for file changes with StatReloader
+INFO 2026-01-19 22:56:10,928 autoreload 15508 19020 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\urls.py changed, reloading.
+INFO 2026-01-19 22:56:12,071 autoreload 29456 25676 Watching for file changes with StatReloader
+INFO 2026-01-19 22:57:35,953 basehttp 29456 15592 "OPTIONS /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 0
+WARNING 2026-01-19 22:57:35,979 log 29456 15592 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 22:57:35,981 basehttp 29456 15592 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:57:50,936 log 29456 15592 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 22:57:50,937 basehttp 29456 15592 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:58:26,941 log 29456 15592 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 22:58:26,942 basehttp 29456 15592 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:58:39,937 log 29456 15592 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 22:58:39,938 basehttp 29456 15592 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+INFO 2026-01-19 22:59:07,695 basehttp 29456 15592 "POST /api/token/refresh/ HTTP/1.1" 200 483
+WARNING 2026-01-19 22:59:07,727 log 29456 15592 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 22:59:07,728 basehttp 29456 15592 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:59:07,735 log 29456 15592 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 22:59:07,735 basehttp 29456 15592 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+INFO 2026-01-19 22:59:07,812 basehttp 29456 37156 "POST /api/token/refresh/ HTTP/1.1" 200 483
+WARNING 2026-01-19 22:59:08,523 log 29456 37156 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 22:59:08,524 basehttp 29456 37156 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:59:08,531 log 29456 37156 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 22:59:08,532 basehttp 29456 37156 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:59:09,140 log 29456 37156 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 22:59:09,140 basehttp 29456 37156 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:59:09,148 log 29456 37156 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 22:59:09,149 basehttp 29456 37156 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:59:10,098 log 29456 37156 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 22:59:10,099 basehttp 29456 37156 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:59:10,111 log 29456 37156 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 22:59:10,112 basehttp 29456 37156 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 22:59:44,918 log 29456 11852 Unauthorized: /api/test/
+WARNING 2026-01-19 22:59:44,919 basehttp 29456 11852 "GET /api/test/ HTTP/1.1" 401 5090
+WARNING 2026-01-19 23:00:02,644 log 29456 11852 Unauthorized: /api/notes/
+WARNING 2026-01-19 23:00:02,645 basehttp 29456 11852 "GET /api/notes/ HTTP/1.1" 401 5156
+INFO 2026-01-19 23:00:15,090 basehttp 29456 11852 "GET /api/token HTTP/1.1" 301 0
+WARNING 2026-01-19 23:00:15,229 log 29456 24444 Method Not Allowed: /api/token/
+WARNING 2026-01-19 23:00:15,232 basehttp 29456 24444 "GET /api/token/ HTTP/1.1" 405 7672
+WARNING 2026-01-19 23:00:26,584 log 29456 24444 Unauthorized: /api/token/
+WARNING 2026-01-19 23:00:26,585 basehttp 29456 24444 "POST /api/token/ HTTP/1.1" 401 7612
+INFO 2026-01-19 23:00:38,681 basehttp 29456 24444 "POST /api/token/ HTTP/1.1" 200 8116
+WARNING 2026-01-19 23:00:47,044 log 29456 24444 Unauthorized: /api/test/
+WARNING 2026-01-19 23:00:47,044 basehttp 29456 24444 "GET /api/test/ HTTP/1.1" 401 5090
+WARNING 2026-01-19 23:00:50,756 log 29456 24444 Unauthorized: /api/test/
+WARNING 2026-01-19 23:00:50,756 basehttp 29456 24444 "GET /api/test/ HTTP/1.1" 401 5090
+WARNING 2026-01-19 23:00:53,219 log 29456 24444 Unauthorized: /api/test/
+WARNING 2026-01-19 23:00:53,220 basehttp 29456 24444 "GET /api/test/?format=json HTTP/1.1" 401 58
+WARNING 2026-01-19 23:01:31,728 log 29456 24444 Unauthorized: /api/test/
+WARNING 2026-01-19 23:01:31,728 basehttp 29456 24444 "GET /api/test/?format=json HTTP/1.1" 401 58
+INFO 2026-01-19 23:01:38,870 autoreload 29456 25676 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py changed, reloading.
+INFO 2026-01-19 23:01:40,166 autoreload 4136 30020 Watching for file changes with StatReloader
+WARNING 2026-01-19 23:02:23,952 log 4136 5876 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:02:23,953 basehttp 4136 5876 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+INFO 2026-01-19 23:03:05,507 autoreload 4136 30020 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py changed, reloading.
+INFO 2026-01-19 23:03:06,263 autoreload 37640 22420 Watching for file changes with StatReloader
+WARNING 2026-01-19 23:03:50,953 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:03:50,954 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:03:59,012 log 37640 22424 Unauthorized: /api/test/
+WARNING 2026-01-19 23:03:59,014 basehttp 37640 22424 "GET /api/test/?format=json HTTP/1.1" 401 58
+WARNING 2026-01-19 23:04:01,581 log 37640 22424 Unauthorized: /api/test/
+WARNING 2026-01-19 23:04:01,581 basehttp 37640 22424 "GET /api/test/ HTTP/1.1" 401 5090
+WARNING 2026-01-19 23:04:03,713 log 37640 22424 Unauthorized: /api/test/
+WARNING 2026-01-19 23:04:03,714 basehttp 37640 22424 "GET /api/test/ HTTP/1.1" 401 5090
+WARNING 2026-01-19 23:04:14,245 log 37640 22424 Unauthorized: /api/test/
+WARNING 2026-01-19 23:04:14,245 basehttp 37640 22424 "GET /api/test/ HTTP/1.1" 401 5090
+WARNING 2026-01-19 23:04:17,414 log 37640 22424 Unauthorized: /api/test/
+WARNING 2026-01-19 23:04:17,415 basehttp 37640 22424 "GET /api/test/?format=api HTTP/1.1" 401 5123
+WARNING 2026-01-19 23:04:20,230 log 37640 22424 Unauthorized: /api/test/
+WARNING 2026-01-19 23:04:20,231 basehttp 37640 22424 "GET /api/test/?format=api HTTP/1.1" 401 5123
+WARNING 2026-01-19 23:04:22,054 log 37640 22424 Unauthorized: /api/test/
+WARNING 2026-01-19 23:04:22,055 basehttp 37640 22424 "GET /api/test/?format=api HTTP/1.1" 401 5123
+WARNING 2026-01-19 23:04:25,813 log 37640 22424 Unauthorized: /api/test/
+WARNING 2026-01-19 23:04:25,814 basehttp 37640 22424 "GET /api/test/?format=api HTTP/1.1" 401 5123
+WARNING 2026-01-19 23:05:12,287 log 37640 25436 Not Found: /health/
+WARNING 2026-01-19 23:05:12,288 basehttp 37640 25436 "GET /health/ HTTP/1.1" 404 3346
+INFO 2026-01-19 23:05:27,782 basehttp 37640 7304 "POST /api/token/ HTTP/1.1" 200 486
+INFO 2026-01-19 23:05:30,374 basehttp 37640 31496 "GET /api/test/ HTTP/1.1" 200 223
+INFO 2026-01-19 23:05:33,475 basehttp 37640 38564 "GET /api/youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 623
+INFO 2026-01-19 23:05:36,737 basehttp 37640 34132 "GET /api/youtube/search/channels/?q=python&max_results=3 HTTP/1.1" 200 1230
+INFO 2026-01-19 23:05:39,910 basehttp 37640 13740 "GET /api/youtube/search/videos/?q=django&max_results=3 HTTP/1.1" 200 11494
+INFO 2026-01-19 23:05:41,992 basehttp 37640 22840 "GET /api/notes/ HTTP/1.1" 200 2
+WARNING 2026-01-19 23:07:01,942 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:07:01,943 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:07:06,756 log 37640 37384 Unauthorized: /api/notes/
+WARNING 2026-01-19 23:07:06,757 basehttp 37640 37384 "GET /api/notes/ HTTP/1.1" 401 58
+WARNING 2026-01-19 23:07:06,759 log 37640 37384 Unauthorized: /api/notes/
+WARNING 2026-01-19 23:07:06,760 basehttp 37640 37384 "GET /api/notes/ HTTP/1.1" 401 58
+WARNING 2026-01-19 23:07:09,367 log 37640 37384 Unauthorized: /api/notes/
+WARNING 2026-01-19 23:07:09,369 basehttp 37640 37384 "GET /api/notes/ HTTP/1.1" 401 58
+WARNING 2026-01-19 23:07:09,374 log 37640 37384 Unauthorized: /api/notes/
+WARNING 2026-01-19 23:07:09,375 basehttp 37640 37384 "GET /api/notes/ HTTP/1.1" 401 58
+INFO 2026-01-19 23:07:22,338 basehttp 37640 38760 "GET /api/notes/ HTTP/1.1" 200 9529
+WARNING 2026-01-19 23:07:22,531 log 37640 38760 Not Found: /favicon.ico
+WARNING 2026-01-19 23:07:22,533 basehttp 37640 38760 "GET /favicon.ico HTTP/1.1" 404 3358
+INFO 2026-01-19 23:08:00,934 basehttp 37640 37384 "OPTIONS /api/notes/ HTTP/1.1" 200 0
+INFO 2026-01-19 23:08:00,988 basehttp 37640 37384 "GET /api/notes/ HTTP/1.1" 200 441
+WARNING 2026-01-19 23:08:11,415 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:08:11,416 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:08:11,422 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:08:11,422 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:08:20,936 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:08:20,937 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:11:40,951 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:11:40,952 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:11:42,370 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:11:42,370 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:11:42,377 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:11:42,377 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:12:05,970 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:12:05,970 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:12:10,350 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:12:10,351 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:12:10,357 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:12:10,359 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+INFO 2026-01-19 23:12:12,928 basehttp 37640 37384 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-19 23:12:12,983 basehttp 37640 37384 "GET /api/notes/ HTTP/1.1" 200 441
+WARNING 2026-01-19 23:12:15,648 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:12:15,649 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:12:15,658 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:12:15,661 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:12:23,934 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:12:23,934 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:12:45,929 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:12:45,930 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:12:46,939 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:12:46,940 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:12:48,934 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:12:48,935 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:12:50,940 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:12:50,941 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:12:52,718 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:12:52,721 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:12:52,728 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:12:52,729 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+INFO 2026-01-19 23:12:54,759 basehttp 37640 37384 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-19 23:12:54,816 basehttp 37640 37384 "GET /api/notes/ HTTP/1.1" 200 441
+WARNING 2026-01-19 23:12:56,582 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:12:56,582 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:12:56,587 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:12:56,587 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:12:58,389 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:12:58,390 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:12:58,400 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:12:58,401 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:13:02,924 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:13:02,925 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:13:15,416 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:13:15,417 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:13:15,423 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:13:15,423 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:13:18,679 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:13:18,680 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:13:19,237 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:13:19,238 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:13:20,894 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:13:20,895 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:13:21,622 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:13:21,623 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:13:38,943 log 37640 37384 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:13:38,944 basehttp 37640 37384 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:16:30,510 log 37640 39724 Unauthorized: /api/youtube/analytics/
+WARNING 2026-01-19 23:16:30,511 basehttp 37640 39724 "GET /api/youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 401 5386
+INFO 2026-01-19 23:28:02,919 basehttp 37640 34416 "OPTIONS /api/api/notes/ HTTP/1.1" 200 0
+INFO 2026-01-19 23:28:02,922 basehttp 37640 26364 "OPTIONS /api/api/notes/ HTTP/1.1" 200 0
+WARNING 2026-01-19 23:28:02,933 log 37640 34416 Not Found: /api/api/notes/
+WARNING 2026-01-19 23:28:02,934 basehttp 37640 34416 "GET /api/api/notes/ HTTP/1.1" 404 8211
+WARNING 2026-01-19 23:28:02,941 log 37640 34416 Not Found: /api/api/notes/
+WARNING 2026-01-19 23:28:02,942 basehttp 37640 34416 "GET /api/api/notes/ HTTP/1.1" 404 8211
+INFO 2026-01-19 23:28:10,463 basehttp 37640 4868 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-19 23:28:10,521 basehttp 37640 4868 "GET /api/notes/ HTTP/1.1" 200 441
+WARNING 2026-01-19 23:28:46,948 log 37640 4868 Not Found: /youtube/analytics/
+WARNING 2026-01-19 23:28:46,949 basehttp 37640 4868 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:28:49,184 log 37640 4868 Not Found: /youtube/analytics/
+WARNING 2026-01-19 23:28:49,185 basehttp 37640 4868 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:28:49,191 log 37640 4868 Not Found: /youtube/analytics/
+WARNING 2026-01-19 23:28:49,192 basehttp 37640 4868 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:29:26,939 log 37640 4868 Not Found: /youtube/analytics/
+WARNING 2026-01-19 23:29:26,940 basehttp 37640 4868 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:29:26,946 log 37640 4868 Not Found: /youtube/analytics/
+WARNING 2026-01-19 23:29:26,947 basehttp 37640 4868 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+INFO 2026-01-19 23:29:29,133 basehttp 37640 4868 "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2026-01-19 23:29:29,135 basehttp 37640 30316 "POST /api/token/refresh/ HTTP/1.1" 200 483
+WARNING 2026-01-19 23:29:29,149 log 37640 30316 Not Found: /youtube/analytics/
+WARNING 2026-01-19 23:29:29,150 basehttp 37640 30316 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:29:29,156 log 37640 30316 Not Found: /youtube/analytics/
+WARNING 2026-01-19 23:29:29,156 basehttp 37640 30316 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+INFO 2026-01-19 23:30:50,478 basehttp 37640 30316 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-19 23:30:50,534 basehttp 37640 30316 "GET /api/notes/ HTTP/1.1" 200 441
+INFO 2026-01-19 23:30:59,915 basehttp 37640 30316 "OPTIONS /api/notes/update/15/ HTTP/1.1" 200 0
+INFO 2026-01-19 23:30:59,971 basehttp 37640 30316 "PUT /api/notes/update/15/ HTTP/1.1" 200 107
+INFO 2026-01-19 23:31:00,031 basehttp 37640 30316 "GET /api/notes/ HTTP/1.1" 200 443
+INFO 2026-01-19 23:31:05,600 basehttp 37640 30316 "PUT /api/notes/update/15/ HTTP/1.1" 200 101
+INFO 2026-01-19 23:31:05,665 basehttp 37640 30316 "GET /api/notes/ HTTP/1.1" 200 437
+ERROR 2026-01-19 23:31:11,554 log 37640 30316 Internal Server Error: /api/notes/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "author_id" of relation "api_note" violates not-null constraint
+DETAIL:  Failing row contains (17, dasdfsdf, sdfsdfsdf, 2026-01-19 17:46:11.113145+00, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "author_id" of relation "api_note" violates not-null constraint
+DETAIL:  Failing row contains (17, dasdfsdf, sdfsdfsdf, 2026-01-19 17:46:11.113145+00, null).
+
+ERROR 2026-01-19 23:31:11,565 basehttp 37640 30316 "POST /api/notes/ HTTP/1.1" 500 205078
+ERROR 2026-01-19 23:31:18,934 log 37640 30316 Internal Server Error: /api/notes/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "author_id" of relation "api_note" violates not-null constraint
+DETAIL:  Failing row contains (18, ssssssss, dddddddddd, 2026-01-19 17:46:18.878214+00, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "author_id" of relation "api_note" violates not-null constraint
+DETAIL:  Failing row contains (18, ssssssss, dddddddddd, 2026-01-19 17:46:18.878214+00, null).
+
+ERROR 2026-01-19 23:31:18,938 basehttp 37640 30316 "POST /api/notes/ HTTP/1.1" 500 205103
+INFO 2026-01-19 23:31:47,979 basehttp 37640 30316 "GET /api/notes/ HTTP/1.1" 200 437
+INFO 2026-01-19 23:31:48,509 basehttp 37640 30316 "GET /api/notes/ HTTP/1.1" 200 437
+INFO 2026-01-19 23:31:48,560 basehttp 37640 30316 "GET /api/notes/ HTTP/1.1" 200 437
+INFO 2026-01-19 23:31:51,090 basehttp 37640 30316 "GET /api/notes/ HTTP/1.1" 200 437
+INFO 2026-01-19 23:31:51,157 basehttp 37640 30316 "GET /api/notes/ HTTP/1.1" 200 437
+ERROR 2026-01-19 23:31:56,512 log 37640 30316 Internal Server Error: /api/notes/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "author_id" of relation "api_note" violates not-null constraint
+DETAIL:  Failing row contains (19, 123, 33333, 2026-01-19 17:46:56.457967+00, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "author_id" of relation "api_note" violates not-null constraint
+DETAIL:  Failing row contains (19, 123, 33333, 2026-01-19 17:46:56.457967+00, null).
+
+ERROR 2026-01-19 23:31:56,520 basehttp 37640 30316 "POST /api/notes/ HTTP/1.1" 500 204818
+ERROR 2026-01-19 23:31:59,592 log 37640 30316 Internal Server Error: /api/notes/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "author_id" of relation "api_note" violates not-null constraint
+DETAIL:  Failing row contains (20, 123, 33333, 2026-01-19 17:46:59.516181+00, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "author_id" of relation "api_note" violates not-null constraint
+DETAIL:  Failing row contains (20, 123, 33333, 2026-01-19 17:46:59.516181+00, null).
+
+ERROR 2026-01-19 23:31:59,595 basehttp 37640 30316 "POST /api/notes/ HTTP/1.1" 500 204818
+ERROR 2026-01-19 23:32:01,998 log 37640 30316 Internal Server Error: /api/notes/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "author_id" of relation "api_note" violates not-null constraint
+DETAIL:  Failing row contains (21, 123, 33333, 2026-01-19 17:47:01.951653+00, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "author_id" of relation "api_note" violates not-null constraint
+DETAIL:  Failing row contains (21, 123, 33333, 2026-01-19 17:47:01.951653+00, null).
+
+ERROR 2026-01-19 23:32:02,002 basehttp 37640 30316 "POST /api/notes/ HTTP/1.1" 500 204811
+ERROR 2026-01-19 23:32:04,535 log 37640 30316 Internal Server Error: /api/notes/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "author_id" of relation "api_note" violates not-null constraint
+DETAIL:  Failing row contains (22, 123, 33333, 2026-01-19 17:47:04.489993+00, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "author_id" of relation "api_note" violates not-null constraint
+DETAIL:  Failing row contains (22, 123, 33333, 2026-01-19 17:47:04.489993+00, null).
+
+ERROR 2026-01-19 23:32:04,542 basehttp 37640 30316 "POST /api/notes/ HTTP/1.1" 500 204811
+INFO 2026-01-19 23:32:20,276 basehttp 37640 12176 "GET /api/notes/ HTTP/1.1" 200 9529
+WARNING 2026-01-19 23:32:20,470 log 37640 12176 Not Found: /favicon.ico
+WARNING 2026-01-19 23:32:20,471 basehttp 37640 12176 "GET /favicon.ico HTTP/1.1" 404 3358
+ERROR 2026-01-19 23:32:27,385 log 37640 30316 Internal Server Error: /api/notes/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "author_id" of relation "api_note" violates not-null constraint
+DETAIL:  Failing row contains (23, 123, 33333, 2026-01-19 17:47:27.335581+00, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "author_id" of relation "api_note" violates not-null constraint
+DETAIL:  Failing row contains (23, 123, 33333, 2026-01-19 17:47:27.335581+00, null).
+
+ERROR 2026-01-19 23:32:27,388 basehttp 37640 30316 "POST /api/notes/ HTTP/1.1" 500 204818
+INFO 2026-01-19 23:32:34,387 basehttp 37640 30316 "OPTIONS /api/notes/delete/14/ HTTP/1.1" 200 0
+INFO 2026-01-19 23:32:34,440 basehttp 37640 30316 "DELETE /api/notes/delete/14/ HTTP/1.1" 204 0
+INFO 2026-01-19 23:32:34,500 basehttp 37640 30316 "GET /api/notes/ HTTP/1.1" 200 328
+INFO 2026-01-19 23:32:37,347 basehttp 37640 30316 "OPTIONS /api/notes/delete/13/ HTTP/1.1" 200 0
+INFO 2026-01-19 23:32:37,414 basehttp 37640 30316 "DELETE /api/notes/delete/13/ HTTP/1.1" 204 0
+INFO 2026-01-19 23:32:37,474 basehttp 37640 30316 "GET /api/notes/ HTTP/1.1" 200 222
+ERROR 2026-01-19 23:32:42,117 log 37640 30316 Internal Server Error: /api/notes/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "author_id" of relation "api_note" violates not-null constraint
+DETAIL:  Failing row contains (24, sdfsdfs, sdfsdf, 2026-01-19 17:47:42.056996+00, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "author_id" of relation "api_note" violates not-null constraint
+DETAIL:  Failing row contains (24, sdfsdfs, sdfsdf, 2026-01-19 17:47:42.056996+00, null).
+
+ERROR 2026-01-19 23:32:42,123 basehttp 37640 30316 "POST /api/notes/ HTTP/1.1" 500 204868
+INFO 2026-01-19 23:32:59,986 basehttp 37640 30316 "GET /api/notes/ HTTP/1.1" 200 222
+INFO 2026-01-19 23:33:00,485 basehttp 37640 30316 "GET /api/notes/ HTTP/1.1" 200 222
+INFO 2026-01-19 23:33:00,537 basehttp 37640 30316 "GET /api/notes/ HTTP/1.1" 200 222
+INFO 2026-01-19 23:33:28,994 basehttp 37640 30316 "GET /api/notes/ HTTP/1.1" 200 222
+INFO 2026-01-19 23:33:41,656 basehttp 37640 15780 "OPTIONS /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 0
+INFO 2026-01-19 23:33:41,661 basehttp 37640 36852 "OPTIONS /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 0
+INFO 2026-01-19 23:33:43,176 basehttp 37640 15780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:33:44,224 basehttp 37640 15780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:33:51,585 basehttp 37640 15780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:33:52,937 basehttp 37640 15780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:33:55,836 basehttp 37640 15780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:34:37,264 basehttp 37640 15780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:34:39,361 basehttp 37640 15780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:35:33,003 basehttp 37640 15780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:35:34,086 basehttp 37640 15780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3237
+WARNING 2026-01-19 23:39:30,601 log 37640 38064 Unauthorized: /api/test/
+WARNING 2026-01-19 23:39:30,602 basehttp 37640 38064 "GET /api/test/ HTTP/1.1" 401 5090
+WARNING 2026-01-19 23:39:30,732 log 37640 38064 Not Found: /favicon.ico
+WARNING 2026-01-19 23:39:30,732 basehttp 37640 38064 "GET /favicon.ico HTTP/1.1" 404 3358
+INFO 2026-01-19 23:40:34,416 basehttp 37640 15780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:40:35,898 basehttp 37640 15780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:40:59,664 basehttp 37640 15780 "OPTIONS /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 0
+INFO 2026-01-19 23:41:00,731 basehttp 37640 33756 "OPTIONS /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last7days HTTP/1.1" 200 0
+INFO 2026-01-19 23:41:01,052 basehttp 37640 15780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:41:02,043 basehttp 37640 33756 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last7days HTTP/1.1" 200 3236
+INFO 2026-01-19 23:41:02,633 basehttp 37640 15780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:41:03,355 basehttp 37640 33756 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:41:05,368 basehttp 37640 33756 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:41:06,235 basehttp 37640 15780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last7days HTTP/1.1" 200 3236
+INFO 2026-01-19 23:41:07,462 basehttp 37640 33756 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:41:07,931 basehttp 37640 15780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last7days HTTP/1.1" 200 3236
+INFO 2026-01-19 23:41:14,290 basehttp 37640 15780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:41:18,082 basehttp 37640 15780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:45:18,951 basehttp 37640 24988 "OPTIONS /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 0
+WARNING 2026-01-19 23:45:18,956 log 37640 24988 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:45:18,956 basehttp 37640 24988 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 404 3437
+INFO 2026-01-19 23:45:18,961 basehttp 37640 24988 "OPTIONS /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 0
+WARNING 2026-01-19 23:45:18,967 log 37640 24988 Not Found: /youtube/analytics/
+WARNING 2026-01-19 23:45:18,968 basehttp 37640 24988 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:45:21,942 log 37640 24988 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:45:21,943 basehttp 37640 24988 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:45:21,955 log 37640 24988 Not Found: /youtube/analytics/
+WARNING 2026-01-19 23:45:21,955 basehttp 37640 24988 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 404 3437
+INFO 2026-01-19 23:45:54,019 autoreload 37640 22420 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-01-19 23:45:54,785 autoreload 23772 32776 Watching for file changes with StatReloader
+WARNING 2026-01-19 23:47:16,548 log 23772 33152 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:47:16,549 basehttp 23772 33152 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:47:16,556 log 23772 33152 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:47:16,562 log 23772 18536 Not Found: /youtube/analytics/
+WARNING 2026-01-19 23:47:16,562 basehttp 23772 33152 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:47:16,563 basehttp 23772 18536 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:47:16,568 log 23772 18536 Not Found: /youtube/analytics/
+WARNING 2026-01-19 23:47:16,569 basehttp 23772 18536 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:47:17,630 log 23772 18536 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:47:17,632 basehttp 23772 18536 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:47:17,640 log 23772 18536 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:47:17,640 basehttp 23772 18536 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:47:17,644 log 23772 33152 Not Found: /youtube/analytics/
+WARNING 2026-01-19 23:47:17,645 basehttp 23772 33152 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:47:17,652 log 23772 33152 Not Found: /youtube/analytics/
+WARNING 2026-01-19 23:47:17,653 basehttp 23772 33152 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:47:19,691 log 23772 33152 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:47:19,692 basehttp 23772 33152 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:47:19,699 log 23772 33152 Not Found: /youtube/dashboard/
+WARNING 2026-01-19 23:47:19,702 basehttp 23772 33152 "GET /youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:47:19,707 log 23772 18536 Not Found: /youtube/analytics/
+WARNING 2026-01-19 23:47:19,707 basehttp 23772 18536 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+WARNING 2026-01-19 23:47:19,714 log 23772 18536 Not Found: /youtube/analytics/
+WARNING 2026-01-19 23:47:19,715 basehttp 23772 18536 "GET /youtube/analytics/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 404 3437
+INFO 2026-01-19 23:47:28,728 basehttp 23772 29692 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:47:33,016 basehttp 23772 29692 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:47:33,849 basehttp 23772 29692 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:47:40,838 basehttp 23772 29692 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3237
+INFO 2026-01-19 23:47:42,106 basehttp 23772 18536 "GET /api/notes/ HTTP/1.1" 200 222
+INFO 2026-01-19 23:47:42,156 basehttp 23772 18536 "GET /api/notes/ HTTP/1.1" 200 222
+INFO 2026-01-19 23:47:42,226 basehttp 23772 29692 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3237
+ERROR 2026-01-19 23:47:46,876 log 23772 18536 Internal Server Error: /api/notes/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "author_id" of relation "api_note" violates not-null constraint
+DETAIL:  Failing row contains (25, xcvxvxc, vxcvxcv, 2026-01-19 18:02:46.815316+00, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "author_id" of relation "api_note" violates not-null constraint
+DETAIL:  Failing row contains (25, xcvxvxc, vxcvxcv, 2026-01-19 18:02:46.815316+00, null).
+
+ERROR 2026-01-19 23:47:46,885 basehttp 23772 18536 "POST /api/notes/ HTTP/1.1" 500 204744
+INFO 2026-01-19 23:47:52,745 basehttp 23772 18536 "GET /api/notes/ HTTP/1.1" 200 222
+INFO 2026-01-19 23:47:52,794 basehttp 23772 18536 "GET /api/notes/ HTTP/1.1" 200 222
+INFO 2026-01-20 09:26:32,684 basehttp 23772 23968 "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO 2026-01-20 09:26:32,686 basehttp 23772 13256 "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO 2026-01-20 09:26:32,880 basehttp 23772 13256 "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2026-01-20 09:26:32,884 basehttp 23772 23968 "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2026-01-20 09:26:32,973 basehttp 23772 23968 "OPTIONS /api/notes/ HTTP/1.1" 200 0
+INFO 2026-01-20 09:26:33,135 basehttp 23772 23968 "GET /api/notes/ HTTP/1.1" 200 222
+INFO 2026-01-20 09:26:33,223 basehttp 23772 23968 "GET /api/notes/ HTTP/1.1" 200 222
+ERROR 2026-01-20 09:26:47,774 log 23772 23968 Internal Server Error: /api/notes/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "author_id" of relation "api_note" violates not-null constraint
+DETAIL:  Failing row contains (26, sdfsdf, sdfsdf, 2026-01-20 03:41:47.707935+00, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\mixins.py", line 24, in perform_create
+    serializer.save()
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\serializers.py", line 989, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "author_id" of relation "api_note" violates not-null constraint
+DETAIL:  Failing row contains (26, sdfsdf, sdfsdf, 2026-01-20 03:41:47.707935+00, null).
+
+ERROR 2026-01-20 09:26:47,777 basehttp 23772 23968 "POST /api/notes/ HTTP/1.1" 500 204687
+INFO 2026-01-20 09:28:26,590 autoreload 23772 32776 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py changed, reloading.
+INFO 2026-01-20 09:28:27,357 autoreload 29572 37836 Watching for file changes with StatReloader
+INFO 2026-01-20 09:28:30,262 basehttp 29572 40904 "POST /api/notes/ HTTP/1.1" 201 99
+INFO 2026-01-20 09:28:30,330 basehttp 29572 40904 "GET /api/notes/ HTTP/1.1" 200 372
+INFO 2026-01-20 09:28:36,022 basehttp 29572 40904 "POST /api/notes/ HTTP/1.1" 201 94
+INFO 2026-01-20 09:28:36,071 basehttp 29572 40904 "GET /api/notes/ HTTP/1.1" 200 467
+INFO 2026-01-20 09:28:41,783 basehttp 29572 40904 "POST /api/notes/ HTTP/1.1" 201 100
+INFO 2026-01-20 09:28:41,837 basehttp 29572 40904 "GET /api/notes/ HTTP/1.1" 200 568
+INFO 2026-01-20 09:28:44,222 basehttp 29572 36176 "OPTIONS /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 0
+INFO 2026-01-20 09:28:44,222 basehttp 29572 11640 "OPTIONS /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 0
+INFO 2026-01-20 09:28:45,751 basehttp 29572 36176 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3288
+INFO 2026-01-20 09:28:46,981 basehttp 29572 36176 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3288
+INFO 2026-01-20 09:28:51,939 basehttp 29572 36176 "OPTIONS /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last7days HTTP/1.1" 200 0
+INFO 2026-01-20 09:28:53,098 basehttp 29572 11640 "OPTIONS /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 0
+INFO 2026-01-20 09:28:53,108 basehttp 29572 36176 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last7days HTTP/1.1" 200 3287
+INFO 2026-01-20 09:28:54,424 basehttp 29572 11640 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 3288
+INFO 2026-01-20 09:29:56,528 autoreload 29572 37836 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-01-20 09:29:57,249 autoreload 3944 37704 Watching for file changes with StatReloader
+INFO 2026-01-20 09:30:17,419 autoreload 3944 37704 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-01-20 09:30:18,110 autoreload 38712 38748 Watching for file changes with StatReloader
+INFO 2026-01-20 09:30:25,545 basehttp 38712 29360 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3288
+INFO 2026-01-20 09:30:26,881 basehttp 38712 29360 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 3288
+INFO 2026-01-20 09:30:28,208 basehttp 38712 29360 "OPTIONS /api/youtube/export/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&format=json HTTP/1.1" 200 0
+INFO 2026-01-20 09:30:29,063 basehttp 38712 29360 "GET /api/youtube/export/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&format=json HTTP/1.1" 200 221
+INFO 2026-01-20 09:32:37,826 autoreload 38712 38748 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py changed, reloading.
+INFO 2026-01-20 09:32:38,533 autoreload 38740 7576 Watching for file changes with StatReloader
+INFO 2026-01-20 09:32:39,715 basehttp 38740 40024 "OPTIONS /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 0
+INFO 2026-01-20 09:32:39,716 basehttp 38740 40044 "OPTIONS /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 0
+INFO 2026-01-20 09:32:40,906 basehttp 38740 40044 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2371
+INFO 2026-01-20 09:32:42,022 basehttp 38740 40044 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2371
+INFO 2026-01-20 09:32:53,313 basehttp 38740 40044 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2371
+INFO 2026-01-20 09:32:54,717 basehttp 38740 40044 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2371
+INFO 2026-01-20 09:33:23,867 basehttp 38740 40044 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2371
+INFO 2026-01-20 09:33:30,984 basehttp 38740 40044 "OPTIONS /api/youtube/export/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&format=json HTTP/1.1" 200 0
+INFO 2026-01-20 09:33:31,904 basehttp 38740 40044 "GET /api/youtube/export/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&format=json HTTP/1.1" 200 203
+INFO 2026-01-20 09:33:45,159 basehttp 38740 40044 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2371
+INFO 2026-01-20 09:33:46,547 basehttp 38740 40044 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2371
+INFO 2026-01-20 09:33:46,972 basehttp 38740 12956 "GET /api/notes/ HTTP/1.1" 200 568
+INFO 2026-01-20 09:33:47,027 basehttp 38740 12956 "GET /api/notes/ HTTP/1.1" 200 568
+INFO 2026-01-20 09:33:49,422 basehttp 38740 40044 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2371
+INFO 2026-01-20 09:33:50,773 basehttp 38740 40044 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2371
+INFO 2026-01-20 09:34:16,052 basehttp 38740 40044 "OPTIONS /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 0
+INFO 2026-01-20 09:34:17,501 basehttp 38740 40044 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2371
+INFO 2026-01-20 09:34:24,707 basehttp 38740 40044 "OPTIONS /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last7days HTTP/1.1" 200 0
+INFO 2026-01-20 09:34:26,174 basehttp 38740 40044 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last7days HTTP/1.1" 200 2251
+INFO 2026-01-20 09:35:06,619 basehttp 38740 40044 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2371
+INFO 2026-01-20 09:35:07,668 basehttp 38740 40044 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2371
+INFO 2026-01-20 09:35:32,136 basehttp 38740 40044 "OPTIONS /api/youtube/search/channels/?q=total%20videos&max_results=5 HTTP/1.1" 200 0
+INFO 2026-01-20 09:35:33,993 basehttp 38740 40044 "GET /api/youtube/search/channels/?q=total%20videos&max_results=5 HTTP/1.1" 200 1716
+INFO 2026-01-20 09:35:37,652 basehttp 38740 40044 "OPTIONS /api/youtube/dashboard/?channel_id=UCmd_DECssbgd3BNW1J9Vn_w&period=last30days HTTP/1.1" 200 0
+INFO 2026-01-20 09:35:39,113 basehttp 38740 40044 "GET /api/youtube/dashboard/?channel_id=UCmd_DECssbgd3BNW1J9Vn_w&period=last30days HTTP/1.1" 200 1849
+INFO 2026-01-20 09:35:44,251 basehttp 38740 40044 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2371
+INFO 2026-01-20 09:35:46,146 basehttp 38740 40044 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2371
+INFO 2026-01-20 09:37:20,145 basehttp 38740 4320 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2371
+INFO 2026-01-20 09:37:21,512 basehttp 38740 4320 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2371
+INFO 2026-01-20 09:37:23,872 basehttp 38740 4320 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2371
+INFO 2026-01-20 09:37:25,220 basehttp 38740 4320 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2371

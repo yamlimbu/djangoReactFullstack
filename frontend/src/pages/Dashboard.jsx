@@ -1,186 +1,656 @@
 import { useState, useEffect } from "react";
-import api from "../api.js";
+import api, { youtubeApi } from "../api.js";  // Added youtubeApi import
 import { Link } from "react-router-dom";
+import {
+  BarChart3,
+  Users,
+  Eye,
+  ThumbsUp,
+  Clock,
+  TrendingUp,
+  Video,
+  DollarSign,
+  Download,
+  Calendar,
+  Search,
+  RefreshCw,
+  AlertCircle
+} from "lucide-react";
 
 function Dashboard() {
-  const [stats, setStats] = useState({
-    total: 3,
-    active: 3,
-    archived: 0
+  // State for real data
+  const [analytics, setAnalytics] = useState(null);
+  const [channelStats, setChannelStats] = useState({
+    totalViews: "0",
+    subscribers: "0",
+    totalVideos: "0",
+    channelTitle: "Loading..."
   });
-  const [recentNotes, setRecentNotes] = useState([
-    { id: 1, title: "Test", content: "Thee", status: "Active" },
-    { id: 2, title: "Title", content: "Contentet", status: "Active" },
-    { id: 3, title: "New Note Jan 18", content: "This is test", status: "Active" }
-  ]);
-  const [loading, setLoading] = useState(false);
+  
+  const [timeRange, setTimeRange] = useState("last30days");
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [topVideos, setTopVideos] = useState([]);
+  const [searchedChannels, setSearchedChannels] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedChannelId, setSelectedChannelId] = useState("UC-2Mn1v6KM5OCdr0mauE0Jg"); // Default: Google Developers
+
+  // Debug logging
+  useEffect(() => {
+    console.log("Analytics state updated:", analytics);
+    console.log("Channel stats:", channelStats);
+    console.log("Top videos:", topVideos);
+  }, [analytics, channelStats, topVideos]);
 
   useEffect(() => {
-    // Fetch real data from API
-    fetchDashboardData();
-  }, []);
+    fetchYouTubeData();
+  }, [timeRange, selectedChannelId]);
 
-  const fetchDashboardData = () => {
+  const fetchYouTubeData = async () => {
     setLoading(true);
-    api.get("/api/notes/")
-      .then(res => {
-        const notes = res.data || recentNotes;
-        const active = notes.filter(note => !note.status || note.status === 'Active').length;
+    setError(null);
+    
+    try {
+      console.log("Fetching YouTube data for channel:", selectedChannelId);
+      
+      // First, try to use the new dashboard endpoint
+      try {
+        const dashboardRes = await youtubeApi.get(`/youtube/dashboard/?channel_id=${selectedChannelId}&period=${timeRange}`);
+        const data = dashboardRes.data;
         
-        setStats({
-          total: notes.length,
-          active: active,
-          archived: notes.length - active
+        console.log("Dashboard response:", data);
+        
+        if (data.api_status === "success") {
+          // Set analytics data
+          setAnalytics({
+            channel_info: data.channel_info,
+            statistics: data.statistics,
+            period: data.period,
+            date_range: data.date_range,
+            api_status: data.api_status,
+            channel_id: data.channel_id,
+            quick_metrics: data.quick_metrics
+          });
+          
+          // Set channel stats
+          setChannelStats({
+            totalViews: data.statistics.total_views?.toLocaleString() || "0",
+            subscribers: data.statistics.subscribers?.toLocaleString() || "0",
+            totalVideos: data.statistics.total_videos || "0",
+            channelTitle: data.channel_info?.title || "Unknown Channel"
+          });
+          
+          // Set top videos
+          setTopVideos(data.top_videos || []);
+          return; // Success, exit early
+        }
+      } catch (dashboardError) {
+        console.log("Dashboard endpoint failed, trying individual endpoints:", dashboardError.message);
+      }
+      
+      // Fallback to individual endpoints if dashboard endpoint fails
+      console.log("Using individual endpoints...");
+      
+      // 1. Fetch channel analytics
+      const analyticsRes = await youtubeApi.get(`/youtube/analytics/?channel_id=${selectedChannelId}&period=${timeRange}`);
+      console.log("Analytics response:", analyticsRes.data);
+      
+      const analyticsData = analyticsRes.data;
+      setAnalytics(analyticsData);
+      
+      // Extract stats from analytics
+      if (analyticsData?.statistics) {
+        setChannelStats({
+          totalViews: analyticsData.statistics.total_views?.toLocaleString() || "0",
+          subscribers: analyticsData.statistics.subscribers?.toLocaleString() || "0",
+          totalVideos: analyticsData.statistics.total_videos || "0",
+          channelTitle: analyticsData.channel_info?.title || "Unknown Channel"
         });
-        
-        setRecentNotes(notes.slice(0, 5));
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error(err);
-        setLoading(false);
+      }
+      
+      // 2. Fetch top videos
+      const videosRes = await youtubeApi.get(`/youtube/videos/?channel_id=${selectedChannelId}&max_results=5`);
+      console.log("Videos response:", videosRes.data);
+      setTopVideos(videosRes.data?.videos || []);
+      
+    } catch (err) {
+      console.error("Error fetching YouTube data:", err);
+      const errorMessage = err.response?.data?.error || err.message || "Failed to load YouTube data";
+      setError(errorMessage);
+      
+      // Set default values on error
+      setChannelStats({
+        totalViews: "Error",
+        subscribers: "Error",
+        totalVideos: "0",
+        channelTitle: "Error Loading Channel"
       });
+    } finally {
+      setLoading(false);
+    }
   };
+
+  const searchChannels = async () => {
+    if (!searchQuery.trim()) return;
+    
+    try {
+      const response = await youtubeApi.get(`/youtube/search/channels/?q=${searchQuery}&max_results=5`);
+      setSearchedChannels(response.data?.channels || []);
+    } catch (err) {
+      console.error("Error searching channels:", err);
+    }
+  };
+
+  const selectChannel = (channelId, channelTitle) => {
+    setSelectedChannelId(channelId);
+    setChannelStats(prev => ({ ...prev, channelTitle }));
+    setSearchedChannels([]);
+    setSearchQuery("");
+  };
+
+  const exportReport = async () => {
+    try {
+      const response = await youtubeApi.get(`/youtube/export/?channel_id=${selectedChannelId}&format=json`, {
+        responseType: 'blob'
+      });
+      
+      // Create download link
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', `youtube_analytics_${new Date().toISOString().split('T')[0]}.json`);
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    } catch (err) {
+      console.error("Export error:", err);
+      alert("Failed to export report");
+    }
+  };
+
+  // Format numbers with commas
+  const formatNumber = (num) => {
+    if (!num && num !== 0) return "0";
+    return parseInt(num).toLocaleString();
+  };
+
+  // Calculate watch time from analytics data
+  const calculateWatchTime = () => {
+    // First try quick_metrics
+    if (analytics?.quick_metrics?.estimated_watch_time) {
+      return formatNumber(Math.floor(analytics.quick_metrics.estimated_watch_time));
+    }
+    
+    // Fallback calculation
+    if (analytics?.statistics?.total_views) {
+      const estimatedHours = Math.floor(analytics.statistics.total_views * 0.5 / 60);
+      return formatNumber(estimatedHours);
+    }
+    
+    return "0";
+  };
+
+  // Calculate estimated revenue from analytics data
+  const calculateEstimatedRevenue = () => {
+    // First try quick_metrics
+    if (analytics?.quick_metrics?.estimated_revenue) {
+      return `$${formatNumber(Math.floor(analytics.quick_metrics.estimated_revenue))}`;
+    }
+    
+    // Fallback calculation
+    if (analytics?.statistics?.total_views) {
+      const estimatedRevenue = analytics.statistics.total_views * 0.001;
+      return `$${formatNumber(Math.floor(estimatedRevenue))}`;
+    }
+    
+    return "$0";
+  };
+
+  // Calculate engagement rate from analytics data
+  const calculateEngagementRate = () => {
+    // First try quick_metrics
+    if (analytics?.quick_metrics?.engagement_rate) {
+      return `${analytics.quick_metrics.engagement_rate.toFixed(1)}%`;
+    }
+    
+    // Fallback calculation from top videos
+    if (topVideos.length > 0) {
+      const totalLikes = topVideos.reduce((sum, video) => sum + (video.likes || 0), 0);
+      const totalViews = topVideos.reduce((sum, video) => sum + (video.views || 0), 0);
+      if (totalViews === 0) return "0%";
+      return `${((totalLikes / totalViews) * 100).toFixed(1)}%`;
+    }
+    
+    return "0%";
+  };
+
+  if (loading && !analytics) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <RefreshCw className="w-12 h-12 text-blue-600 animate-spin mx-auto mb-4" />
+          <p className="text-gray-600">Loading YouTube analytics data...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="p-4 md:p-6">
-      {/* Header */}
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900">📊 ADMIN DASHBOARD</h1>
-        <p className="text-gray-600 mt-2">Welcome back, Yam! Here's your overview</p>
-      </div>
-
-      {/* Stats Cards - Compact Layout */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8">
-        <div className="bg-white rounded-xl shadow-lg p-5 border-t-4 border-blue-500">
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-gray-500 text-sm font-medium">Total Notes</p>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mt-1">
-                {loading ? "..." : stats.total}
-              </h3>
-            </div>
-            <div className="p-3 bg-blue-50 rounded-lg">
-              <div className="text-xl">📝</div>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-xl shadow-lg p-5 border-t-4 border-green-500">
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-gray-500 text-sm font-medium">Active Notes</p>
-              <h3 className="text-2xl md:text-3xl font-bold text-green-600 mt-1">
-                {loading ? "..." : stats.active}
-              </h3>
-            </div>
-            <div className="p-3 bg-green-50 rounded-lg">
-              <div className="text-xl">✅</div>
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-xl shadow-lg p-5 border-t-4 border-gray-500">
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-gray-500 text-sm font-medium">Archived Notes</p>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-700 mt-1">
-                {loading ? "..." : stats.archived}
-              </h3>
-            </div>
-            <div className="p-3 bg-gray-50 rounded-lg">
-              <div className="text-xl">📁</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Recent Notes & Quick Actions in Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
-        {/* Recent Notes - Takes 2/3 on large screens */}
-        <div className="lg:col-span-2">
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden h-full">
-            <div className="p-5 md:p-6 border-b border-gray-100 flex justify-between items-center">
-              <h2 className="text-xl font-bold text-gray-900">📋 Recent Notes</h2>
-              <Link
-                to="/notes"
-                className="text-blue-600 hover:text-blue-800 font-medium text-sm flex items-center gap-1"
+      {/* Header with Channel Search */}
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+        <div>
+          <h1 className="text-3xl font-bold text-gray-900">📊 YouTube Analytics Dashboard</h1>
+          <p className="text-gray-600 mt-2">Real-time analytics for YouTube channels</p>
+          
+          {/* Channel Selector */}
+          <div className="mt-4 relative max-w-md">
+            <div className="flex gap-2">
+              <div className="flex-1 relative">
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onKeyPress={(e) => e.key === 'Enter' && searchChannels()}
+                  placeholder="Search YouTube channels..."
+                  className="w-full px-4 py-2 pl-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                />
+                <Search className="absolute left-3 top-2.5 text-gray-400" size={18} />
+                <button
+                  onClick={searchChannels}
+                  className="absolute right-2 top-2 text-blue-600 hover:text-blue-800"
+                >
+                  Search
+                </button>
+              </div>
+              <button
+                onClick={fetchYouTubeData}
+                className="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center gap-2"
               >
-                View All →
-              </Link>
+                <RefreshCw size={16} />
+                Refresh
+              </button>
             </div>
             
-            {loading ? (
-              <div className="p-8 text-center">
-                <div className="inline-block animate-spin rounded-full h-6 w-6 border-t-2 border-b-2 border-blue-600"></div>
-              </div>
-            ) : recentNotes.length === 0 ? (
-              <div className="p-8 text-center text-gray-500">
-                No notes yet. Create your first note!
-              </div>
-            ) : (
-              <div className="divide-y divide-gray-100">
-                {recentNotes.map((note) => (
-                  <div key={note.id} className="p-4 md:p-5 hover:bg-gray-50 transition-colors">
-                    <div className="flex items-center justify-between">
-                      <div className="flex-1 min-w-0">
-                        <h3 className="font-medium text-gray-900 truncate">{note.title}</h3>
-                        <p className="text-sm text-gray-600 mt-1 truncate">{note.content}</p>
+            {/* Search Results Dropdown */}
+            {searchedChannels.length > 0 && (
+              <div className="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg max-h-60 overflow-y-auto">
+                {searchedChannels.map((channel) => (
+                  <button
+                    key={channel.id}
+                    onClick={() => selectChannel(channel.id, channel.title)}
+                    className="w-full px-4 py-3 hover:bg-gray-50 text-left flex items-center gap-3 border-b border-gray-100 last:border-0"
+                  >
+                    <img 
+                      src={channel.thumbnail} 
+                      alt={channel.title}
+                      className="w-8 h-8 rounded-full"
+                    />
+                    <div className="flex-1">
+                      <div className="font-medium text-gray-900">{channel.title}</div>
+                      <div className="text-sm text-gray-600">
+                        {formatNumber(channel.statistics?.subscribers)} subscribers • {formatNumber(channel.statistics?.videos)} videos
                       </div>
-                      <span className={`ml-3 px-2 py-1 rounded text-xs font-medium whitespace-nowrap ${
-                        !note.status || note.status === 'Active' 
-                          ? 'bg-green-100 text-green-800' 
-                          : 'bg-gray-100 text-gray-800'
-                      }`}>
-                        {note.status || 'Active'}
-                      </span>
                     </div>
-                  </div>
+                  </button>
                 ))}
               </div>
             )}
           </div>
         </div>
-
-        {/* Quick Actions - Takes 1/3 on large screens */}
-        <div className="lg:col-span-1">
-          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl shadow-lg p-5 md:p-6 h-full">
-            <h2 className="text-xl font-bold text-gray-900 mb-4">🚀 Quick Actions</h2>
-            <div className="space-y-3">
-              <Link
-                to="/notes"
-                className="block w-full px-4 py-3 bg-white text-gray-800 font-medium rounded-lg hover:shadow-md transition-all flex items-center justify-between"
-              >
-                <span>📝 View All Notes</span>
-                <span className="text-gray-400">→</span>
-              </Link>
-              <Link
-                to="/notes"
-                className="block w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all flex items-center justify-between"
-              >
-                <span>➕ Create New Note</span>
-                <span className="text-white/70">→</span>
-              </Link>
+        
+        {/* Selected Channel Info */}
+        <div className="flex items-center gap-4">
+          <div className="text-right">
+            <div className="text-sm text-gray-600">Current Channel</div>
+            <div className="font-bold text-gray-900">{channelStats.channelTitle}</div>
+          </div>
+          
+          <div className="flex items-center gap-2">
+            <div className="flex bg-gray-100 rounded-lg p-1">
+              {["last7days", "last30days", "last90days"].map((period) => (
+                <button
+                  key={period}
+                  onClick={() => setTimeRange(period)}
+                  className={`px-3 py-1 rounded-md text-sm font-medium transition-all ${
+                    timeRange === period
+                      ? "bg-white shadow text-blue-600"
+                      : "text-gray-600 hover:text-gray-900"
+                  }`}
+                >
+                  {period.replace("last", "").replace("days", "d")}
+                </button>
+              ))}
             </div>
+            <button
+              onClick={exportReport}
+              className="px-4 py-2 bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-lg hover:shadow-lg transition-all flex items-center gap-2"
+            >
+              <Download size={16} />
+              Export
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Error Message */}
+      {error && (
+        <div className="mb-6 p-4 bg-red-50 border border-red-200 text-red-700 rounded-xl flex items-center gap-3">
+          <AlertCircle size={20} />
+          <div>
+            <p className="font-medium">Error Loading Data</p>
+            <p className="text-sm">{error}</p>
+          </div>
+          <button 
+            onClick={fetchYouTubeData}
+            className="ml-auto text-red-700 hover:text-red-900"
+          >
+            Retry
+          </button>
+        </div>
+      )}
+
+      {/* Stats Grid with REAL DATA */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8">
+        {/* Total Views */}
+        <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl shadow-lg p-6 border-l-4 border-blue-500">
+          <div className="flex items-center justify-between">
+            <div>
+              <p className="text-blue-600 text-sm font-medium">Total Views</p>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mt-1">
+                {formatNumber(channelStats.totalViews)}
+              </h3>
+              <p className="text-blue-600 text-sm mt-2 flex items-center gap-1">
+                <Eye size={14} />
+                {analytics?.statistics?.sample_views ? `${formatNumber(analytics.statistics.sample_views)} sample views` : 'Real-time data'}
+              </p>
+            </div>
+            <div className="p-3 bg-blue-500/20 rounded-xl">
+              <Eye className="text-blue-600" size={24} />
+            </div>
+          </div>
+        </div>
+
+        {/* Subscribers */}
+        <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl shadow-lg p-6 border-l-4 border-green-500">
+          <div className="flex items-center justify-between">
+            <div>
+              <p className="text-green-600 text-sm font-medium">Subscribers</p>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mt-1">
+                {formatNumber(channelStats.subscribers)}
+              </h3>
+              <p className="text-green-600 text-sm mt-2 flex items-center gap-1">
+                <Users size={14} />
+                YouTube API Data
+              </p>
+            </div>
+            <div className="p-3 bg-green-500/20 rounded-xl">
+              <Users className="text-green-600" size={24} />
+            </div>
+          </div>
+        </div>
+
+        {/* Total Videos */}
+        <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl shadow-lg p-6 border-l-4 border-purple-500">
+          <div className="flex items-center justify-between">
+            <div>
+              <p className="text-purple-600 text-sm font-medium">Total Videos</p>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mt-1">
+                {channelStats.totalVideos}
+              </h3>
+              <p className="text-purple-600 text-sm mt-2 flex items-center gap-1">
+                <Video size={14} />
+                Public videos count
+              </p>
+            </div>
+            <div className="p-3 bg-purple-500/20 rounded-xl">
+              <Video className="text-purple-600" size={24} />
+            </div>
+          </div>
+        </div>
+
+        {/* Estimated Watch Time */}
+        <div className="bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl shadow-lg p-6 border-l-4 border-amber-500">
+          <div className="flex items-center justify-between">
+            <div>
+              <p className="text-amber-600 text-sm font-medium">Estimated Watch Time</p>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mt-1">
+                {calculateWatchTime()}h
+              </h3>
+              <p className="text-amber-600 text-sm mt-2 flex items-center gap-1">
+                <Clock size={14} />
+                Based on views estimate
+              </p>
+            </div>
+            <div className="p-3 bg-amber-500/20 rounded-xl">
+              <Clock className="text-amber-600" size={24} />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Analytics Details */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 mb-8">
+        {/* Channel Information */}
+        <div className="lg:col-span-2">
+          <div className="bg-white rounded-2xl shadow-lg p-6 h-full">
+            <h2 className="text-xl font-bold text-gray-900 mb-6">📊 Channel Analytics</h2>
             
-            {/* Stats Summary */}
-            <div className="mt-6 pt-6 border-t border-blue-200">
-              <h3 className="font-medium text-gray-700 mb-2">📊 Quick Stats</h3>
-              <div className="space-y-2">
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-600">Total Notes:</span>
-                  <span className="font-medium">{stats.total}</span>
+            {analytics?.channel_info ? (
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  {analytics.channel_info.thumbnail && (
+                    <img 
+                      src={analytics.channel_info.thumbnail} 
+                      alt={analytics.channel_info.title}
+                      className="w-16 h-16 rounded-full"
+                    />
+                  )}
+                  <div className="flex-1">
+                    <h3 className="text-lg font-bold text-gray-900">{analytics.channel_info.title}</h3>
+                    <p className="text-gray-600 text-sm mt-1">{analytics.channel_info.description}</p>
+                    <div className="flex gap-4 mt-3 text-sm">
+                      {analytics.channel_info.custom_url && (
+                        <span className="text-blue-600">🔗 {analytics.channel_info.custom_url}</span>
+                      )}
+                      {analytics.channel_info.published_at && (
+                        <span className="text-gray-500">
+                          <Calendar size={14} className="inline mr-1" />
+                          Joined {new Date(analytics.channel_info.published_at).toLocaleDateString()}
+                        </span>
+                      )}
+                    </div>
+                  </div>
                 </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-600">Active:</span>
-                  <span className="font-medium text-green-600">{stats.active}</span>
+                
+                {/* Date Range */}
+                {analytics.date_range && (
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <div className="text-sm text-gray-600 mb-1">Analysis Period</div>
+                    <div className="flex items-center gap-2">
+                      <Calendar size={16} className="text-gray-500" />
+                      <span className="font-medium">
+                        {analytics.date_range?.start} to {analytics.date_range?.end}
+                      </span>
+                      <span className="ml-auto text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">
+                        {analytics.period || timeRange}
+                      </span>
+                    </div>
+                  </div>
+                )}
+                
+                {/* API Status */}
+                <div className={`p-3 rounded-lg ${analytics.api_status === 'success' ? 'bg-green-50 text-green-700' : 'bg-yellow-50 text-yellow-700'}`}>
+                  <div className="flex items-center gap-2">
+                    <div className={`w-2 h-2 rounded-full ${analytics.api_status === 'success' ? 'bg-green-500' : 'bg-yellow-500'}`}></div>
+                    <span className="text-sm">
+                      API Status: <span className="font-medium">{analytics.api_status || 'unknown'}</span>
+                    </span>
+                  </div>
                 </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-600">Archived:</span>
-                  <span className="font-medium text-gray-600">{stats.archived}</span>
+              </div>
+            ) : (
+              <div className="text-center py-8 text-gray-500">
+                No channel data available
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Quick Metrics */}
+        <div className="lg:col-span-1">
+          <div className="bg-white rounded-2xl shadow-lg p-6 h-full">
+            <h2 className="text-xl font-bold text-gray-900 mb-6">📈 Quick Metrics</h2>
+            
+            <div className="space-y-4">
+              <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                <div>
+                  <div className="text-sm text-gray-600">Engagement Rate</div>
+                  <div className="text-lg font-bold text-gray-900">{calculateEngagementRate()}</div>
+                </div>
+                <TrendingUp className="text-green-600" size={20} />
+              </div>
+              
+              <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                <div>
+                  <div className="text-sm text-gray-600">Estimated Revenue</div>
+                  <div className="text-lg font-bold text-gray-900">{calculateEstimatedRevenue()}</div>
+                </div>
+                <DollarSign className="text-amber-600" size={20} />
+              </div>
+              
+              <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                <div>
+                  <div className="text-sm text-gray-600">Avg. Video Views</div>
+                  <div className="text-lg font-bold text-gray-900">
+                    {analytics?.quick_metrics?.avg_video_views 
+                      ? formatNumber(analytics.quick_metrics.avg_video_views)
+                      : (analytics?.statistics?.total_views && analytics?.statistics?.total_videos
+                          ? formatNumber(Math.floor(analytics.statistics.total_views / analytics.statistics.total_videos))
+                          : "0")
+                    }
+                  </div>
+                </div>
+                <BarChart3 className="text-purple-600" size={20} />
+              </div>
+              
+              <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                <div>
+                  <div className="text-sm text-gray-600">Data Source</div>
+                  <div className="text-sm font-medium text-blue-600">
+                    {analytics?.api_status === 'success' ? 'YouTube Data API v3' : 'API Error'}
+                  </div>
+                </div>
+                <div className={`text-xs px-2 py-1 rounded ${
+                  analytics?.api_status === 'success' 
+                    ? 'bg-green-100 text-green-800' 
+                    : 'bg-red-100 text-red-800'
+                }`}>
+                  {analytics?.api_status === 'success' ? 'LIVE' : 'ERROR'}
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Top Videos Section */}
+      <div className="bg-white rounded-2xl shadow-lg overflow-hidden mb-8">
+        <div className="p-6 border-b border-gray-100 flex justify-between items-center">
+          <h2 className="text-xl font-bold text-gray-900">🎬 Top Performing Videos</h2>
+          <div className="text-sm text-gray-600">
+            Showing {topVideos.length} videos from {channelStats.channelTitle}
+          </div>
+        </div>
+        
+        {topVideos.length > 0 ? (
+          <div className="overflow-x-auto">
+            <table className="w-full">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="py-3 px-6 text-left text-sm font-medium text-gray-700">Video</th>
+                  <th className="py-3 px-6 text-left text-sm font-medium text-gray-700">Views</th>
+                  <th className="py-3 px-6 text-left text-sm font-medium text-gray-700">Likes</th>
+                  <th className="py-3 px-6 text-left text-sm font-medium text-gray-700">Comments</th>
+                  <th className="py-3 px-6 text-left text-sm font-medium text-gray-700">Published</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                {topVideos.map((video, index) => (
+                  <tr key={video.id || index} className="hover:bg-gray-50 transition-colors">
+                    <td className="py-4 px-6">
+                      <div className="flex items-center gap-3">
+                        {video.thumbnail && (
+                          <img 
+                            src={video.thumbnail} 
+                            alt={video.title}
+                            className="w-16 h-9 rounded object-cover"
+                          />
+                        )}
+                        <div className="flex-1 min-w-0">
+                          <p className="font-medium text-gray-900 truncate">{video.title || 'Untitled Video'}</p>
+                          <p className="text-sm text-gray-500 truncate">{video.description || ''}</p>
+                          {video.tags && video.tags.length > 0 && (
+                            <div className="flex flex-wrap gap-1 mt-1">
+                              {video.tags.slice(0, 2).map((tag, idx) => (
+                                <span key={idx} className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">
+                                  #{tag}
+                                </span>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </td>
+                    <td className="py-4 px-6">
+                      <div className="font-medium">{formatNumber(video.views)}</div>
+                    </td>
+                    <td className="py-4 px-6">
+                      <div className="flex items-center gap-1">
+                        <ThumbsUp size={14} className="text-gray-500" />
+                        <span>{formatNumber(video.likes)}</span>
+                      </div>
+                    </td>
+                    <td className="py-4 px-6">
+                      <div>{formatNumber(video.comments)}</div>
+                    </td>
+                    <td className="py-4 px-6">
+                      <div className="text-sm text-gray-600">
+                        {video.published_at ? new Date(video.published_at).toLocaleDateString() : 'N/A'}
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ) : (
+          <div className="text-center py-12">
+            <Video className="w-12 h-12 text-gray-400 mx-auto mb-4" />
+            <p className="text-gray-600">No video data available</p>
+            <p className="text-sm text-gray-500 mt-1">Try selecting a different channel</p>
+          </div>
+        )}
+      </div>
+
+      {/* Tips & Next Steps */}
+      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-6">
+        <h3 className="text-lg font-bold text-gray-900 mb-4">💡 Tips for Better Analytics</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="bg-white p-4 rounded-lg">
+            <div className="text-2xl mb-2">🔍</div>
+            <h4 className="font-medium mb-2">Search More Channels</h4>
+            <p className="text-sm text-gray-600">Use the search bar above to analyze any public YouTube channel</p>
+          </div>
+          <div className="bg-white p-4 rounded-lg">
+            <div className="text-2xl mb-2">📊</div>
+            <h4 className="font-medium mb-2">Export Data</h4>
+            <p className="text-sm text-gray-600">Click the Export button to download analytics in JSON or CSV format</p>
+          </div>
+          <div className="bg-white p-4 rounded-lg">
+            <div className="text-2xl mb-2">🎯</div>
+            <h4 className="font-medium mb-2">Try Different Channels</h4>
+            <p className="text-sm text-gray-600">Analyze competitors or similar channels to benchmark performance</p>
           </div>
         </div>
       </div>
