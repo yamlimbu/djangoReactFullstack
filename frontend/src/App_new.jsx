@@ -7,7 +7,7 @@ import NotFound from "./pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Layout from "./components/layout/Layout";
 
-// Import new pages
+// Import new pages (create these next)
 import Analytics from "./pages/Analytics";
 import Videos from "./pages/Videos";
 import Audience from "./pages/Audience";
@@ -46,14 +46,14 @@ function App() {
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/audience" element={<Audience />} />
-          <Route path="/revenue" element={<Revenue />} />
+          {/* <Route path="/revenue" element={<Revenue />} />
           <Route path="/geographic" element={<Geographic />} />
           <Route path="/trends" element={<Trends />} />
           <Route path="/comments" element={<Comments />} />
           <Route path="/alerts" element={<Alerts />} />
           <Route path="/reports" element={<Reports />} />
           <Route path="/settings" element={<Settings />} />
-          <Route path="/admin" element={<Admin />} />
+          <Route path="/admin" element={<Admin />} /> */}
           <Route path="/notes" element={<Home />} />
         </Route>
 

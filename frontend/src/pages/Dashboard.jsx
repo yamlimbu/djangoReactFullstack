@@ -74,9 +74,9 @@ function Dashboard() {
           
           // Set channel stats
           setChannelStats({
-            totalViews: data.statistics.total_views?.toLocaleString() || "0",
-            subscribers: data.statistics.subscribers?.toLocaleString() || "0",
-            totalVideos: data.statistics.total_videos || "0",
+            totalViews: Number(data.statistics?.total_views || 0).toLocaleString(),
+            subscribers: Number(data.statistics?.subscribers || 0).toLocaleString(),
+            totalVideos: Number(data.statistics?.total_videos || 0).toLocaleString(),
             channelTitle: data.channel_info?.title || "Unknown Channel"
           });
           
