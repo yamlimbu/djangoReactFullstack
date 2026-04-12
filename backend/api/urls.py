@@ -1,62 +1,31 @@
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
+# urls.py
+from django.urls import path
 from . import views
 
-router = DefaultRouter()
-
-# Module 1: User Authentication & Management
-router.register(r'users/profile', views.UserProfileViewSet, basename='user-profile')
-
-# Module 2: YouTube Integration
-router.register(r'channels', views.ChannelViewSet, basename='channel')
-
-# Module 3: Data Collection & Synchronization
-router.register(r'sync-jobs', views.SyncJobViewSet, basename='sync-job')
-
-# Module 4: Data Processing & ETL
-router.register(r'videos', views.VideoViewSet, basename='video')
-router.register(r'comments', views.CommentViewSet, basename='comment')
-
-# Module 5: Analytics Engine
-router.register(r'analytics-metrics', views.AnalyticsMetricViewSet, basename='analytics-metric')
-
-# Module 6: Machine Learning
-router.register(r'predictions', views.PerformancePredictionViewSet, basename='prediction')
-router.register(r'recommendations', views.ContentRecommendationViewSet, basename='recommendation')
-
-# Module 7: Visualization & Dashboard
-router.register(r'dashboards', views.DashboardViewSet, basename='dashboard')
-
-# Module 8: Reporting Module
-router.register(r'reports', views.ReportViewSet, basename='report')
-
-# Module 9: Alert & Notification
-router.register(r'alerts', views.AlertViewSet, basename='alert')
-router.register(r'notifications', views.NotificationViewSet, basename='notification')
-
-# Module 10: Administration
-router.register(r'system-logs', views.SystemLogViewSet, basename='system-log')
-router.register(r'api-usage', views.APIUsageViewSet, basename='api-usage')
-router.register(r'system-config', views.SystemConfigurationViewSet, basename='system-config')
-
 urlpatterns = [
-    # Authentication endpoints
-    path('auth/register/', views.UserRegistrationView.as_view(), name='register'),
-    path('auth/login/', views.login_view, name='login'),
-    path('auth/logout/', views.logout_view, name='logout'),
+    # Existing Note URLs
+    path('notes/', views.NoteListCreate.as_view(), name='note-list'),
+    path('notes/update/<int:pk>/', views.NoteUpdateView.as_view(), name='note-update'),
+    path('notes/delete/<int:pk>/', views.NoteDelete.as_view(), name='note-delete'),
     
-    # Dashboard summary
-    path('dashboard/summary/', views.dashboard_summary, name='dashboard-summary'),
+    # User URLs
+    path('register/', views.CreateUserView.as_view(), name='register'),
+    path('user/profile/', views.UserProfileView.as_view(), name='user-profile'),
     
-    # Health check
+    # YouTube Analytics URLs (Updated to use database)
+    path('youtube/dashboard/', views.YouTubeDashboardView.as_view(), name='youtube-dashboard'),
+    path('youtube/analytics/', views.YouTubeDashboardView.as_view(), name='youtube-analytics'),
+    path('youtube/videos/', views.VideoAnalyticsView.as_view(), name='video-analytics'),
+    path('youtube/trends/', views.AnalyticsTrendsView.as_view(), name='analytics-trends'),
+    path('youtube/search/channels/', views.SearchChannelsView.as_view(), name='search-channels'),
+    path('youtube/channels/', views.ChannelManagementView.as_view(), name='channel-management'),
+    path('youtube/channels/<str:channel_id>/', views.ChannelManagementView.as_view(), name='channel-detail'),
+    
+    # Dashboard & Summary
+    path('dashboard/summary/', views.DashboardSummaryView.as_view(), name='dashboard-summary'),
+    
+    # System URLs
     path('health/', views.health_check, name='health-check'),
-    
-    # Legacy Notes endpoints
-    path('notes/', views.NoteListCreate.as_view(), name='note-list-create'),
-    path('notes/<int:pk>/', views.NoteDelete.as_view(), name='note-delete'),
-
-    path('youtube/dashboard/', views.youtube_dashboard, name='youtube-dashboard'),
-    
-    # Router URLs
-    path('', include(router.urls)),
+    path('user/stats/', views.user_stats, name='user-stats'),
+    path('test/', views.api_test, name='api-test'),
 ]

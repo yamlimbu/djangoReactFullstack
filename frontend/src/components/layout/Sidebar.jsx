@@ -25,28 +25,28 @@ function Sidebar() {
     // Core Analytics
     { path: "/", icon: <Home size={20} />, label: "Dashboard", badge: null },
     { path: "/analytics", icon: <BarChart3 size={20} />, label: "Analytics", badge: "Live" },
-    
+
     // Content Management
     { path: "/videos", icon: <Video size={20} />, label: "Videos", badge: null },
-    { path: "/playlists", icon: <List size={20} />, label: "Playlists", badge: null },
-    
+    // { path: "/playlists", icon: <List size={20} />, label: "Playlists", badge: null },
+
     // Audience Insights
     { path: "/audience", icon: <Users size={20} />, label: "Audience", badge: null },
     { path: "/geographic", icon: <Globe size={20} />, label: "Geographic", badge: null },
-    { path: "/demographics", icon: <PieChart size={20} />, label: "Demographics", badge: null },
-    
+    // { path: "/demographics", icon: <PieChart size={20} />, label: "Demographics", badge: null },
+
     // Performance
     { path: "/revenue", icon: <DollarSign size={20} />, label: "Revenue", badge: null },
     { path: "/trends", icon: <TrendingUp size={20} />, label: "Trends", badge: "New" },
-    { path: "/predictions", icon: <Zap size={20} />, label: "Predictions", badge: null },
-    
+    // { path: "/predictions", icon: <Zap size={20} />, label: "Predictions", badge: null },
+
     // Engagement
     { path: "/comments", icon: <MessageSquare size={20} />, label: "Comments", badge: null },
     { path: "/alerts", icon: <Bell size={20} />, label: "Alerts", badge: null },
-    
+
     // Reports & Export
     { path: "/reports", icon: <FileText size={20} />, label: "Reports", badge: null },
-    
+
     // Settings & Admin
     { path: "/settings", icon: <Settings size={20} />, label: "Settings", badge: null },
     { path: "/admin", icon: <Shield size={20} />, label: "Administration", badge: null },
@@ -76,8 +76,8 @@ function Sidebar() {
             to={item.path}
             end
             className={({ isActive }) =>
-              `${baseClass} ${isActive 
-                ? 'bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-l-4 border-blue-400 font-semibold' 
+              `${baseClass} ${isActive
+                ? 'bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-l-4 border-blue-400 font-semibold'
                 : 'hover:bg-white/5'
               }`
             }
@@ -85,13 +85,12 @@ function Sidebar() {
             <div className="text-gray-300">{item.icon}</div>
             <span className="flex-1">{item.label}</span>
             {item.badge && (
-              <span className={`ml-auto text-xs px-2 py-1 rounded-full ${
-                typeof item.badge === 'number' 
-                  ? 'bg-blue-500/20 text-blue-300'
-                  : item.badge.startsWith('$')
+              <span className={`ml-auto text-xs px-2 py-1 rounded-full ${typeof item.badge === 'number'
+                ? 'bg-blue-500/20 text-blue-300'
+                : item.badge.startsWith('$')
                   ? 'bg-green-500/20 text-green-300'
                   : 'bg-purple-500/20 text-purple-300'
-              }`}>
+                }`}>
                 {item.badge}
               </span>
             )}
@@ -118,7 +117,7 @@ function Sidebar() {
             </div>
           </div>
         </div> */}
-        
+
         {/* User Info */}
         <div className="flex items-center gap-3 pt-4 border-t border-gray-700">
           <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center flex-shrink-0">

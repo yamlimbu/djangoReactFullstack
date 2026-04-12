@@ -14,8 +14,7 @@ import {
   Calendar,
   Search,
   RefreshCw,
-  AlertCircle,
-  Plus
+  AlertCircle
 } from "lucide-react";
 
 function Dashboard() {
@@ -27,14 +26,14 @@ function Dashboard() {
     totalVideos: "0",
     channelTitle: "Loading..."
   });
-
+  
   const [timeRange, setTimeRange] = useState("last30days");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [topVideos, setTopVideos] = useState([]);
   const [searchedChannels, setSearchedChannels] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
-  const [selectedChannelId, setSelectedChannelId] = useState(""); // Dynamically fetch user channels
+  const [selectedChannelId, setSelectedChannelId] = useState("UC-2Mn1v6KM5OCdr0mauE0Jg"); // Default: Google Developers
 
   // Debug logging
   useEffect(() => {
@@ -44,48 +43,23 @@ function Dashboard() {
   }, [analytics, channelStats, topVideos]);
 
   useEffect(() => {
-    if (selectedChannelId) {
-      fetchYouTubeData();
-    }
+    fetchYouTubeData();
   }, [timeRange, selectedChannelId]);
 
-  useEffect(() => {
-    const fetchDefaultChannel = async () => {
-      try {
-        const res = await youtubeApi.get('/youtube/channels/');
-        if (res.data.channels && res.data.channels.length > 0) {
-          const firstChannel = res.data.channels[0];
-          setSelectedChannelId(firstChannel.id);
-        } else {
-          setLoading(false);
-          setError("No YouTube channels found. Please sync a channel first.");
-        }
-      } catch (err) {
-        console.error("Error fetching channels:", err);
-        setLoading(false);
-        setError("Failed to load user channels.");
-      }
-    };
-    
-    fetchDefaultChannel();
-  }, []);
-
   const fetchYouTubeData = async () => {
-    if (!selectedChannelId) return;
-
     setLoading(true);
     setError(null);
-
+    
     try {
       console.log("Fetching YouTube data for channel:", selectedChannelId);
-
+      
       // First, try to use the new dashboard endpoint
       try {
         const dashboardRes = await youtubeApi.get(`/youtube/dashboard/?channel_id=${selectedChannelId}&period=${timeRange}`);
         const data = dashboardRes.data;
-
+        
         console.log("Dashboard response:", data);
-
+        
         if (data.api_status === "success") {
           // Set analytics data
           setAnalytics({
@@ -97,7 +71,7 @@ function Dashboard() {
             channel_id: data.channel_id,
             quick_metrics: data.quick_metrics
           });
-
+          
           // Set channel stats
           setChannelStats({
             totalViews: Number(data.statistics?.total_views || 0).toLocaleString(),
@@ -105,7 +79,7 @@ function Dashboard() {
             totalVideos: Number(data.statistics?.total_videos || 0).toLocaleString(),
             channelTitle: data.channel_info?.title || "Unknown Channel"
           });
-
+          
           // Set top videos
           setTopVideos(data.top_videos || []);
           return; // Success, exit early
@@ -113,17 +87,17 @@ function Dashboard() {
       } catch (dashboardError) {
         console.log("Dashboard endpoint failed, trying individual endpoints:", dashboardError.message);
       }
-
+      
       // Fallback to individual endpoints if dashboard endpoint fails
       console.log("Using individual endpoints...");
-
+      
       // 1. Fetch channel analytics
       const analyticsRes = await youtubeApi.get(`/youtube/analytics/?channel_id=${selectedChannelId}&period=${timeRange}`);
       console.log("Analytics response:", analyticsRes.data);
-
+      
       const analyticsData = analyticsRes.data;
       setAnalytics(analyticsData);
-
+      
       // Extract stats from analytics
       if (analyticsData?.statistics) {
         setChannelStats({
@@ -133,17 +107,17 @@ function Dashboard() {
           channelTitle: analyticsData.channel_info?.title || "Unknown Channel"
         });
       }
-
+      
       // 2. Fetch top videos
       const videosRes = await youtubeApi.get(`/youtube/videos/?channel_id=${selectedChannelId}&max_results=5`);
       console.log("Videos response:", videosRes.data);
       setTopVideos(videosRes.data?.videos || []);
-
+      
     } catch (err) {
       console.error("Error fetching YouTube data:", err);
       const errorMessage = err.response?.data?.error || err.message || "Failed to load YouTube data";
       setError(errorMessage);
-
+      
       // Set default values on error
       setChannelStats({
         totalViews: "Error",
@@ -158,7 +132,7 @@ function Dashboard() {
 
   const searchChannels = async () => {
     if (!searchQuery.trim()) return;
-
+    
     try {
       const response = await youtubeApi.get(`/youtube/search/channels/?q=${searchQuery}&max_results=5`);
       setSearchedChannels(response.data?.channels || []);
@@ -174,22 +148,12 @@ function Dashboard() {
     setSearchQuery("");
   };
 
-  const addChannel = async (channelId) => {
-    try {
-      await youtubeApi.post('/youtube/channels/', { channel_id: channelId });
-      alert("Channel saved to profile successfully!");
-    } catch (err) {
-      console.error("Error saving channel:", err);
-      alert("Failed to save channel to profile.");
-    }
-  };
-
   const exportReport = async () => {
     try {
       const response = await youtubeApi.get(`/youtube/export/?channel_id=${selectedChannelId}&format=json`, {
         responseType: 'blob'
       });
-
+      
       // Create download link
       const url = window.URL.createObjectURL(new Blob([response.data]));
       const link = document.createElement('a');
@@ -216,13 +180,13 @@ function Dashboard() {
     if (analytics?.quick_metrics?.estimated_watch_time) {
       return formatNumber(Math.floor(analytics.quick_metrics.estimated_watch_time));
     }
-
+    
     // Fallback calculation
     if (analytics?.statistics?.total_views) {
       const estimatedHours = Math.floor(analytics.statistics.total_views * 0.5 / 60);
       return formatNumber(estimatedHours);
     }
-
+    
     return "0";
   };
 
@@ -232,13 +196,13 @@ function Dashboard() {
     if (analytics?.quick_metrics?.estimated_revenue) {
       return `$${formatNumber(Math.floor(analytics.quick_metrics.estimated_revenue))}`;
     }
-
+    
     // Fallback calculation
     if (analytics?.statistics?.total_views) {
       const estimatedRevenue = analytics.statistics.total_views * 0.001;
       return `$${formatNumber(Math.floor(estimatedRevenue))}`;
     }
-
+    
     return "$0";
   };
 
@@ -248,7 +212,7 @@ function Dashboard() {
     if (analytics?.quick_metrics?.engagement_rate) {
       return `${analytics.quick_metrics.engagement_rate.toFixed(1)}%`;
     }
-
+    
     // Fallback calculation from top videos
     if (topVideos.length > 0) {
       const totalLikes = topVideos.reduce((sum, video) => sum + (video.likes || 0), 0);
@@ -256,7 +220,7 @@ function Dashboard() {
       if (totalViews === 0) return "0%";
       return `${((totalLikes / totalViews) * 100).toFixed(1)}%`;
     }
-
+    
     return "0%";
   };
 
@@ -278,7 +242,7 @@ function Dashboard() {
         <div>
           <h1 className="text-3xl font-bold text-gray-900">📊 YouTube Analytics Dashboard</h1>
           <p className="text-gray-600 mt-2">Real-time analytics for YouTube channels</p>
-
+          
           {/* Channel Selector */}
           <div className="mt-4 relative max-w-md">
             <div className="flex gap-2">
@@ -307,59 +271,52 @@ function Dashboard() {
                 Refresh
               </button>
             </div>
-
+            
             {/* Search Results Dropdown */}
             {searchedChannels.length > 0 && (
               <div className="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg max-h-60 overflow-y-auto">
                 {searchedChannels.map((channel) => (
-                  <div key={channel.id} className="w-full flex items-center justify-between border-b border-gray-100 last:border-0 hover:bg-gray-50 pr-2">
-                    <button
-                      onClick={() => selectChannel(channel.id, channel.title)}
-                      className="flex-1 px-4 py-3 text-left flex items-center gap-3"
-                    >
-                      <img
-                        src={channel.thumbnail}
-                        alt={channel.title}
-                        className="w-8 h-8 rounded-full"
-                      />
-                      <div className="flex-1">
-                        <div className="font-medium text-gray-900">{channel.title}</div>
-                        <div className="text-sm text-gray-600">
-                          {formatNumber(channel.statistics?.subscribers)} subscribers • {formatNumber(channel.statistics?.videos)} videos
-                        </div>
+                  <button
+                    key={channel.id}
+                    onClick={() => selectChannel(channel.id, channel.title)}
+                    className="w-full px-4 py-3 hover:bg-gray-50 text-left flex items-center gap-3 border-b border-gray-100 last:border-0"
+                  >
+                    <img 
+                      src={channel.thumbnail} 
+                      alt={channel.title}
+                      className="w-8 h-8 rounded-full"
+                    />
+                    <div className="flex-1">
+                      <div className="font-medium text-gray-900">{channel.title}</div>
+                      <div className="text-sm text-gray-600">
+                        {formatNumber(channel.statistics?.subscribers)} subscribers • {formatNumber(channel.statistics?.videos)} videos
                       </div>
-                    </button>
-                    <button 
-                      onClick={() => addChannel(channel.id)}
-                      title="Save to Profile"
-                      className="p-2 text-gray-400 hover:text-blue-600 hover:bg-blue-50 rounded-full transition-colors flex-shrink-0"
-                    >
-                      <Plus size={20} />
-                    </button>
-                  </div>
+                    </div>
+                  </button>
                 ))}
               </div>
             )}
           </div>
         </div>
-
+        
         {/* Selected Channel Info */}
         <div className="flex items-center gap-4">
           <div className="text-right">
             <div className="text-sm text-gray-600">Current Channel</div>
             <div className="font-bold text-gray-900">{channelStats.channelTitle}</div>
           </div>
-
+          
           <div className="flex items-center gap-2">
             <div className="flex bg-gray-100 rounded-lg p-1">
               {["last7days", "last30days", "last90days"].map((period) => (
                 <button
                   key={period}
                   onClick={() => setTimeRange(period)}
-                  className={`px-3 py-1 rounded-md text-sm font-medium transition-all ${timeRange === period
+                  className={`px-3 py-1 rounded-md text-sm font-medium transition-all ${
+                    timeRange === period
                       ? "bg-white shadow text-blue-600"
                       : "text-gray-600 hover:text-gray-900"
-                    }`}
+                  }`}
                 >
                   {period.replace("last", "").replace("days", "d")}
                 </button>
@@ -384,7 +341,7 @@ function Dashboard() {
             <p className="font-medium">Error Loading Data</p>
             <p className="text-sm">{error}</p>
           </div>
-          <button
+          <button 
             onClick={fetchYouTubeData}
             className="ml-auto text-red-700 hover:text-red-900"
           >
@@ -478,13 +435,13 @@ function Dashboard() {
         <div className="lg:col-span-2">
           <div className="bg-white rounded-2xl shadow-lg p-6 h-full">
             <h2 className="text-xl font-bold text-gray-900 mb-6">📊 Channel Analytics</h2>
-
+            
             {analytics?.channel_info ? (
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   {analytics.channel_info.thumbnail && (
-                    <img
-                      src={analytics.channel_info.thumbnail}
+                    <img 
+                      src={analytics.channel_info.thumbnail} 
                       alt={analytics.channel_info.title}
                       className="w-16 h-16 rounded-full"
                     />
@@ -505,7 +462,7 @@ function Dashboard() {
                     </div>
                   </div>
                 </div>
-
+                
                 {/* Date Range */}
                 {analytics.date_range && (
                   <div className="bg-gray-50 p-4 rounded-lg">
@@ -521,7 +478,7 @@ function Dashboard() {
                     </div>
                   </div>
                 )}
-
+                
                 {/* API Status */}
                 <div className={`p-3 rounded-lg ${analytics.api_status === 'success' ? 'bg-green-50 text-green-700' : 'bg-yellow-50 text-yellow-700'}`}>
                   <div className="flex items-center gap-2">
@@ -544,7 +501,7 @@ function Dashboard() {
         <div className="lg:col-span-1">
           <div className="bg-white rounded-2xl shadow-lg p-6 h-full">
             <h2 className="text-xl font-bold text-gray-900 mb-6">📈 Quick Metrics</h2>
-
+            
             <div className="space-y-4">
               <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                 <div>
@@ -553,7 +510,7 @@ function Dashboard() {
                 </div>
                 <TrendingUp className="text-green-600" size={20} />
               </div>
-
+              
               <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                 <div>
                   <div className="text-sm text-gray-600">Estimated Revenue</div>
@@ -561,22 +518,22 @@ function Dashboard() {
                 </div>
                 <DollarSign className="text-amber-600" size={20} />
               </div>
-
+              
               <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                 <div>
                   <div className="text-sm text-gray-600">Avg. Video Views</div>
                   <div className="text-lg font-bold text-gray-900">
-                    {analytics?.quick_metrics?.avg_video_views
+                    {analytics?.quick_metrics?.avg_video_views 
                       ? formatNumber(analytics.quick_metrics.avg_video_views)
                       : (analytics?.statistics?.total_views && analytics?.statistics?.total_videos
-                        ? formatNumber(Math.floor(analytics.statistics.total_views / analytics.statistics.total_videos))
-                        : "0")
+                          ? formatNumber(Math.floor(analytics.statistics.total_views / analytics.statistics.total_videos))
+                          : "0")
                     }
                   </div>
                 </div>
                 <BarChart3 className="text-purple-600" size={20} />
               </div>
-
+              
               <div className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                 <div>
                   <div className="text-sm text-gray-600">Data Source</div>
@@ -584,10 +541,11 @@ function Dashboard() {
                     {analytics?.api_status === 'success' ? 'YouTube Data API v3' : 'API Error'}
                   </div>
                 </div>
-                <div className={`text-xs px-2 py-1 rounded ${analytics?.api_status === 'success'
-                    ? 'bg-green-100 text-green-800'
+                <div className={`text-xs px-2 py-1 rounded ${
+                  analytics?.api_status === 'success' 
+                    ? 'bg-green-100 text-green-800' 
                     : 'bg-red-100 text-red-800'
-                  }`}>
+                }`}>
                   {analytics?.api_status === 'success' ? 'LIVE' : 'ERROR'}
                 </div>
               </div>
@@ -604,7 +562,7 @@ function Dashboard() {
             Showing {topVideos.length} videos from {channelStats.channelTitle}
           </div>
         </div>
-
+        
         {topVideos.length > 0 ? (
           <div className="overflow-x-auto">
             <table className="w-full">
@@ -623,8 +581,8 @@ function Dashboard() {
                     <td className="py-4 px-6">
                       <div className="flex items-center gap-3">
                         {video.thumbnail && (
-                          <img
-                            src={video.thumbnail}
+                          <img 
+                            src={video.thumbnail} 
                             alt={video.title}
                             className="w-16 h-9 rounded object-cover"
                           />

@@ -38,29 +38,29 @@ const addAuthInterceptor = (axiosInstance) => {
     (response) => response,
     async (error) => {
       const originalRequest = error.config;
-      
+
       // If 401 error and not already retrying
       if (error.response?.status === 401 && !originalRequest._retry) {
         originalRequest._retry = true;
-        
+
         try {
           const refreshToken = localStorage.getItem("refresh_token");
-          
+
           if (refreshToken) {
             // Request new access token
             const response = await axios.post(
               `${isDevelopment ? localApiUrl : (import.meta.env.VITE_API_URL || choreoApiUrl)}/token/refresh/`,
               { refresh: refreshToken }
             );
-            
+
             const newAccessToken = response.data.access;
-            
+
             // Store new token
             localStorage.setItem(ACCESS_TOKEN, newAccessToken);
-            
+
             // Update the original request with new token
             originalRequest.headers.Authorization = `Bearer ${newAccessToken}`;
-            
+
             // Retry the original request
             return axiosInstance(originalRequest);
           }
@@ -72,7 +72,7 @@ const addAuthInterceptor = (axiosInstance) => {
           return Promise.reject(refreshError);
         }
       }
-      
+
       return Promise.reject(error);
     }
   );

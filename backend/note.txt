@@ -1,0 +1,1 @@
+python manage.py sync_youtube_data --channel-id UCkkY9KSZOE1ZACTS371NbsA --username yamlimbu

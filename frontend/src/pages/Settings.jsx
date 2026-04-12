@@ -1,17 +1,83 @@
-import { useState } from "react";
-import { Settings, Save, Lock, Bell, Key, LogOut } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Settings, Save, Lock, Bell, Key, LogOut, Video, RefreshCw } from "lucide-react";
+import api, { youtubeApi } from "../api";
 
 function SettingsPage() {
   const [activeTab, setActiveTab] = useState("profile");
   const [formData, setFormData] = useState({
-    username: "youtube_user",
-    email: "user@example.com",
-    fullName: "John Doe",
+    username: "",
+    email: "",
+    fullName: "",
+    bio: ""
   });
+  const [loading, setLoading] = useState(true);
+  const [saveStatus, setSaveStatus] = useState("");
+
+  const [channels, setChannels] = useState([]);
+  const [syncChannelId, setSyncChannelId] = useState("");
+  const [syncing, setSyncing] = useState(false);
+
+  useEffect(() => {
+    fetchProfile();
+    fetchChannels();
+  }, []);
+
+  const fetchProfile = async () => {
+    try {
+      const res = await api.get('/api/user/profile/');
+      setFormData({
+        username: res.data.username || "",
+        email: res.data.email || "",
+        fullName: res.data.fullName || "",
+        bio: res.data.bio || ""
+      });
+    } catch (err) {
+      console.error("Error fetching profile:", err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const fetchChannels = async () => {
+    try {
+      const res = await youtubeApi.get('/youtube/channels/');
+      setChannels(res.data.channels || []);
+    } catch (err) {
+      console.error("Error fetching channels:", err);
+    }
+  };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSaveProfile = async () => {
+    setSaveStatus("saving");
+    try {
+      await api.put('/api/user/profile/', formData);
+      setSaveStatus("success");
+      setTimeout(() => setSaveStatus(""), 3000);
+    } catch (err) {
+      console.error("Error saving profile:", err);
+      setSaveStatus("error");
+    }
+  };
+
+  const handleSyncChannel = async () => {
+    if (!syncChannelId) return;
+    setSyncing(true);
+    try {
+      await youtubeApi.post('/youtube/channels/', { channel_id: syncChannelId });
+      setSyncChannelId("");
+      fetchChannels();
+      alert("Channel synced successfully!");
+    } catch (err) {
+      console.error("Sync error:", err);
+      alert("Failed to sync channel. Please check the ID and try again.");
+    } finally {
+      setSyncing(false);
+    }
   };
 
   return (
@@ -27,7 +93,7 @@ function SettingsPage() {
           { id: "profile", label: "Profile", icon: "👤" },
           { id: "security", label: "Security", icon: "🔒" },
           { id: "notifications", label: "Notifications", icon: "🔔" },
-          { id: "api", label: "API Keys", icon: "🔑" },
+          { id: "channels", label: "YouTube Channels", icon: "📺" },
         ].map((tab) => (
           <button
             key={tab.id}
@@ -51,7 +117,7 @@ function SettingsPage() {
           {/* Avatar */}
           <div className="mb-8 flex items-center gap-4">
             <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">
-              JD
+              {formData.fullName ? formData.fullName.split(' ').map(n => n[0]).join('').substring(0,2).toUpperCase() : 'U'}
             </div>
             <div>
               <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
@@ -99,19 +165,25 @@ function SettingsPage() {
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">Bio</label>
               <textarea
+                name="bio"
+                value={formData.bio}
+                onChange={handleInputChange}
                 placeholder="Tell us about yourself..."
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent h-24"
               ></textarea>
             </div>
 
-            <div className="flex gap-2">
-              <button className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2">
-                <Save size={16} />
-                Save Changes
+            <div className="flex gap-4 items-center">
+              <button 
+                onClick={handleSaveProfile}
+                disabled={saveStatus === "saving"}
+                className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2"
+              >
+                {saveStatus === "saving" ? <RefreshCw className="animate-spin" size={16} /> : <Save size={16} />}
+                {saveStatus === "saving" ? "Saving..." : "Save Changes"}
               </button>
-              <button className="px-6 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors">
-                Cancel
-              </button>
+              {saveStatus === "success" && <span className="text-sm text-green-600 font-medium">Profile updated successfully!</span>}
+              {saveStatus === "error" && <span className="text-sm text-red-600 font-medium">Failed to save profile.</span>}
             </div>
           </div>
         </div>
@@ -205,38 +277,49 @@ function SettingsPage() {
         </div>
       )}
 
-      {/* API Keys Tab */}
-      {activeTab === "api" && (
+      {/* YouTube Channels Tab */}
+      {activeTab === "channels" && (
         <div className="bg-white rounded-lg shadow-lg p-6 max-w-2xl">
-          <h2 className="text-xl font-bold text-gray-900 mb-6">API Keys</h2>
+          <h2 className="text-xl font-bold text-gray-900 mb-6">Linked YouTube Channels</h2>
           
-          <div className="space-y-4 mb-6">
-            <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
-              <div className="flex justify-between items-start mb-2">
-                <div>
-                  <p className="font-medium text-gray-900">Production API Key</p>
-                  <p className="text-sm text-gray-600 mt-1">Created: 2024-01-01</p>
+          <div className="space-y-4 mb-8">
+            {channels.length === 0 ? (
+              <p className="text-gray-500">No YouTube channels linked yet.</p>
+            ) : (
+              channels.map(channel => (
+                <div key={channel.id} className="p-4 bg-gray-50 rounded-lg border border-gray-200 flex justify-between items-center">
+                  <div className="flex items-center gap-4">
+                    {channel.thumbnail && <img src={channel.thumbnail} alt="Thumbnail" className="w-12 h-12 rounded-full" />}
+                    <div>
+                      <p className="font-medium text-gray-900">{channel.title}</p>
+                      <p className="text-sm text-gray-600">ID: {channel.id}</p>
+                    </div>
+                  </div>
+                  <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded font-medium">Linked</span>
                 </div>
-                <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Active</span>
-              </div>
-              <div className="flex gap-2 mt-3">
-                <input
-                  type="password"
-                  value="sk_live_••••••••••••••••"
-                  readOnly
-                  className="flex-1 px-3 py-2 bg-white border border-gray-300 rounded text-sm"
-                />
-                <button className="px-3 py-2 bg-gray-200 hover:bg-gray-300 rounded transition-colors">
-                  Copy
-                </button>
-              </div>
-            </div>
+              ))
+            )}
           </div>
 
-          <button className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2">
-            <Key size={16} />
-            Generate New Key
-          </button>
+          <h3 className="text-lg font-bold text-gray-900 mb-4">Sync New Channel</h3>
+          <div className="flex gap-2">
+            <input
+              type="text"
+              placeholder="Paste YouTube Channel ID (e.g. UC_x5XG...)"
+              value={syncChannelId}
+              onChange={(e) => setSyncChannelId(e.target.value)}
+              className="flex-1 px-4 py-2 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            />
+            <button 
+              onClick={handleSyncChannel}
+              disabled={syncing || !syncChannelId}
+              className="px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors flex items-center gap-2 disabled:bg-red-400"
+            >
+              {syncing ? <RefreshCw className="animate-spin" size={16} /> : <Video size={16} />}
+              {syncing ? "Syncing..." : "Sync"}
+            </button>
+          </div>
+          <p className="text-sm text-gray-500 mt-2">Connecting a channel may take a few moments as we download all relevant analytics.</p>
         </div>
       )}
 
