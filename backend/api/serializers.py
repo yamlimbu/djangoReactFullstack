@@ -12,7 +12,8 @@ from .models import (
 class NoteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Note
-        fields = '__all__'
+        fields = ['id', 'title', 'content', 'author', 'created_at']
+        read_only_fields = ['author', 'created_at']
         
 # ============================================
 # MODULE 1: USER AUTHENTICATION & MANAGEMENT
