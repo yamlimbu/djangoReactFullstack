@@ -54,8 +54,18 @@ function Dashboard() {
       try {
         const res = await youtubeApi.get('/youtube/channels/');
         if (res.data.channels && res.data.channels.length > 0) {
-          const firstChannel = res.data.channels[0];
-          setSelectedChannelId(firstChannel.id);
+          let targetChannelId = res.data.channels[0].id;
+          const storedId = localStorage.getItem('selectedChannelId');
+          
+          if (storedId) {
+            const found = res.data.channels.find(c => c.id === storedId);
+            if (found) {
+              targetChannelId = found.id;
+            }
+          }
+          
+          setSelectedChannelId(targetChannelId);
+          localStorage.setItem('selectedChannelId', targetChannelId);
         } else {
           setLoading(false);
           setError("No YouTube channels found. Please sync a channel first.");
@@ -95,14 +105,15 @@ function Dashboard() {
             date_range: data.date_range,
             api_status: data.api_status,
             channel_id: data.channel_id,
-            quick_metrics: data.quick_metrics
+            quick_metrics: data.quick_metrics,
+            period_statistics: data.period_statistics
           });
 
           // Set channel stats
           setChannelStats({
-            totalViews: Number(data.statistics?.total_views || 0).toLocaleString(),
-            subscribers: Number(data.statistics?.subscribers || 0).toLocaleString(),
-            totalVideos: Number(data.statistics?.total_videos || 0).toLocaleString(),
+            totalViews: data.statistics?.total_views || 0,
+            subscribers: data.statistics?.subscribers || 0,
+            totalVideos: data.statistics?.total_videos || 0,
             channelTitle: data.channel_info?.title || "Unknown Channel"
           });
 
@@ -127,9 +138,9 @@ function Dashboard() {
       // Extract stats from analytics
       if (analyticsData?.statistics) {
         setChannelStats({
-          totalViews: analyticsData.statistics.total_views?.toLocaleString() || "0",
-          subscribers: analyticsData.statistics.subscribers?.toLocaleString() || "0",
-          totalVideos: analyticsData.statistics.total_videos || "0",
+          totalViews: analyticsData.statistics.total_views || 0,
+          subscribers: analyticsData.statistics.subscribers || 0,
+          totalVideos: analyticsData.statistics.total_videos || 0,
           channelTitle: analyticsData.channel_info?.title || "Unknown Channel"
         });
       }
@@ -169,6 +180,7 @@ function Dashboard() {
 
   const selectChannel = (channelId, channelTitle) => {
     setSelectedChannelId(channelId);
+    localStorage.setItem('selectedChannelId', channelId);
     setChannelStats(prev => ({ ...prev, channelTitle }));
     setSearchedChannels([]);
     setSearchQuery("");
@@ -204,10 +216,16 @@ function Dashboard() {
     }
   };
 
-  // Format numbers with commas
+  // Format numbers with compact notation (e.g., 1.2K, 1.5M)
   const formatNumber = (num) => {
     if (!num && num !== 0) return "0";
-    return parseInt(num).toLocaleString();
+    const parsed = parseInt(num);
+    if (isNaN(parsed)) return "0";
+    
+    return Intl.NumberFormat('en-US', {
+      notation: "compact",
+      maximumFractionDigits: 1
+    }).format(parsed);
   };
 
   // Calculate watch time from analytics data
@@ -272,17 +290,17 @@ function Dashboard() {
   }
 
   return (
-    <div className="p-4 md:p-6">
+    <div className="p-4 md:p-6 w-full max-w-full overflow-hidden">
       {/* Header with Channel Search */}
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
-        <div>
+      <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center mb-8 gap-6 w-full">
+        <div className="w-full xl:w-auto">
           <h1 className="text-3xl font-bold text-gray-900">📊 YouTube Analytics Dashboard</h1>
           <p className="text-gray-600 mt-2">Real-time analytics for YouTube channels</p>
 
           {/* Channel Selector */}
-          <div className="mt-4 relative max-w-md">
-            <div className="flex gap-2">
-              <div className="flex-1 relative">
+          <div className="mt-4 relative max-w-md w-full">
+            <div className="flex flex-col sm:flex-row gap-2 w-full">
+              <div className="flex-1 relative w-full">
                 <input
                   type="text"
                   value={searchQuery}
@@ -301,7 +319,7 @@ function Dashboard() {
               </div>
               <button
                 onClick={fetchYouTubeData}
-                className="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center gap-2"
+                className="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center justify-center gap-2 w-full sm:w-auto whitespace-nowrap"
               >
                 <RefreshCw size={16} />
                 Refresh
@@ -343,34 +361,34 @@ function Dashboard() {
           </div>
         </div>
 
-        {/* Selected Channel Info */}
-        <div className="flex items-center gap-4">
-          <div className="text-right">
+        {/* Selected Channel Info & Filters */}
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 w-full xl:w-auto">
+          <div className="text-left sm:text-right hidden sm:block">
             <div className="text-sm text-gray-600">Current Channel</div>
             <div className="font-bold text-gray-900">{channelStats.channelTitle}</div>
           </div>
 
-          <div className="flex items-center gap-2">
-            <div className="flex bg-gray-100 rounded-lg p-1">
-              {["last7days", "last30days", "last90days"].map((period) => (
+          <div className="flex flex-wrap items-center gap-2 w-full sm:w-auto">
+            <div className="flex flex-wrap bg-gray-100 rounded-lg p-1 w-full sm:w-auto">
+              {["all_time", "last7days", "last30days", "last90days"].map((period) => (
                 <button
                   key={period}
                   onClick={() => setTimeRange(period)}
-                  className={`px-3 py-1 rounded-md text-sm font-medium transition-all ${timeRange === period
+                  className={`px-3 py-1 rounded-md text-sm font-medium transition-all flex-1 sm:flex-none text-center ${timeRange === period
                       ? "bg-white shadow text-blue-600"
                       : "text-gray-600 hover:text-gray-900"
                     }`}
                 >
-                  {period.replace("last", "").replace("days", "d")}
+                  {period === "all_time" ? "Lifetime" : period.replace("last", "").replace("days", "d")}
                 </button>
               ))}
             </div>
             <button
               onClick={exportReport}
-              className="px-4 py-2 bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-lg hover:shadow-lg transition-all flex items-center gap-2"
+              className="px-4 py-2 bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-lg hover:shadow-lg transition-all flex items-center justify-center gap-2 whitespace-nowrap"
             >
               <Download size={16} />
-              Export
+              <span className="hidden sm:inline">Export</span>
             </button>
           </div>
         </div>
@@ -399,13 +417,15 @@ function Dashboard() {
         <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl shadow-lg p-6 border-l-4 border-blue-500">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-blue-600 text-sm font-medium">Total Views</p>
+              <p className="text-blue-600 text-sm font-medium">Views (Period)</p>
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mt-1">
-                {formatNumber(channelStats.totalViews)}
+                {formatNumber(analytics?.period_statistics?.period_views || 0)}
               </h3>
               <p className="text-blue-600 text-sm mt-2 flex items-center gap-1">
                 <Eye size={14} />
-                {analytics?.statistics?.sample_views ? `${formatNumber(analytics.statistics.sample_views)} sample views` : 'Real-time data'}
+                <span title={`Lifetime views: ${formatNumber(channelStats.totalViews)}`}>
+                  From videos in period
+                </span>
               </p>
             </div>
             <div className="p-3 bg-blue-500/20 rounded-xl">
@@ -437,13 +457,15 @@ function Dashboard() {
         <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl shadow-lg p-6 border-l-4 border-purple-500">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-purple-600 text-sm font-medium">Total Videos</p>
+              <p className="text-purple-600 text-sm font-medium">Videos (Period)</p>
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mt-1">
-                {channelStats.totalVideos}
+                {formatNumber(analytics?.period_statistics?.period_videos || 0)}
               </h3>
               <p className="text-purple-600 text-sm mt-2 flex items-center gap-1">
                 <Video size={14} />
-                Public videos count
+                <span title={`Total channel videos: ${channelStats.totalVideos}`}>
+                  Published in period
+                </span>
               </p>
             </div>
             <div className="p-3 bg-purple-500/20 rounded-xl">
@@ -473,31 +495,31 @@ function Dashboard() {
       </div>
 
       {/* Analytics Details */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 mb-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 mb-8 w-full">
         {/* Channel Information */}
-        <div className="lg:col-span-2">
-          <div className="bg-white rounded-2xl shadow-lg p-6 h-full">
+        <div className="lg:col-span-2 min-w-0 w-full">
+          <div className="bg-white rounded-2xl shadow-lg p-6 h-full min-w-0 w-full">
             <h2 className="text-xl font-bold text-gray-900 mb-6">📊 Channel Analytics</h2>
 
             {analytics?.channel_info ? (
               <div className="space-y-6">
-                <div className="flex items-start gap-4">
+                <div className="flex flex-col sm:flex-row items-start gap-4 w-full">
                   {analytics.channel_info.thumbnail && (
                     <img
                       src={analytics.channel_info.thumbnail}
                       alt={analytics.channel_info.title}
-                      className="w-16 h-16 rounded-full"
+                      className="w-16 h-16 rounded-full flex-shrink-0"
                     />
                   )}
-                  <div className="flex-1">
-                    <h3 className="text-lg font-bold text-gray-900">{analytics.channel_info.title}</h3>
-                    <p className="text-gray-600 text-sm mt-1">{analytics.channel_info.description}</p>
-                    <div className="flex gap-4 mt-3 text-sm">
+                  <div className="flex-1 min-w-0 w-full">
+                    <h3 className="text-lg font-bold text-gray-900 break-words">{analytics.channel_info.title}</h3>
+                    <p className="text-gray-600 text-sm mt-1 line-clamp-3 break-words">{analytics.channel_info.description}</p>
+                    <div className="flex flex-wrap gap-4 mt-3 text-sm">
                       {analytics.channel_info.custom_url && (
-                        <span className="text-blue-600">🔗 {analytics.channel_info.custom_url}</span>
+                        <span className="text-blue-600 break-all">🔗 {analytics.channel_info.custom_url}</span>
                       )}
                       {analytics.channel_info.published_at && (
-                        <span className="text-gray-500">
+                        <span className="text-gray-500 whitespace-nowrap">
                           <Calendar size={14} className="inline mr-1" />
                           Joined {new Date(analytics.channel_info.published_at).toLocaleDateString()}
                         </span>
@@ -508,14 +530,14 @@ function Dashboard() {
 
                 {/* Date Range */}
                 {analytics.date_range && (
-                  <div className="bg-gray-50 p-4 rounded-lg">
+                  <div className="bg-gray-50 p-4 rounded-lg w-full overflow-hidden">
                     <div className="text-sm text-gray-600 mb-1">Analysis Period</div>
-                    <div className="flex items-center gap-2">
-                      <Calendar size={16} className="text-gray-500" />
-                      <span className="font-medium">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <Calendar size={16} className="text-gray-500 flex-shrink-0" />
+                      <span className="font-medium break-words">
                         {analytics.date_range?.start} to {analytics.date_range?.end}
                       </span>
-                      <span className="ml-auto text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">
+                      <span className="sm:ml-auto text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded whitespace-nowrap">
                         {analytics.period || timeRange}
                       </span>
                     </div>
@@ -523,10 +545,10 @@ function Dashboard() {
                 )}
 
                 {/* API Status */}
-                <div className={`p-3 rounded-lg ${analytics.api_status === 'success' ? 'bg-green-50 text-green-700' : 'bg-yellow-50 text-yellow-700'}`}>
-                  <div className="flex items-center gap-2">
-                    <div className={`w-2 h-2 rounded-full ${analytics.api_status === 'success' ? 'bg-green-500' : 'bg-yellow-500'}`}></div>
-                    <span className="text-sm">
+                <div className={`p-3 rounded-lg w-full ${analytics.api_status === 'success' ? 'bg-green-50 text-green-700' : 'bg-yellow-50 text-yellow-700'}`}>
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <div className={`w-2 h-2 rounded-full flex-shrink-0 ${analytics.api_status === 'success' ? 'bg-green-500' : 'bg-yellow-500'}`}></div>
+                    <span className="text-sm break-words">
                       API Status: <span className="font-medium">{analytics.api_status || 'unknown'}</span>
                     </span>
                   </div>
@@ -606,8 +628,8 @@ function Dashboard() {
         </div>
 
         {topVideos.length > 0 ? (
-          <div className="overflow-x-auto">
-            <table className="w-full">
+          <div className="overflow-x-auto w-full">
+            <table className="w-full min-w-max">
               <thead className="bg-gray-50">
                 <tr>
                   <th className="py-3 px-6 text-left text-sm font-medium text-gray-700">Video</th>
@@ -645,16 +667,16 @@ function Dashboard() {
                       </div>
                     </td>
                     <td className="py-4 px-6">
-                      <div className="font-medium">{formatNumber(video.views)}</div>
+                      <div className="font-medium" title={Number(video.views).toLocaleString()}>{formatNumber(video.views)}</div>
                     </td>
                     <td className="py-4 px-6">
-                      <div className="flex items-center gap-1">
+                      <div className="flex items-center gap-1" title={Number(video.likes).toLocaleString()}>
                         <ThumbsUp size={14} className="text-gray-500" />
                         <span>{formatNumber(video.likes)}</span>
                       </div>
                     </td>
                     <td className="py-4 px-6">
-                      <div>{formatNumber(video.comments)}</div>
+                      <div title={Number(video.comments).toLocaleString()}>{formatNumber(video.comments)}</div>
                     </td>
                     <td className="py-4 px-6">
                       <div className="text-sm text-gray-600">

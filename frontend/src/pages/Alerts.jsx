@@ -1,18 +1,54 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Bell, Download, RefreshCw, Plus, Trash2, Edit2, AlertCircle } from "lucide-react";
+import { youtubeApi } from "../api.js";
 
 function Alerts() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const [showForm, setShowForm] = useState(false);
+  const [dashData, setDashData] = useState(null);
+  const location = useLocation();
+  
   const [alerts, setAlerts] = useState([
     { id: 1, name: "Low Views Alert", metric: "Views", threshold: 1000, condition: "below", status: "active", lastTriggered: "2024-01-15" },
     { id: 2, name: "High Engagement", metric: "Engagement Rate", threshold: 10, condition: "above", status: "active", lastTriggered: "2024-01-14" },
     { id: 3, name: "Revenue Drop", metric: "Revenue", threshold: 100, condition: "below", status: "inactive", lastTriggered: "2024-01-10" },
   ]);
 
-  const handleRefresh = () => {
+  const fetchDashData = async () => {
+    const params = new URLSearchParams(location.search);
+    let channelId = params.get('channel_id') || localStorage.getItem('selectedChannelId');
+    
+    if (!channelId) {
+      setError("No channel selected. Please select a channel from the dashboard.");
+      setLoading(false);
+      return;
+    }
+
     setLoading(true);
-    setTimeout(() => setLoading(false), 1000);
+    setError(null);
+    try {
+      const res = await youtubeApi.get(`/youtube/dashboard/?channel_id=${channelId}`);
+      if (res.data.api_status === "success" || res.data.statistics) {
+        setDashData(res.data);
+      } else {
+        setError(res.data.error || "Failed to load channel data for alerts");
+      }
+    } catch (err) {
+      console.error(err);
+      setError("Error fetching channel data.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchDashData();
+  }, [location.search]);
+
+  const handleRefresh = () => {
+    fetchDashData();
   };
 
   const toggleAlert = (id) => {
@@ -35,7 +71,8 @@ function Alerts() {
         <div className="flex gap-2">
           <button
             onClick={handleRefresh}
-            className="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center gap-2 transition-colors"
+            disabled={loading}
+            className="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center gap-2 transition-colors disabled:opacity-50"
           >
             <RefreshCw size={16} className={loading ? "animate-spin" : ""} />
             Refresh
@@ -49,6 +86,16 @@ function Alerts() {
           </button>
         </div>
       </div>
+
+      {error && (
+        <div className="mb-6 p-4 bg-red-50 border border-red-200 text-red-700 rounded-xl flex items-center gap-3">
+          <AlertCircle size={20} />
+          <div>
+            <p className="font-medium">Notice</p>
+            <p className="text-sm">{error}</p>
+          </div>
+        </div>
+      )}
 
       {/* Create Alert Form */}
       {showForm && (
@@ -149,7 +196,7 @@ function Alerts() {
 
       {/* Alert History */}
       <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
-        <h2 className="text-xl font-bold text-gray-900 mb-6">📜 Alert History</h2>
+        <h2 className="text-xl font-bold text-gray-900 mb-6">📜 Alert History (Simulation)</h2>
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead className="bg-gray-50 border-b">

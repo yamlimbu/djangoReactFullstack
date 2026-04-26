@@ -148,21 +148,32 @@ class YouTubeDashboardView(APIView):
             start_date = end_date - timedelta(days=7)
         elif period == "last90days":
             start_date = end_date - timedelta(days=90)
-        else:
+        elif period == "last30days":
             start_date = end_date - timedelta(days=30)
+        else:
+            start_date = None  # all_time
         
         # Get videos
-        videos = Video.objects.filter(
-            channel=channel,
-            published_at__date__gte=start_date,
-            published_at__date__lte=end_date
-        )
+        if start_date:
+            videos = Video.objects.filter(
+                channel=channel,
+                published_at__date__gte=start_date,
+                published_at__date__lte=end_date
+            )
+        else:
+            videos = Video.objects.filter(channel=channel)
         
-        # Calculate statistics
-        total_views = videos.aggregate(total=Sum('view_count'))['total'] or 0
-        total_likes = videos.aggregate(total=Sum('like_count'))['total'] or 0
-        total_comments = videos.aggregate(total=Sum('comment_count'))['total'] or 0
-        total_videos = videos.count()
+        # Calculate statistics for the period
+        if start_date:
+            period_views = videos.aggregate(total=Sum('view_count'))['total'] or 0
+            period_likes = videos.aggregate(total=Sum('like_count'))['total'] or 0
+            period_comments = videos.aggregate(total=Sum('comment_count'))['total'] or 0
+            period_videos = videos.count()
+        else:
+            period_views = channel.view_count
+            period_likes = videos.aggregate(total=Sum('like_count'))['total'] or 0
+            period_comments = videos.aggregate(total=Sum('comment_count'))['total'] or 0
+            period_videos = videos.count() # Use DB count to match the videos page
         
         # Get top videos
         top_videos_data = []
@@ -178,11 +189,11 @@ class YouTubeDashboardView(APIView):
                 "published_at": video.published_at.isoformat() if video.published_at else None
             })
         
-        # Calculate metrics
-        engagement_rate = (total_likes / total_views * 100) if total_views > 0 else 0
-        estimated_watch_time = (total_views * 5) / 60 if total_views > 0 else 0
-        estimated_revenue = (total_views / 1000) * 2 if total_views > 0 else 0
-        avg_video_views = total_views // total_videos if total_videos > 0 else 0
+        # Calculate metrics (using period videos as a proxy for engagement)
+        engagement_rate = (period_likes / period_views * 100) if period_views > 0 else 0
+        estimated_watch_time = (period_views * 5) / 60 if period_views > 0 else 0
+        estimated_revenue = (period_views / 1000) * 2 if period_views > 0 else 0
+        avg_video_views = period_views // period_videos if period_videos > 0 else 0
         
         response_data = {
             "channel_info": {
@@ -192,9 +203,15 @@ class YouTubeDashboardView(APIView):
                 "custom_url": channel.channel_url,
             },
             "statistics": {
-                "total_views": total_views,
+                "total_views": channel.view_count,  # Use real channel total views
                 "subscribers": channel.subscriber_count,
-                "total_videos": channel.video_count,
+                "total_videos": videos.count() if not start_date else Video.objects.filter(channel=channel).count(),
+            },
+            "period_statistics": {
+                "period_views": period_views,
+                "period_videos": period_videos,
+                "period_likes": period_likes,
+                "period_comments": period_comments,
             },
             "quick_metrics": {
                 "engagement_rate": round(engagement_rate, 2),
@@ -221,7 +238,8 @@ class VideoAnalyticsView(APIView):
         
         try:
             channel = Channel.objects.get(youtube_channel_id=channel_id, user=request.user)
-            videos = Video.objects.filter(channel=channel).order_by('-view_count')[:20]
+            # Removed the [:20] limit to return all videos dynamically
+            videos = Video.objects.filter(channel=channel).order_by('-published_at')
             
             videos_data = [{
                 "id": v.youtube_video_id,
@@ -242,11 +260,13 @@ class ChannelManagementView(APIView):
     permission_classes = [IsAuthenticated]
     
     def get(self, request):
-        channels = Channel.objects.filter(user=request.user, is_active=True)
+        # Order by is_default so default comes first
+        channels = Channel.objects.filter(user=request.user, is_active=True).order_by('-is_default', '-created_at')
         channels_data = [{
             "id": c.youtube_channel_id,
             "title": c.channel_name,
             "thumbnail": c.thumbnail_url,
+            "is_default": c.is_default,
             "statistics": {
                 "subscribers": c.subscriber_count,
                 "videos": c.video_count,
@@ -263,9 +283,36 @@ class ChannelManagementView(APIView):
         
         try:
             call_command('sync_youtube_data', channel_id=channel_id, username=request.user.username)
+            # If this is the user's first channel, make it default
+            channel = Channel.objects.filter(youtube_channel_id=channel_id, user=request.user).first()
+            if channel and not Channel.objects.filter(user=request.user, is_default=True).exists():
+                channel.is_default = True
+                channel.save()
             return Response({"message": "Channel synced successfully"})
         except Exception as e:
             return Response({"error": f"Failed to sync channel: {str(e)}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+class SetDefaultChannelView(APIView):
+    permission_classes = [IsAuthenticated]
+    
+    def post(self, request):
+        channel_id = request.data.get('channel_id')
+        if not channel_id:
+            return Response({"error": "channel_id is required"}, status=status.HTTP_400_BAD_REQUEST)
+            
+        try:
+            # Set all user channels to not default
+            Channel.objects.filter(user=request.user).update(is_default=False)
+            
+            # Set the requested channel to default
+            channel = Channel.objects.get(youtube_channel_id=channel_id, user=request.user)
+            channel.is_default = True
+            channel.save()
+            
+            return Response({"message": "Default channel updated successfully", "channel_id": channel_id})
+        except Channel.DoesNotExist:
+            return Response({"error": "Channel not found"}, status=status.HTTP_404_NOT_FOUND)
 
 
 class SearchChannelsView(APIView):

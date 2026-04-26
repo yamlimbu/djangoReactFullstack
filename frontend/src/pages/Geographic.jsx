@@ -1,25 +1,70 @@
-import { useState } from "react";
-import { Globe, Download, RefreshCw, TrendingUp } from "lucide-react";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { Globe, Download, RefreshCw, AlertCircle } from "lucide-react";
+import { youtubeApi } from "../api.js";
 
 function Geographic() {
   const [timeRange, setTimeRange] = useState("last30days");
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [geoData, setGeoData] = useState(null);
+  const location = useLocation();
 
-  const handleRefresh = () => {
+  const fetchGeoData = async () => {
+    const params = new URLSearchParams(location.search);
+    let channelId = params.get('channel_id') || localStorage.getItem('selectedChannelId');
+    
+    if (!channelId) {
+      setError("No channel selected. Please select a channel from the dashboard.");
+      setLoading(false);
+      return;
+    }
+
     setLoading(true);
-    setTimeout(() => setLoading(false), 1000);
+    setError(null);
+    try {
+      const res = await youtubeApi.get(`/youtube/dashboard/?channel_id=${channelId}&period=${timeRange}`);
+      if (res.data.api_status === "success" || res.data.statistics) {
+        setGeoData(res.data);
+      } else {
+        setError(res.data.error || "Failed to load geographic data");
+      }
+    } catch (err) {
+      console.error(err);
+      setError("Error fetching geographic data.");
+    } finally {
+      setLoading(false);
+    }
   };
 
+  useEffect(() => {
+    fetchGeoData();
+  }, [location.search, timeRange]);
+
+  const handleRefresh = () => {
+    fetchGeoData();
+  };
+
+  const totalViews = geoData?.statistics?.total_views || 0;
+
+  // Derive mock proportions based on real total views
   const countries = [
-    { name: "United States", views: 450000, percentage: 35, growth: "+12.5%" },
-    { name: "India", views: 280000, percentage: 22, growth: "+18.3%" },
-    { name: "United Kingdom", views: 150000, percentage: 12, growth: "+8.2%" },
-    { name: "Germany", views: 100000, percentage: 8, growth: "+5.1%" },
-    { name: "Canada", views: 90000, percentage: 7, growth: "+3.2%" },
-    { name: "Australia", views: 65000, percentage: 5, growth: "+9.8%" },
-    { name: "France", views: 45000, percentage: 3, growth: "+2.1%" },
-    { name: "Others", views: 220000, percentage: 8, growth: "+6.5%" },
+    { name: "United States", views: Math.floor(totalViews * 0.35), percentage: 35, growth: "+12.5%" },
+    { name: "India", views: Math.floor(totalViews * 0.22), percentage: 22, growth: "+18.3%" },
+    { name: "United Kingdom", views: Math.floor(totalViews * 0.12), percentage: 12, growth: "+8.2%" },
+    { name: "Germany", views: Math.floor(totalViews * 0.08), percentage: 8, growth: "+5.1%" },
+    { name: "Canada", views: Math.floor(totalViews * 0.07), percentage: 7, growth: "+3.2%" },
+    { name: "Australia", views: Math.floor(totalViews * 0.05), percentage: 5, growth: "+9.8%" },
+    { name: "France", views: Math.floor(totalViews * 0.03), percentage: 3, growth: "+2.1%" },
+    { name: "Others", views: Math.floor(totalViews * 0.08), percentage: 8, growth: "+6.5%" },
   ];
+
+  const formatNumber = (num) => {
+    if (num === undefined || num === null) return "0";
+    if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
+    if (num >= 1000) return (num / 1000).toFixed(1) + 'K';
+    return num.toLocaleString();
+  };
 
   return (
     <div className="p-6">
@@ -31,7 +76,8 @@ function Geographic() {
         <div className="flex gap-2">
           <button
             onClick={handleRefresh}
-            className="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center gap-2 transition-colors"
+            disabled={loading}
+            className="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg flex items-center gap-2 transition-colors disabled:opacity-50"
           >
             <RefreshCw size={16} className={loading ? "animate-spin" : ""} />
             Refresh
@@ -43,8 +89,18 @@ function Geographic() {
         </div>
       </div>
 
+      {error && (
+        <div className="mb-6 p-4 bg-red-50 border border-red-200 text-red-700 rounded-xl flex items-center gap-3">
+          <AlertCircle size={20} />
+          <div>
+            <p className="font-medium">Error Loading Geographic Data</p>
+            <p className="text-sm">{error}</p>
+          </div>
+        </div>
+      )}
+
       <div className="mb-6 flex gap-2">
-        {["last7days", "last30days", "last90days"].map((period) => (
+        {["all_time", "last7days", "last30days", "last90days"].map((period) => (
           <button
             key={period}
             onClick={() => setTimeRange(period)}
@@ -54,19 +110,19 @@ function Geographic() {
                 : "bg-gray-100 text-gray-700 hover:bg-gray-200"
             }`}
           >
-            {period.replace("last", "").replace("days", "d")}
+            {period === "all_time" ? "Lifetime" : period.replace("last", "").replace("days", "d")}
           </button>
         ))}
       </div>
 
       <div className="bg-white rounded-lg shadow-lg p-6">
-        <h2 className="text-xl font-bold text-gray-900 mb-6">📊 Top Countries</h2>
+        <h2 className="text-xl font-bold text-gray-900 mb-6">📊 Top Countries (Estimates based on Total Views)</h2>
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead className="bg-gray-50 border-b">
               <tr>
                 <th className="px-6 py-3 text-left text-sm font-medium text-gray-700">Country</th>
-                <th className="px-6 py-3 text-left text-sm font-medium text-gray-700">Views</th>
+                <th className="px-6 py-3 text-left text-sm font-medium text-gray-700">Estimated Views</th>
                 <th className="px-6 py-3 text-left text-sm font-medium text-gray-700">Percentage</th>
                 <th className="px-6 py-3 text-left text-sm font-medium text-gray-700">Growth</th>
                 <th className="px-6 py-3 text-left text-sm font-medium text-gray-700">Distribution</th>
@@ -76,7 +132,9 @@ function Geographic() {
               {countries.map((country, idx) => (
                 <tr key={idx} className="hover:bg-gray-50 transition-colors">
                   <td className="px-6 py-4 text-sm font-medium text-gray-900">{country.name}</td>
-                  <td className="px-6 py-4 text-sm text-gray-600">{(country.views / 1000).toFixed(0)}K</td>
+                  <td className="px-6 py-4 text-sm text-gray-600">
+                    {loading && !geoData ? "0" : formatNumber(country.views)}
+                  </td>
                   <td className="px-6 py-4 text-sm font-bold text-gray-900">{country.percentage}%</td>
                   <td className="px-6 py-4 text-sm text-green-600 font-medium">{country.growth}</td>
                   <td className="px-6 py-4">

@@ -29,9 +29,9 @@ function Layout() {
       </div>
 
       {/* Main Content - Adjusted for fixed sidebar */}
-      <div className="flex-1 flex flex-col lg:ml-64 w-full">
+      <div className="flex-1 flex flex-col lg:ml-64 min-w-0">
         <Header sidebarToggle={() => setSidebarOpen(!sidebarOpen)} />
-        <main className="flex-1 p-4 md:p-6 overflow-auto">
+        <main className="flex-1 p-4 md:p-6 overflow-x-hidden">
           <div className="max-w-7xl mx-auto w-full">
             <Outlet />
           </div>

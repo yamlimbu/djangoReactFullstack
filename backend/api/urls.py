@@ -19,6 +19,7 @@ urlpatterns = [
     path('youtube/trends/', views.AnalyticsTrendsView.as_view(), name='analytics-trends'),
     path('youtube/search/channels/', views.SearchChannelsView.as_view(), name='search-channels'),
     path('youtube/channels/', views.ChannelManagementView.as_view(), name='channel-management'),
+    path('youtube/channels/set-default/', views.SetDefaultChannelView.as_view(), name='channel-set-default'),
     path('youtube/channels/<str:channel_id>/', views.ChannelManagementView.as_view(), name='channel-detail'),
     
     # Dashboard & Summary

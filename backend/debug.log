@@ -7295,3 +7295,1808 @@ INFO 2026-04-26 14:03:01,420 basehttp 1236 35156 "POST /api/notes/ HTTP/1.1" 201
 INFO 2026-04-26 14:03:01,591 basehttp 1236 35156 "GET /api/notes/ HTTP/1.1" 200 177
 INFO 2026-04-26 14:03:10,669 basehttp 1236 35156 "POST /api/notes/ HTTP/1.1" 201 126
 INFO 2026-04-26 14:03:10,802 basehttp 1236 35156 "GET /api/notes/ HTTP/1.1" 200 304
+INFO 2026-04-26 14:04:07,777 basehttp 1236 19268 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:04:07,964 basehttp 1236 19268 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:04:08,055 basehttp 1236 23172 "GET /api/youtube/dashboard/?channel_id=UCkkY9KSZOE1ZACTS371NbsA&period=last30days HTTP/1.1" 200 904
+INFO 2026-04-26 14:04:11,493 basehttp 1236 23172 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:04:11,627 basehttp 1236 19268 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:04:11,650 basehttp 1236 23172 "GET /api/youtube/dashboard/?channel_id=UCkkY9KSZOE1ZACTS371NbsA&period=last30days HTTP/1.1" 200 904
+INFO 2026-04-26 14:04:23,162 basehttp 1236 35156 "OPTIONS /api/user/profile/ HTTP/1.1" 200 0
+INFO 2026-04-26 14:04:23,177 basehttp 1236 3860 "OPTIONS /api/user/profile/ HTTP/1.1" 200 0
+INFO 2026-04-26 14:04:23,337 basehttp 1236 23172 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:04:23,347 basehttp 1236 35156 "GET /api/user/profile/ HTTP/1.1" 200 74
+INFO 2026-04-26 14:04:23,470 basehttp 1236 3860 "GET /api/user/profile/ HTTP/1.1" 200 74
+INFO 2026-04-26 14:04:23,475 basehttp 1236 19268 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:04:33,682 basehttp 1236 19268 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:04:33,823 basehttp 1236 23172 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:04:33,845 basehttp 1236 19268 "GET /api/youtube/dashboard/?channel_id=UCkkY9KSZOE1ZACTS371NbsA&period=last30days HTTP/1.1" 200 904
+INFO 2026-04-26 14:04:56,807 basehttp 1236 3860 "POST /api/token/ HTTP/1.1" 200 483
+INFO 2026-04-26 14:04:57,125 basehttp 1236 19268 "GET /api/youtube/channels/ HTTP/1.1" 200 274
+INFO 2026-04-26 14:04:57,152 basehttp 1236 19268 "OPTIONS /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 0
+INFO 2026-04-26 14:04:57,272 basehttp 1236 23172 "GET /api/youtube/channels/ HTTP/1.1" 200 274
+INFO 2026-04-26 14:04:57,311 basehttp 1236 19268 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 14:05:00,725 basehttp 1236 3860 "GET /api/notes/ HTTP/1.1" 200 52
+INFO 2026-04-26 14:05:00,866 basehttp 1236 35156 "GET /api/notes/ HTTP/1.1" 200 52
+INFO 2026-04-26 14:05:34,383 basehttp 1236 35156 "POST /api/notes/ HTTP/1.1" 201 112
+INFO 2026-04-26 14:05:34,538 basehttp 1236 35156 "GET /api/notes/ HTTP/1.1" 200 164
+INFO 2026-04-26 14:06:16,787 basehttp 1236 19268 "GET /api/youtube/channels/ HTTP/1.1" 200 274
+INFO 2026-04-26 14:06:16,930 basehttp 1236 23172 "GET /api/youtube/channels/ HTTP/1.1" 200 274
+INFO 2026-04-26 14:06:16,972 basehttp 1236 19268 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 14:24:53,084 autoreload 7304 26068 Watching for file changes with StatReloader
+INFO 2026-04-26 14:25:35,895 basehttp 7304 17232 "GET /api/youtube/channels/ HTTP/1.1" 200 274
+INFO 2026-04-26 14:25:36,037 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 274
+INFO 2026-04-26 14:25:36,926 basehttp 7304 20908 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 14:26:43,347 basehttp 7304 20908 "OPTIONS /api/youtube/search/channels/?q=sisan&max_results=5 HTTP/1.1" 200 0
+INFO 2026-04-26 14:26:46,622 basehttp 7304 20908 "GET /api/youtube/search/channels/?q=sisan&max_results=5 HTTP/1.1" 200 1572
+INFO 2026-04-26 14:26:50,466 basehttp 7304 20908 "OPTIONS /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 0
+INFO 2026-04-26 14:26:54,018 basehttp 7304 20908 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:31:32,820 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:31:32,861 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:31:32,907 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:31:32,948 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:31:32,991 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:31:33,031 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:31:33,071 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:31:33,116 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:31:33,284 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:31:33,330 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:31:33,375 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:31:33,410 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:36:27,712 basehttp 7304 31328 "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2026-04-26 14:36:27,717 basehttp 7304 33552 "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2026-04-26 14:36:27,898 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:36:27,957 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:36:28,016 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:36:28,065 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:36:31,442 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:36:31,494 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:36:31,539 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:36:31,591 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:36:33,007 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:36:33,059 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:36:33,106 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:36:33,155 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:36:34,113 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:36:34,161 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:36:34,209 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:36:34,260 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:37:27,568 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:37:27,619 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:37:27,632 basehttp 7304 32056 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:38:21,546 basehttp 7304 32056 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:38:21,602 basehttp 7304 20908 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:38:25,697 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:38:25,748 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:38:25,804 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:38:25,820 basehttp 7304 32056 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:38:25,869 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:38:25,879 basehttp 7304 32056 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:38:27,355 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:38:27,369 basehttp 7304 20908 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:38:27,412 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:38:27,427 basehttp 7304 32056 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:38:27,487 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:38:27,555 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:39:31,668 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:39:31,727 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:39:31,777 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:39:31,837 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:39:31,867 basehttp 7304 32056 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:39:31,889 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:39:31,985 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:39:45,658 basehttp 7304 33552 "POST /api/token/ HTTP/1.1" 200 486
+INFO 2026-04-26 14:39:45,759 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:45,812 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:45,858 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:45,907 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:45,914 basehttp 7304 32056 "GET /api/youtube/dashboard/?channel_id=UCkkY9KSZOE1ZACTS371NbsA&period=last30days HTTP/1.1" 200 904
+INFO 2026-04-26 14:39:45,951 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:45,993 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:46,050 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:46,106 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:46,162 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:46,324 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:46,368 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:46,422 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:46,485 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:46,535 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:46,591 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:46,651 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:46,708 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:46,758 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:46,803 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:46,853 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:46,906 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:46,957 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:39:58,732 basehttp 7304 33552 "POST /api/token/ HTTP/1.1" 200 483
+INFO 2026-04-26 14:39:58,808 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:58,857 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:58,905 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:58,911 basehttp 7304 32056 "OPTIONS /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 0
+INFO 2026-04-26 14:39:58,961 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:58,980 basehttp 7304 32056 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:39:59,011 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:59,062 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:59,109 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:59,158 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:59,206 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:59,254 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:59,294 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:59,337 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:59,379 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:59,435 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:59,488 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:59,534 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:59,579 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:59,623 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:59,670 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:59,722 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:59,776 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:59,824 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:59,890 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:59,945 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:39:59,999 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:40:00,055 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:40:00,112 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:40:00,167 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:40:13,824 basehttp 7304 32056 "OPTIONS /api/youtube/search/channels/?q=Songyak&max_results=5 HTTP/1.1" 200 0
+INFO 2026-04-26 14:40:15,581 basehttp 7304 32056 "GET /api/youtube/search/channels/?q=Songyak&max_results=5 HTTP/1.1" 200 1718
+INFO 2026-04-26 14:40:29,497 basehttp 7304 32056 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:40:30,954 basehttp 7304 32056 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:40:31,369 basehttp 7304 32056 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:40:32,024 basehttp 7304 32056 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:40:32,476 basehttp 7304 32056 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:40:35,728 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:40:35,784 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:40:35,837 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:40:35,892 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:40:35,922 basehttp 7304 32056 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:40:35,948 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:40:35,991 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:40:37,618 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:40:37,672 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:40:37,724 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:40:37,769 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:40:37,827 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:40:37,840 basehttp 7304 20908 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:40:37,876 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:40:40,277 basehttp 7304 29220 "OPTIONS /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last7days HTTP/1.1" 200 0
+INFO 2026-04-26 14:40:40,338 basehttp 7304 29220 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last7days HTTP/1.1" 200 726
+INFO 2026-04-26 14:40:41,796 basehttp 7304 29220 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:40:42,844 basehttp 7304 29220 "OPTIONS /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 0
+INFO 2026-04-26 14:40:42,898 basehttp 7304 29220 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2197
+INFO 2026-04-26 14:40:51,215 basehttp 7304 29220 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:40:51,271 basehttp 7304 20908 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:40:59,936 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:40:59,987 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:40:59,992 basehttp 7304 20908 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:41:03,917 basehttp 7304 20908 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:41:03,972 basehttp 7304 29220 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:41:20,196 basehttp 7304 29220 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:41:20,254 basehttp 7304 20908 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:41:22,725 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:41:22,735 basehttp 7304 29220 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:41:22,785 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:41:22,800 basehttp 7304 20908 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:41:22,839 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:41:22,920 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:41:23,876 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:41:23,895 basehttp 7304 29220 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:41:23,928 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:41:23,957 basehttp 7304 20908 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:41:23,981 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:41:24,032 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:41:31,724 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:41:31,777 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:41:31,787 basehttp 7304 20908 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:41:34,500 basehttp 7304 20908 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2197
+INFO 2026-04-26 14:41:39,672 basehttp 7304 20908 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2197
+INFO 2026-04-26 14:41:42,300 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:41:42,315 basehttp 7304 29220 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:41:42,359 basehttp 7304 32056 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:41:42,384 basehttp 7304 20908 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:41:42,409 basehttp 7304 29220 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:41:42,458 basehttp 7304 20908 "GET /api/youtube/channels/ HTTP/1.1" 200 262
+INFO 2026-04-26 14:41:44,257 basehttp 7304 20908 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2197
+INFO 2026-04-26 14:42:04,005 basehttp 7304 20908 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:42:04,950 basehttp 7304 20908 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last7days HTTP/1.1" 200 726
+INFO 2026-04-26 14:42:05,986 basehttp 7304 20908 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2197
+INFO 2026-04-26 14:42:09,148 basehttp 7304 20908 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2197
+INFO 2026-04-26 14:47:32,707 basehttp 7304 28516 "OPTIONS /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 0
+INFO 2026-04-26 14:47:32,713 basehttp 7304 34604 "OPTIONS /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 0
+INFO 2026-04-26 14:47:32,771 basehttp 7304 28516 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 5424
+INFO 2026-04-26 14:47:32,852 basehttp 7304 34604 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 5424
+INFO 2026-04-26 14:47:59,774 basehttp 7304 34604 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 5424
+INFO 2026-04-26 14:48:22,263 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:48:22,320 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:48:25,555 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2197
+INFO 2026-04-26 14:49:40,386 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:49:40,451 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:49:44,021 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2197
+INFO 2026-04-26 14:51:55,843 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:51:55,889 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:52:20,712 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2197
+INFO 2026-04-26 14:52:22,677 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last7days HTTP/1.1" 200 726
+INFO 2026-04-26 14:52:23,894 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:52:25,061 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2197
+INFO 2026-04-26 14:52:57,870 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:52:57,877 basehttp 7304 34604 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 5424
+INFO 2026-04-26 14:52:57,929 basehttp 7304 34604 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 5424
+INFO 2026-04-26 14:52:57,932 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:53:02,346 basehttp 7304 34604 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 5424
+INFO 2026-04-26 14:53:02,348 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2197
+INFO 2026-04-26 14:53:13,917 basehttp 7304 34604 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 5424
+INFO 2026-04-26 14:53:13,917 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2197
+INFO 2026-04-26 14:53:42,737 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:53:42,792 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 727
+INFO 2026-04-26 14:54:25,732 basehttp 7304 28516 "OPTIONS /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 0
+INFO 2026-04-26 14:54:25,734 basehttp 7304 34604 "OPTIONS /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 0
+INFO 2026-04-26 14:54:25,781 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 727
+INFO 2026-04-26 14:54:25,838 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 727
+INFO 2026-04-26 14:54:35,748 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 727
+INFO 2026-04-26 14:54:35,803 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 727
+INFO 2026-04-26 14:54:40,882 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 727
+INFO 2026-04-26 14:54:40,950 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 727
+INFO 2026-04-26 14:54:41,977 basehttp 7304 34604 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 5424
+INFO 2026-04-26 14:54:42,029 basehttp 7304 28516 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 5424
+INFO 2026-04-26 14:54:47,052 basehttp 7304 28516 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 5424
+INFO 2026-04-26 14:55:16,898 basehttp 7304 35576 "POST /api/token/ HTTP/1.1" 200 486
+INFO 2026-04-26 14:55:16,984 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:17,039 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:17,084 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:17,140 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:17,150 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UCkkY9KSZOE1ZACTS371NbsA&period=last30days HTTP/1.1" 200 904
+INFO 2026-04-26 14:55:17,197 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:17,248 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:17,296 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:17,348 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:17,391 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:17,436 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:17,475 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:17,526 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:17,564 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:17,609 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:17,658 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:17,724 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:17,774 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:17,824 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:17,878 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:17,942 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:18,002 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:18,162 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 270
+INFO 2026-04-26 14:55:32,350 basehttp 7304 35576 "POST /api/token/ HTTP/1.1" 200 483
+INFO 2026-04-26 14:55:32,427 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:32,506 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:32,560 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:32,621 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:55:32,718 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:32,777 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:32,829 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:32,885 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:32,950 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:33,009 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:33,179 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:33,221 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:33,273 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:33,313 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:33,351 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:33,394 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:33,435 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:33,475 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:33,518 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:33,561 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:33,602 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:33,652 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:33,698 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:33,745 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:33,790 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:33,828 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:33,876 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:34,036 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:34,080 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:55:43,128 basehttp 7304 34604 "OPTIONS /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last90days HTTP/1.1" 200 0
+INFO 2026-04-26 14:55:43,191 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last90days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:55:47,104 basehttp 7304 34604 "OPTIONS /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last7days HTTP/1.1" 200 0
+INFO 2026-04-26 14:55:47,171 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last7days HTTP/1.1" 200 1046
+INFO 2026-04-26 14:55:49,418 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:55:50,439 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last90days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:55:54,395 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:55:54,559 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:55:57,249 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last90days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:56:03,248 basehttp 7304 28516 "OPTIONS /api/youtube/videos/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 0
+INFO 2026-04-26 14:56:03,252 basehttp 7304 34604 "OPTIONS /api/youtube/videos/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 0
+INFO 2026-04-26 14:56:03,312 basehttp 7304 34604 "GET /api/youtube/videos/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 4515
+INFO 2026-04-26 14:56:03,495 basehttp 7304 28516 "GET /api/youtube/videos/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 4515
+INFO 2026-04-26 14:56:09,886 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:56:09,963 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:56:19,917 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last90days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:56:21,484 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last7days HTTP/1.1" 200 1046
+INFO 2026-04-26 14:56:23,009 basehttp 7304 34604 "OPTIONS /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 0
+INFO 2026-04-26 14:56:23,012 basehttp 7304 28516 "OPTIONS /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 0
+INFO 2026-04-26 14:56:23,074 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 1047
+INFO 2026-04-26 14:56:23,123 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 1047
+INFO 2026-04-26 14:56:25,103 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 1047
+INFO 2026-04-26 14:56:25,160 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 1047
+INFO 2026-04-26 14:57:02,602 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:57:02,659 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:57:09,681 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:57:09,727 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:57:09,745 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:57:56,786 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:57:56,843 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:57:56,896 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:57:56,953 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:57:57,016 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:57:57,049 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:57:57,078 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:58:16,059 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last90days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:58:17,539 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:58:18,642 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last7days HTTP/1.1" 200 1046
+INFO 2026-04-26 14:58:30,858 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last90days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:58:33,632 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:58:38,991 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last7days HTTP/1.1" 200 1046
+INFO 2026-04-26 14:58:44,888 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:58:44,898 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:58:44,949 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:58:45,041 basehttp 7304 24944 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:58:45,094 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:58:45,142 basehttp 7304 24944 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 14:58:57,225 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last90days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:59:03,867 basehttp 7304 24944 "GET /api/youtube/videos/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 4515
+INFO 2026-04-26 14:59:03,925 basehttp 7304 34604 "GET /api/youtube/videos/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 4515
+INFO 2026-04-26 14:59:05,855 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:59:05,918 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:59:08,235 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:59:08,285 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:59:12,324 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last90days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:59:13,434 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last7days HTTP/1.1" 200 1046
+INFO 2026-04-26 14:59:14,774 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:59:14,841 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:59:24,359 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last90days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:59:37,248 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:59:37,252 basehttp 7304 34604 "GET /api/youtube/videos/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 4515
+INFO 2026-04-26 14:59:37,306 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 14:59:37,306 basehttp 7304 24944 "GET /api/youtube/videos/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 4515
+INFO 2026-04-26 14:59:49,811 basehttp 7304 24944 "GET /api/youtube/videos/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 4515
+INFO 2026-04-26 14:59:49,861 basehttp 7304 28516 "GET /api/youtube/videos/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 4515
+INFO 2026-04-26 14:59:54,466 basehttp 7304 28516 "GET /api/youtube/videos/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 4515
+INFO 2026-04-26 15:00:07,013 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 1047
+INFO 2026-04-26 15:00:07,067 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 1047
+INFO 2026-04-26 15:00:14,408 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 1047
+INFO 2026-04-26 15:00:14,470 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 1047
+INFO 2026-04-26 15:00:29,226 basehttp 7304 35576 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:00:29,227 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:00:29,275 basehttp 7304 24944 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:00:29,277 basehttp 7304 16508 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:00:52,423 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 1047
+INFO 2026-04-26 15:00:52,485 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 1047
+INFO 2026-04-26 15:00:53,725 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 1047
+INFO 2026-04-26 15:00:53,784 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 1047
+INFO 2026-04-26 15:00:59,181 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 15:00:59,235 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 15:01:00,406 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 15:01:00,459 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 15:02:17,252 basehttp 7304 16508 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:02:17,258 basehttp 7304 24944 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:17,297 basehttp 7304 35576 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:02:17,302 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:38,534 basehttp 7304 28516 "POST /api/youtube/channels/ HTTP/1.1" 200 41
+INFO 2026-04-26 15:02:41,020 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:48,546 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:48,596 basehttp 7304 24944 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:48,640 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:48,684 basehttp 7304 24944 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:48,730 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:48,780 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 15:02:48,780 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:57,997 basehttp 7304 35576 "POST /api/token/ HTTP/1.1" 200 483
+INFO 2026-04-26 15:02:58,079 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:58,236 basehttp 7304 24944 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:58,285 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:58,335 basehttp 7304 24944 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:58,347 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 15:02:58,398 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:58,463 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:58,528 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:58,586 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:58,640 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:58,711 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:58,768 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:58,815 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:58,871 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:58,916 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:58,971 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:59,022 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:59,077 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:02:59,135 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:05,440 basehttp 7304 35576 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:03:05,492 basehttp 7304 16508 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:03:05,549 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:05,606 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:05,655 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:05,702 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:05,753 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:05,795 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:22,535 basehttp 7304 28516 "OPTIONS /api/youtube/search/channels/?q=TravelEats&max_results=5 HTTP/1.1" 200 0
+INFO 2026-04-26 15:03:24,368 basehttp 7304 28516 "GET /api/youtube/search/channels/?q=TravelEats&max_results=5 HTTP/1.1" 200 1890
+INFO 2026-04-26 15:03:26,730 basehttp 7304 28516 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:26,749 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 15:03:26,778 basehttp 7304 24944 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:26,824 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:26,882 basehttp 7304 24944 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:26,940 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:27,002 basehttp 7304 24944 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:27,056 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:27,106 basehttp 7304 24944 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:27,158 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:27,205 basehttp 7304 24944 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:27,252 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:27,310 basehttp 7304 24944 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:27,358 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:27,419 basehttp 7304 24944 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:27,479 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:27,529 basehttp 7304 24944 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:27,584 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:27,641 basehttp 7304 24944 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:03:31,373 basehttp 7304 24944 "OPTIONS /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last90days HTTP/1.1" 200 0
+INFO 2026-04-26 15:03:31,434 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last90days HTTP/1.1" 200 984
+INFO 2026-04-26 15:03:38,075 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 15:03:38,136 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 15:03:40,386 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last90days HTTP/1.1" 200 984
+INFO 2026-04-26 15:03:45,803 basehttp 7304 34604 "OPTIONS /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 0
+INFO 2026-04-26 15:03:45,831 basehttp 7304 24944 "OPTIONS /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 0
+INFO 2026-04-26 15:03:45,893 basehttp 7304 34604 "GET /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 4118
+INFO 2026-04-26 15:03:45,946 basehttp 7304 24944 "GET /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 4118
+INFO 2026-04-26 15:03:53,287 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 15:03:53,345 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 15:03:59,401 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last90days HTTP/1.1" 200 984
+INFO 2026-04-26 15:04:01,611 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 15:04:01,664 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 15:04:03,290 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last90days HTTP/1.1" 200 984
+INFO 2026-04-26 15:04:07,510 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 15:04:07,572 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 15:04:10,501 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last90days HTTP/1.1" 200 984
+INFO 2026-04-26 15:04:22,733 basehttp 7304 24944 "GET /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 4118
+INFO 2026-04-26 15:04:22,737 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 15:04:22,786 basehttp 7304 28516 "GET /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 4118
+INFO 2026-04-26 15:04:22,794 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 15:04:27,114 basehttp 7304 28516 "GET /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 4118
+INFO 2026-04-26 15:04:27,114 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last90days HTTP/1.1" 200 984
+INFO 2026-04-26 15:04:29,909 basehttp 7304 24944 "GET /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 4118
+INFO 2026-04-26 15:04:29,957 basehttp 7304 28516 "GET /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 4118
+INFO 2026-04-26 15:04:32,866 basehttp 7304 28516 "GET /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 4118
+INFO 2026-04-26 15:04:47,248 basehttp 7304 28516 "OPTIONS /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 0
+INFO 2026-04-26 15:04:47,274 basehttp 7304 24944 "OPTIONS /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 0
+INFO 2026-04-26 15:04:47,334 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 736
+INFO 2026-04-26 15:04:47,403 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 736
+INFO 2026-04-26 15:05:29,655 basehttp 7304 24944 "GET /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 4118
+INFO 2026-04-26 15:05:29,721 basehttp 7304 28516 "GET /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 4118
+INFO 2026-04-26 15:05:50,534 basehttp 7304 28516 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 15:05:50,586 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 15:05:52,613 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last90days HTTP/1.1" 200 984
+INFO 2026-04-26 15:06:25,493 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 15:06:25,496 basehttp 7304 28516 "GET /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 4118
+INFO 2026-04-26 15:06:25,546 basehttp 7304 24944 "GET /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 4118
+INFO 2026-04-26 15:06:25,550 basehttp 7304 34604 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 15:06:31,969 basehttp 7304 34604 "GET /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 4118
+INFO 2026-04-26 15:06:32,019 basehttp 7304 24944 "GET /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 4118
+INFO 2026-04-26 15:06:38,748 basehttp 7304 24944 "GET /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 4118
+INFO 2026-04-26 15:06:43,914 basehttp 7304 24944 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:06:43,964 basehttp 7304 34604 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:06:43,972 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 15:06:57,322 basehttp 7304 24944 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last90days HTTP/1.1" 200 984
+INFO 2026-04-26 15:09:21,617 autoreload 7304 26068 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\management\commands\sync_youtube_data.py changed, reloading.
+INFO 2026-04-26 15:09:22,409 autoreload 30488 20184 Watching for file changes with StatReloader
+INFO 2026-04-26 15:10:19,320 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:19,366 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:19,415 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:19,472 basehttp 30488 33040 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:19,485 basehttp 30488 24556 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 15:10:19,526 basehttp 30488 33040 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:19,577 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:24,924 basehttp 30488 24556 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:10:24,924 basehttp 30488 33040 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:10:24,924 basehttp 30488 30920 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:10:24,924 basehttp 30488 29624 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:10:24,924 basehttp 30488 19656 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:10:24,925 basehttp 30488 24556 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:10:25,027 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:25,034 basehttp 30488 33040 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:25,044 basehttp 30488 30920 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:25,059 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:25,067 basehttp 30488 19656 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:25,111 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:25,211 basehttp 30488 24556 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 736
+INFO 2026-04-26 15:10:31,185 basehttp 30488 24556 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last90days HTTP/1.1" 200 984
+INFO 2026-04-26 15:10:40,047 basehttp 30488 24556 "OPTIONS /api/youtube/search/channels/?q=songyak&max_results=5 HTTP/1.1" 200 0
+INFO 2026-04-26 15:10:41,910 basehttp 30488 24556 "GET /api/youtube/search/channels/?q=songyak&max_results=5 HTTP/1.1" 200 1718
+INFO 2026-04-26 15:10:46,818 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:46,865 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:46,907 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:46,959 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:47,013 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:47,063 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:47,113 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:47,159 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:47,210 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:47,259 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:47,306 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:47,373 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:47,431 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:47,482 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:47,535 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 516
+INFO 2026-04-26 15:10:47,581 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:10:47,624 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:10:47,666 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:10:47,707 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:10:47,751 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:10:47,793 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:10:47,835 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:10:47,881 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:10:47,927 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:10:47,973 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:10:48,023 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:10:48,064 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:10:48,108 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:10:48,164 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:10:48,214 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:10:48,266 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:10:48,321 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:10:48,369 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:10:48,420 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:10:51,086 basehttp 30488 19656 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2191
+INFO 2026-04-26 15:11:23,995 basehttp 30488 19656 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:11:24,044 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:11:24,129 basehttp 30488 19656 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:11:24,189 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:11:24,224 basehttp 30488 19656 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 15:11:24,241 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:11:24,302 basehttp 30488 19656 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:11:33,783 basehttp 30488 19656 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:11:33,840 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:11:33,889 basehttp 30488 19656 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:11:33,945 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:11:33,984 basehttp 30488 19656 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 15:11:34,012 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:11:34,093 basehttp 30488 19656 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:11:36,492 basehttp 30488 19656 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:11:36,543 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:11:36,590 basehttp 30488 19656 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:11:36,642 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:11:36,650 basehttp 30488 19656 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 15:11:36,690 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:11:36,741 basehttp 30488 19656 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:11:41,992 basehttp 30488 19656 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 15:11:42,046 basehttp 30488 24556 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 15:11:43,662 basehttp 30488 24556 "GET /api/youtube/videos/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 4515
+INFO 2026-04-26 15:11:43,720 basehttp 30488 19656 "GET /api/youtube/videos/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA HTTP/1.1" 200 4515
+INFO 2026-04-26 15:11:51,385 basehttp 30488 11684 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:11:51,386 basehttp 30488 19656 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:11:51,434 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:11:51,435 basehttp 30488 32584 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:12:01,073 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:12:01,125 basehttp 30488 19656 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:12:01,135 basehttp 30488 24556 "GET /api/youtube/dashboard/?channel_id=UC6SEUWgSEUOTKdwdRV7IRhA&period=last30days HTTP/1.1" 200 1047
+INFO 2026-04-26 15:12:08,279 basehttp 30488 24556 "GET /api/youtube/search/channels/?q=songyak&max_results=5 HTTP/1.1" 200 1718
+INFO 2026-04-26 15:12:09,924 basehttp 30488 24556 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:12:09,934 basehttp 30488 19656 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2182
+INFO 2026-04-26 15:12:09,995 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:12:10,043 basehttp 30488 19656 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:12:10,093 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:12:10,268 basehttp 30488 19656 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:12:10,309 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:12:10,351 basehttp 30488 19656 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:12:10,398 basehttp 30488 29624 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:12:12,577 basehttp 30488 29624 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2182
+INFO 2026-04-26 15:12:13,645 basehttp 30488 29624 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2182
+INFO 2026-04-26 15:12:16,148 basehttp 30488 29624 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2191
+INFO 2026-04-26 15:13:48,082 autoreload 30488 20184 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py changed, reloading.
+INFO 2026-04-26 15:13:48,721 autoreload 1324 26556 Watching for file changes with StatReloader
+INFO 2026-04-26 15:15:04,626 basehttp 1324 17572 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2192
+INFO 2026-04-26 15:15:07,259 basehttp 1324 17572 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2192
+INFO 2026-04-26 15:15:09,635 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:09,692 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:09,742 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:09,793 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:09,844 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:09,854 basehttp 1324 17572 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2183
+INFO 2026-04-26 15:15:09,897 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:13,440 basehttp 1324 22456 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:15:13,440 basehttp 1324 17572 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:15:13,440 basehttp 1324 29720 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:15:13,440 basehttp 1324 12184 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:15:13,442 basehttp 1324 17572 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:15:13,443 basehttp 1324 22456 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:15:13,504 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:13,509 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:13,526 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:13,527 basehttp 1324 29720 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:13,576 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:13,606 basehttp 1324 29720 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2183
+INFO 2026-04-26 15:15:13,728 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:14,749 basehttp 1324 17572 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:15:14,750 basehttp 1324 29720 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:15:14,750 basehttp 1324 22456 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:15:14,750 basehttp 1324 12184 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:15:14,750 basehttp 1324 31404 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:15:14,750 basehttp 1324 1800 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:15:14,823 basehttp 1324 1800 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:14,836 basehttp 1324 29720 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:14,846 basehttp 1324 31404 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:14,867 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:14,868 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:14,873 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:14,971 basehttp 1324 17572 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2183
+INFO 2026-04-26 15:15:17,522 basehttp 1324 17572 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2192
+INFO 2026-04-26 15:15:19,407 basehttp 1324 17572 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2183
+INFO 2026-04-26 15:15:20,460 basehttp 1324 17572 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last7days HTTP/1.1" 200 1599
+INFO 2026-04-26 15:15:21,536 basehttp 1324 17572 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2183
+INFO 2026-04-26 15:15:22,605 basehttp 1324 17572 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2192
+INFO 2026-04-26 15:15:26,194 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:26,253 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:26,305 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:26,359 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:26,386 basehttp 1324 17572 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2183
+INFO 2026-04-26 15:15:26,409 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:26,492 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:59,196 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:59,251 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:59,299 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:59,353 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:59,375 basehttp 1324 17572 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2183
+INFO 2026-04-26 15:15:59,411 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:15:59,516 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:06,576 basehttp 1324 17572 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last7days HTTP/1.1" 200 1599
+INFO 2026-04-26 15:16:11,104 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:11,161 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:11,211 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:11,278 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:11,301 basehttp 1324 17572 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2183
+INFO 2026-04-26 15:16:11,326 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:11,406 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:19,690 basehttp 1324 17572 "OPTIONS /api/youtube/search/channels/?q=si&max_results=5 HTTP/1.1" 200 0
+INFO 2026-04-26 15:16:21,644 basehttp 1324 17572 "GET /api/youtube/search/channels/?q=si&max_results=5 HTTP/1.1" 200 1693
+INFO 2026-04-26 15:16:24,137 basehttp 1324 17572 "OPTIONS /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=last30days HTTP/1.1" 200 0
+INFO 2026-04-26 15:16:24,192 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:24,240 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:24,289 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:24,339 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:24,393 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:24,448 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:24,504 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:24,552 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:24,605 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:24,650 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:24,701 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:24,755 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:24,812 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:24,870 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:24,923 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 755
+INFO 2026-04-26 15:16:24,971 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:16:25,017 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:16:25,064 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:16:28,953 basehttp 1324 17572 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=last30days HTTP/1.1" 200 2943
+INFO 2026-04-26 15:16:42,350 basehttp 1324 17572 "GET /api/youtube/search/channels/?q=songyak&max_results=5 HTTP/1.1" 200 1718
+INFO 2026-04-26 15:16:44,264 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:16:44,282 basehttp 1324 22456 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2183
+INFO 2026-04-26 15:16:44,314 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:16:44,389 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:16:44,438 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:16:44,480 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:16:44,535 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:16:44,583 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:16:44,626 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:16:44,675 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:16:44,717 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:16:44,765 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:16:44,808 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:16:49,769 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:16:49,821 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:16:49,867 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:16:49,922 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:16:49,943 basehttp 1324 12184 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2183
+INFO 2026-04-26 15:16:49,978 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:16:50,048 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:17:04,184 basehttp 1324 12184 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2192
+INFO 2026-04-26 15:17:05,509 basehttp 1324 12184 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2183
+INFO 2026-04-26 15:17:06,561 basehttp 1324 12184 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last7days HTTP/1.1" 200 1599
+INFO 2026-04-26 15:17:14,476 basehttp 1324 12184 "OPTIONS /api/youtube/search/channels/?q=travelEats&max_results=5 HTTP/1.1" 200 0
+INFO 2026-04-26 15:17:16,258 basehttp 1324 12184 "GET /api/youtube/search/channels/?q=travelEats&max_results=5 HTTP/1.1" 200 1890
+INFO 2026-04-26 15:17:41,008 basehttp 1324 17572 "OPTIONS /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last7days HTTP/1.1" 200 0
+INFO 2026-04-26 15:17:41,060 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:17:41,072 basehttp 1324 17572 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last7days HTTP/1.1" 200 739
+INFO 2026-04-26 15:17:41,116 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:17:41,159 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:17:41,210 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:17:41,257 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:17:41,301 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:17:41,343 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:17:41,391 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:17:45,808 basehttp 1324 22456 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last7days HTTP/1.1" 200 739
+INFO 2026-04-26 15:17:48,423 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:17:48,474 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:17:48,525 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:17:48,594 basehttp 1324 17572 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:17:48,628 basehttp 1324 22456 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 740
+INFO 2026-04-26 15:17:48,646 basehttp 1324 12184 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:17:48,691 basehttp 1324 22456 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:17:51,768 basehttp 1324 22456 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last90days HTTP/1.1" 200 986
+INFO 2026-04-26 15:17:53,312 basehttp 1324 22456 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 740
+INFO 2026-04-26 15:17:54,321 basehttp 1324 22456 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last7days HTTP/1.1" 200 739
+INFO 2026-04-26 15:17:55,567 basehttp 1324 22456 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 740
+INFO 2026-04-26 15:17:56,699 basehttp 1324 22456 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last90days HTTP/1.1" 200 986
+INFO 2026-04-26 15:18:01,161 basehttp 1324 22456 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last7days HTTP/1.1" 200 739
+INFO 2026-04-26 15:18:02,500 basehttp 1324 22456 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 740
+INFO 2026-04-26 15:18:04,031 basehttp 1324 22456 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last90days HTTP/1.1" 200 986
+INFO 2026-04-26 15:18:08,426 basehttp 1324 22456 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 740
+INFO 2026-04-26 15:18:09,893 basehttp 1324 22456 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last7days HTTP/1.1" 200 739
+INFO 2026-04-26 15:18:11,370 basehttp 1324 22456 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 740
+INFO 2026-04-26 15:20:15,296 autoreload 1324 26556 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py changed, reloading.
+INFO 2026-04-26 15:20:15,907 autoreload 18364 30200 Watching for file changes with StatReloader
+INFO 2026-04-26 15:20:34,597 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:34,650 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:34,704 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:34,757 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:34,808 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:34,809 basehttp 18364 33880 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 834
+INFO 2026-04-26 15:20:34,852 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:36,254 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:36,308 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:36,364 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:36,417 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:36,439 basehttp 18364 34748 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 834
+INFO 2026-04-26 15:20:36,468 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:36,514 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:40,791 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:40,795 basehttp 18364 34748 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 834
+INFO 2026-04-26 15:20:50,289 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:50,349 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:50,396 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:50,450 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:50,488 basehttp 18364 34748 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 834
+INFO 2026-04-26 15:20:50,517 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:50,561 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:52,330 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:52,379 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:52,431 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:52,485 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:52,509 basehttp 18364 34748 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 834
+INFO 2026-04-26 15:20:52,543 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:52,584 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:20:55,383 basehttp 18364 34748 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last90days HTTP/1.1" 200 1082
+INFO 2026-04-26 15:20:57,316 basehttp 18364 34748 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 834
+INFO 2026-04-26 15:20:58,851 basehttp 18364 34748 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last7days HTTP/1.1" 200 833
+INFO 2026-04-26 15:21:09,756 basehttp 18364 30844 "POST /api/token/ HTTP/1.1" 200 483
+INFO 2026-04-26 15:21:09,840 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:09,894 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:09,943 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:09,988 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:10,002 basehttp 18364 34748 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=last30days HTTP/1.1" 200 3043
+INFO 2026-04-26 15:21:10,172 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:10,227 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:10,280 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:10,329 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:10,397 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:10,461 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:10,516 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:10,564 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:10,620 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:10,691 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:10,747 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:10,794 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:10,846 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:10,898 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:26,284 basehttp 18364 34748 "GET /api/youtube/search/channels/?q=travelEats&max_results=5 HTTP/1.1" 200 1890
+INFO 2026-04-26 15:21:28,313 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:28,332 basehttp 18364 33880 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 834
+INFO 2026-04-26 15:21:28,361 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:28,411 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:28,468 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:28,532 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:28,594 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:28,656 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:28,711 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:28,781 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:28,836 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:28,891 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:28,961 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:29,025 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:29,085 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:21:33,272 basehttp 18364 18996 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 834
+INFO 2026-04-26 15:21:33,328 basehttp 18364 33880 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 834
+INFO 2026-04-26 15:21:36,320 basehttp 18364 33880 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last90days HTTP/1.1" 200 1082
+INFO 2026-04-26 15:21:43,829 basehttp 18364 33880 "GET /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 4118
+INFO 2026-04-26 15:21:43,892 basehttp 18364 18996 "GET /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 4118
+INFO 2026-04-26 15:22:21,720 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:22:21,766 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:22:21,806 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:22:21,852 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:22:21,897 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:22:21,943 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:22:22,073 basehttp 18364 33880 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last30days HTTP/1.1" 200 834
+INFO 2026-04-26 15:23:33,029 basehttp 18364 33880 "GET /api/youtube/dashboard/?channel_id=UC7nwG44x82jz63lvgHwSc1Q&period=last90days HTTP/1.1" 200 1082
+INFO 2026-04-26 15:23:40,260 basehttp 18364 33880 "GET /api/youtube/search/channels/?q=songyak&max_results=5 HTTP/1.1" 200 1741
+INFO 2026-04-26 15:23:41,695 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:23:41,710 basehttp 18364 18996 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2294
+INFO 2026-04-26 15:23:41,771 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:23:41,821 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:23:41,874 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:23:41,917 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:23:41,962 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:23:42,009 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:23:42,047 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:23:42,092 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:23:42,137 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:23:42,179 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:23:42,226 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:23:49,840 basehttp 18364 34748 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2284
+INFO 2026-04-26 15:23:51,131 basehttp 18364 34748 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last7days HTTP/1.1" 200 1697
+INFO 2026-04-26 15:23:57,106 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:23:57,114 basehttp 18364 18996 "GET /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 4118
+INFO 2026-04-26 15:23:57,167 basehttp 18364 33880 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:23:57,171 basehttp 18364 34748 "GET /api/youtube/videos/?channel_id=UC7nwG44x82jz63lvgHwSc1Q HTTP/1.1" 200 4118
+INFO 2026-04-26 15:23:57,246 basehttp 18364 18996 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:23:57,297 basehttp 18364 34748 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:24:00,973 basehttp 18364 34748 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 5131
+INFO 2026-04-26 15:24:21,125 basehttp 18364 34748 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2294
+INFO 2026-04-26 15:24:22,897 basehttp 18364 34748 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2284
+INFO 2026-04-26 15:26:35,526 basehttp 18364 34748 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2294
+INFO 2026-04-26 15:28:41,385 autoreload 18364 30200 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py changed, reloading.
+INFO 2026-04-26 15:28:42,016 autoreload 26144 31952 Watching for file changes with StatReloader
+INFO 2026-04-26 15:29:00,881 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:29:00,936 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:29:01,000 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:29:01,061 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:29:01,122 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:29:01,137 basehttp 26144 29844 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2284
+INFO 2026-04-26 15:29:01,290 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:29:03,956 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:29:04,012 basehttp 26144 29844 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:29:04,057 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:29:04,111 basehttp 26144 29844 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:29:04,125 basehttp 26144 23780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2284
+INFO 2026-04-26 15:29:04,164 basehttp 26144 14368 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:29:04,258 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:29:06,412 basehttp 26144 23780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2294
+INFO 2026-04-26 15:29:08,026 basehttp 26144 23780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2284
+INFO 2026-04-26 15:29:09,262 basehttp 26144 23780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last7days HTTP/1.1" 200 1697
+INFO 2026-04-26 15:29:37,775 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:29:37,783 basehttp 26144 23780 "OPTIONS /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 0
+INFO 2026-04-26 15:29:37,834 basehttp 26144 14368 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:29:37,845 basehttp 26144 23780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:30:30,542 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:30:30,628 basehttp 26144 14368 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:30:30,684 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:30:30,739 basehttp 26144 14368 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:30:30,767 basehttp 26144 23780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:30:30,800 basehttp 26144 29844 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:30:30,868 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:30:38,649 basehttp 26144 23780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2294
+INFO 2026-04-26 15:30:40,685 basehttp 26144 23780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2284
+INFO 2026-04-26 15:30:41,901 basehttp 26144 23780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last7days HTTP/1.1" 200 1697
+INFO 2026-04-26 15:30:43,057 basehttp 26144 23780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:30:52,127 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:30:52,141 basehttp 26144 29844 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 28705
+INFO 2026-04-26 15:30:52,178 basehttp 26144 14368 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:30:52,200 basehttp 26144 23780 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 28705
+INFO 2026-04-26 15:30:52,234 basehttp 26144 29844 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:30:52,290 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:31:13,662 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:31:13,709 basehttp 26144 29844 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:31:13,777 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:31:13,854 basehttp 26144 29844 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:31:13,874 basehttp 26144 23780 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:31:13,909 basehttp 26144 14368 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:31:13,988 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:02,008 basehttp 26144 24960 "POST /api/token/ HTTP/1.1" 200 483
+INFO 2026-04-26 15:33:02,089 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:02,139 basehttp 26144 14368 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:02,182 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:02,187 basehttp 26144 23780 "OPTIONS /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=all_time HTTP/1.1" 200 0
+INFO 2026-04-26 15:33:02,230 basehttp 26144 14368 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:02,236 basehttp 26144 23780 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=all_time HTTP/1.1" 200 3166
+INFO 2026-04-26 15:33:02,278 basehttp 26144 29844 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:02,334 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:02,395 basehttp 26144 29844 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:02,440 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:02,486 basehttp 26144 29844 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:02,536 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:02,587 basehttp 26144 29844 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:02,635 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:02,682 basehttp 26144 29844 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:02,720 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:02,775 basehttp 26144 29844 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:02,831 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:02,884 basehttp 26144 29844 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:02,940 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:02,996 basehttp 26144 29844 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:03,049 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:03,099 basehttp 26144 29844 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:03,145 basehttp 26144 23780 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:33:05,492 autoreload 26144 31952 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py changed, reloading.
+INFO 2026-04-26 15:33:06,304 autoreload 29040 32536 Watching for file changes with StatReloader
+INFO 2026-04-26 15:33:37,240 basehttp 29040 21156 "OPTIONS /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=last90days HTTP/1.1" 200 0
+INFO 2026-04-26 15:33:37,337 basehttp 29040 21156 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=last90days HTTP/1.1" 200 3050
+INFO 2026-04-26 15:33:44,105 basehttp 29040 21156 "OPTIONS /api/youtube/videos/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag HTTP/1.1" 200 0
+INFO 2026-04-26 15:33:44,116 basehttp 29040 25904 "OPTIONS /api/youtube/videos/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag HTTP/1.1" 200 0
+INFO 2026-04-26 15:33:44,184 basehttp 29040 25904 "GET /api/youtube/videos/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag HTTP/1.1" 200 42609
+INFO 2026-04-26 15:33:44,243 basehttp 29040 21156 "GET /api/youtube/videos/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag HTTP/1.1" 200 42609
+INFO 2026-04-26 15:33:54,283 basehttp 29040 21156 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=last30days HTTP/1.1" 200 3042
+INFO 2026-04-26 15:33:54,355 basehttp 29040 25904 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=last30days HTTP/1.1" 200 3042
+INFO 2026-04-26 15:34:03,506 basehttp 29040 25904 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=last90days HTTP/1.1" 200 3050
+INFO 2026-04-26 15:34:04,937 basehttp 29040 25904 "OPTIONS /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=last7days HTTP/1.1" 200 0
+INFO 2026-04-26 15:34:04,992 basehttp 29040 25904 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=last7days HTTP/1.1" 200 2608
+INFO 2026-04-26 15:34:06,691 basehttp 29040 25904 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=last90days HTTP/1.1" 200 3050
+INFO 2026-04-26 15:34:08,940 basehttp 29040 25904 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=last30days HTTP/1.1" 200 3042
+INFO 2026-04-26 15:34:09,011 basehttp 29040 21156 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=last30days HTTP/1.1" 200 3042
+INFO 2026-04-26 15:34:09,986 basehttp 29040 21156 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=last30days HTTP/1.1" 200 3042
+INFO 2026-04-26 15:34:10,043 basehttp 29040 25904 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=last30days HTTP/1.1" 200 3042
+INFO 2026-04-26 15:34:13,818 basehttp 29040 25904 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=last90days HTTP/1.1" 200 3050
+INFO 2026-04-26 15:34:16,029 basehttp 29040 25904 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=last7days HTTP/1.1" 200 2608
+INFO 2026-04-26 15:34:17,357 basehttp 29040 25904 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=last30days HTTP/1.1" 200 3042
+INFO 2026-04-26 15:34:21,597 basehttp 29040 25904 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=last30days HTTP/1.1" 200 3042
+INFO 2026-04-26 15:34:21,598 basehttp 29040 21156 "GET /api/youtube/videos/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag HTTP/1.1" 200 42609
+INFO 2026-04-26 15:34:21,655 basehttp 29040 21156 "GET /api/youtube/videos/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag HTTP/1.1" 200 42609
+INFO 2026-04-26 15:34:21,658 basehttp 29040 25904 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=last30days HTTP/1.1" 200 3042
+INFO 2026-04-26 15:34:27,202 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:34:27,253 basehttp 29040 21156 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:34:27,265 basehttp 29040 25904 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=all_time HTTP/1.1" 200 3165
+INFO 2026-04-26 15:34:35,395 basehttp 29040 35256 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:34:35,398 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:34:35,463 basehttp 29040 144 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:34:35,466 basehttp 29040 21156 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:34:47,228 basehttp 29040 21156 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:34:47,281 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:34:47,293 basehttp 29040 21156 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=all_time HTTP/1.1" 200 3165
+INFO 2026-04-26 15:34:52,690 basehttp 29040 21156 "OPTIONS /api/youtube/search/channels/?q=song&max_results=5 HTTP/1.1" 200 0
+INFO 2026-04-26 15:34:54,846 basehttp 29040 21156 "GET /api/youtube/search/channels/?q=song&max_results=5 HTTP/1.1" 200 1871
+INFO 2026-04-26 15:35:03,948 basehttp 29040 21156 "GET /api/youtube/search/channels/?q=songyak&max_results=5 HTTP/1.1" 200 1718
+INFO 2026-04-26 15:35:05,875 basehttp 29040 21156 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:05,886 basehttp 29040 25904 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:35:05,931 basehttp 29040 25520 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:05,980 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:06,040 basehttp 29040 25520 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:06,089 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:06,135 basehttp 29040 25520 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:06,180 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:06,222 basehttp 29040 25520 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:06,271 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:06,324 basehttp 29040 25520 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:06,378 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:06,422 basehttp 29040 25520 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:06,471 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:06,514 basehttp 29040 25520 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:06,562 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:06,607 basehttp 29040 25520 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:06,656 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:06,704 basehttp 29040 25520 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:27,529 basehttp 29040 25520 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:35:27,529 basehttp 29040 25904 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:35:27,529 basehttp 29040 21156 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:35:27,530 basehttp 29040 25520 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:35:27,533 basehttp 29040 21156 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:35:27,533 basehttp 29040 25904 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:35:27,588 basehttp 29040 21156 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:27,588 basehttp 29040 25520 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:27,588 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:27,659 basehttp 29040 21156 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:27,678 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:27,678 basehttp 29040 25520 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:27,724 basehttp 29040 21156 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:35:35,695 basehttp 29040 21156 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:35,703 basehttp 29040 25904 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 28705
+INFO 2026-04-26 15:35:35,746 basehttp 29040 25520 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:35,764 basehttp 29040 22452 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 28705
+INFO 2026-04-26 15:35:35,795 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:35:35,852 basehttp 29040 22452 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:36:30,717 basehttp 29040 22452 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 28705
+INFO 2026-04-26 15:36:30,774 basehttp 29040 25904 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 28705
+INFO 2026-04-26 15:36:55,997 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:36:56,048 basehttp 29040 22452 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:36:56,061 basehttp 29040 25904 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:36:58,434 basehttp 29040 22452 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:36:58,434 basehttp 29040 25904 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:36:58,434 basehttp 29040 21156 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:36:58,434 basehttp 29040 25520 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:36:58,437 basehttp 29040 25904 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:36:58,437 basehttp 29040 22452 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:36:58,493 basehttp 29040 25520 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:36:58,500 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:36:58,513 basehttp 29040 22452 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:36:58,513 basehttp 29040 21156 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:36:58,561 basehttp 29040 25520 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:36:58,571 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:36:58,592 basehttp 29040 21156 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:36:59,521 basehttp 29040 21156 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:36:59,522 basehttp 29040 25520 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:36:59,522 basehttp 29040 22452 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:36:59,522 basehttp 29040 20896 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:36:59,522 basehttp 29040 25904 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:36:59,524 basehttp 29040 19232 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:36:59,604 basehttp 29040 20896 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:36:59,605 basehttp 29040 19232 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:36:59,631 basehttp 29040 22452 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:36:59,632 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:36:59,635 basehttp 29040 25520 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:36:59,639 basehttp 29040 21156 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:36:59,737 basehttp 29040 21156 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:37:06,544 basehttp 29040 25520 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:06,547 basehttp 29040 21156 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:37:11,856 basehttp 29040 21156 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 28705
+INFO 2026-04-26 15:37:11,912 basehttp 29040 25520 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 28705
+INFO 2026-04-26 15:37:29,058 basehttp 29040 25520 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:29,108 basehttp 29040 21156 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:29,112 basehttp 29040 25520 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:37:38,350 basehttp 29040 25520 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:38,350 basehttp 29040 21156 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:38,350 basehttp 29040 20896 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:38,350 basehttp 29040 19232 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:38,350 basehttp 29040 22452 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:38,350 basehttp 29040 25904 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:38,425 basehttp 29040 19232 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:38,425 basehttp 29040 22452 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:38,437 basehttp 29040 25520 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:38,445 basehttp 29040 21156 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:38,445 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:38,454 basehttp 29040 20896 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:38,554 basehttp 29040 20896 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:37:39,402 basehttp 29040 25904 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:39,404 basehttp 29040 20896 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:39,404 basehttp 29040 25520 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:39,404 basehttp 29040 19232 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:39,404 basehttp 29040 21156 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:39,404 basehttp 29040 22452 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:39,462 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:39,480 basehttp 29040 21156 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:39,485 basehttp 29040 22452 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:39,498 basehttp 29040 19232 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:39,505 basehttp 29040 25520 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:39,516 basehttp 29040 20896 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:39,553 basehttp 29040 21156 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:37:40,329 basehttp 29040 20896 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:40,329 basehttp 29040 25904 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:40,331 basehttp 29040 22452 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:40,331 basehttp 29040 19232 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:40,331 basehttp 29040 21156 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:40,331 basehttp 29040 25520 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:40,414 basehttp 29040 21156 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:40,419 basehttp 29040 22452 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:40,429 basehttp 29040 19232 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:40,440 basehttp 29040 25904 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:40,447 basehttp 29040 20896 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:40,461 basehttp 29040 25520 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:40,539 basehttp 29040 25520 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:37:41,314 basehttp 29040 25520 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:41,318 basehttp 29040 20896 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:41,318 basehttp 29040 21156 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:41,318 basehttp 29040 25904 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:41,319 basehttp 29040 19232 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:41,319 basehttp 29040 22452 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:41,780 basehttp 29040 22452 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:41,780 basehttp 29040 19232 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:41,780 basehttp 29040 20896 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:41,781 basehttp 29040 25904 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:41,781 basehttp 29040 21156 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:41,781 basehttp 29040 25520 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:41,862 basehttp 29040 25520 - Broken pipe from ('127.0.0.1', 50421)
+INFO 2026-04-26 15:37:41,863 basehttp 29040 19232 - Broken pipe from ('127.0.0.1', 59491)
+INFO 2026-04-26 15:37:41,883 basehttp 29040 21156 - Broken pipe from ('127.0.0.1', 50061)
+INFO 2026-04-26 15:37:41,883 basehttp 29040 25904 - Broken pipe from ('127.0.0.1', 58867)
+INFO 2026-04-26 15:37:41,886 basehttp 29040 20896 - Broken pipe from ('127.0.0.1', 51443)
+INFO 2026-04-26 15:37:41,887 basehttp 29040 22452 - Broken pipe from ('127.0.0.1', 60907)
+INFO 2026-04-26 15:37:42,467 basehttp 29040 18344 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:42,467 basehttp 29040 34512 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:42,469 basehttp 29040 13304 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:42,469 basehttp 29040 35696 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:42,473 basehttp 29040 27212 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:42,481 basehttp 29040 11484 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:42,530 basehttp 29040 35696 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:42,534 basehttp 29040 13304 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:42,535 basehttp 29040 34512 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:42,549 basehttp 29040 18344 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:42,549 basehttp 29040 27212 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:42,551 basehttp 29040 11484 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:42,597 basehttp 29040 13304 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:37:43,854 basehttp 29040 13304 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:43,856 basehttp 29040 11484 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:43,858 basehttp 29040 27212 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:43,858 basehttp 29040 18344 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:43,858 basehttp 29040 35696 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:43,859 basehttp 29040 34512 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:37:43,918 basehttp 29040 13304 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:43,927 basehttp 29040 11484 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:43,943 basehttp 29040 27212 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:43,951 basehttp 29040 35696 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:43,967 basehttp 29040 34512 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:43,969 basehttp 29040 18344 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:37:44,145 basehttp 29040 18344 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:38:13,029 basehttp 29040 18344 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last7days HTTP/1.1" 200 1697
+INFO 2026-04-26 15:38:17,003 basehttp 29040 18344 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:38:26,043 basehttp 29040 34512 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:38:26,043 basehttp 29040 18344 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:38:26,044 basehttp 29040 11484 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:38:26,044 basehttp 29040 35696 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:38:26,044 basehttp 29040 27212 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:38:26,044 basehttp 29040 13304 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-26 15:38:26,100 basehttp 29040 11484 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:26,107 basehttp 29040 13304 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:26,117 basehttp 29040 27212 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:26,128 basehttp 29040 35696 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:26,142 basehttp 29040 34512 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:26,149 basehttp 29040 18344 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:26,196 basehttp 29040 35696 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:38:35,009 basehttp 29040 144 "POST /api/token/ HTTP/1.1" 200 483
+INFO 2026-04-26 15:38:35,109 basehttp 29040 35696 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:35,271 basehttp 29040 18344 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:35,333 basehttp 29040 35696 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:35,397 basehttp 29040 18344 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:35,402 basehttp 29040 35696 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=all_time HTTP/1.1" 200 3165
+INFO 2026-04-26 15:38:35,456 basehttp 29040 34512 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:35,512 basehttp 29040 35696 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:35,558 basehttp 29040 34512 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:35,601 basehttp 29040 35696 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:35,657 basehttp 29040 34512 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:35,706 basehttp 29040 35696 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:35,766 basehttp 29040 34512 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:35,816 basehttp 29040 35696 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:35,864 basehttp 29040 34512 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:35,916 basehttp 29040 35696 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:35,971 basehttp 29040 34512 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:36,018 basehttp 29040 35696 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:36,066 basehttp 29040 34512 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:36,122 basehttp 29040 35696 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:36,190 basehttp 29040 34512 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:36,260 basehttp 29040 35696 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:36,327 basehttp 29040 34512 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:38:36,382 basehttp 29040 35696 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:39:25,400 basehttp 29040 144 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:39:25,408 basehttp 29040 35696 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:39:25,448 basehttp 29040 35256 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:39:25,457 basehttp 29040 34512 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:44:51,297 basehttp 29040 32776 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:44:51,356 basehttp 29040 16712 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:44:51,611 basehttp 29040 17900 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:44:51,658 basehttp 29040 17900 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:44:51,701 basehttp 29040 17900 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:44:51,749 basehttp 29040 17900 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:44:51,798 basehttp 29040 17900 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:44:51,844 basehttp 29040 17900 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:30,250 basehttp 29040 17900 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:30,300 basehttp 29040 28228 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:30,307 basehttp 29040 17900 "GET /api/youtube/dashboard/?channel_id=UCMAGJ9Hhe_IjsiuYHrns8ag&period=all_time HTTP/1.1" 200 3165
+INFO 2026-04-26 15:45:43,953 basehttp 29040 17900 "GET /api/youtube/search/channels/?q=songyak&max_results=5 HTTP/1.1" 200 1741
+INFO 2026-04-26 15:45:45,790 basehttp 29040 17900 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:45,801 basehttp 29040 28228 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:45:45,839 basehttp 29040 12304 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:45,881 basehttp 29040 28228 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:45,928 basehttp 29040 12304 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:45,970 basehttp 29040 28228 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:46,013 basehttp 29040 12304 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:46,052 basehttp 29040 28228 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:46,094 basehttp 29040 12304 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:46,132 basehttp 29040 28228 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:46,173 basehttp 29040 12304 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:46,216 basehttp 29040 28228 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:46,266 basehttp 29040 12304 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:46,315 basehttp 29040 28228 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:46,359 basehttp 29040 12304 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:51,600 basehttp 29040 16712 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:45:51,605 basehttp 29040 12304 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:51,655 basehttp 29040 28228 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:51,655 basehttp 29040 32776 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:45:51,730 basehttp 29040 12304 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:51,778 basehttp 29040 28228 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:51,950 basehttp 29040 12304 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:52,021 basehttp 29040 28228 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:59,340 basehttp 29040 28228 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:59,391 basehttp 29040 12304 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:59,440 basehttp 29040 28228 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:59,443 basehttp 29040 32776 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:45:59,491 basehttp 29040 12304 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:59,494 basehttp 29040 16712 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:45:59,545 basehttp 29040 28228 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:45:59,591 basehttp 29040 12304 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:46:22,889 basehttp 29040 12304 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2284
+INFO 2026-04-26 15:46:22,956 basehttp 29040 28228 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2284
+INFO 2026-04-26 15:46:27,092 basehttp 29040 28228 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2294
+INFO 2026-04-26 15:46:29,523 basehttp 29040 28228 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last7days HTTP/1.1" 200 1697
+INFO 2026-04-26 15:46:31,336 basehttp 29040 28228 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2284
+INFO 2026-04-26 15:46:41,779 basehttp 29040 28228 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 28705
+INFO 2026-04-26 15:46:41,839 basehttp 29040 12304 "GET /api/youtube/videos/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg HTTP/1.1" 200 28705
+INFO 2026-04-26 15:47:05,401 basehttp 29040 12304 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2284
+INFO 2026-04-26 15:47:05,468 basehttp 29040 28228 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2284
+INFO 2026-04-26 15:47:13,742 basehttp 29040 28228 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2284
+INFO 2026-04-26 15:47:13,806 basehttp 29040 12304 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2284
+INFO 2026-04-26 15:47:19,432 basehttp 29040 12304 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last90days HTTP/1.1" 200 2294
+INFO 2026-04-26 15:47:20,685 basehttp 29040 12304 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2284
+INFO 2026-04-26 15:47:20,746 basehttp 29040 28228 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=last30days HTTP/1.1" 200 2284
+INFO 2026-04-26 15:47:22,143 basehttp 29040 28228 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:47:22,189 basehttp 29040 12304 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:47:22,202 basehttp 29040 28228 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:47:30,712 basehttp 29040 28228 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:47:30,718 basehttp 29040 16712 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:47:30,768 basehttp 29040 12304 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:47:30,769 basehttp 29040 32776 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:47:30,950 basehttp 29040 28228 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:47:30,997 basehttp 29040 12304 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:47:31,046 basehttp 29040 28228 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:47:31,098 basehttp 29040 12304 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:49:44,817 autoreload 29040 32536 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\models.py changed, reloading.
+INFO 2026-04-26 15:49:45,528 autoreload 27300 26548 Watching for file changes with StatReloader
+INFO 2026-04-26 15:50:19,280 basehttp 27300 32528 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:50:19,326 basehttp 27300 34612 "GET /api/user/profile/ HTTP/1.1" 200 52
+ERROR 2026-04-26 15:50:19,703 log 27300 18096 Internal Server Error: /api/youtube/channels/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column api_channel.is_default does not exist
+LINE 1: ...hannel"."last_synced", "api_channel"."is_active", "api_chann...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py", line 264, in get
+    channels_data = [{
+                    ^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column api_channel.is_default does not exist
+LINE 1: ...hannel"."last_synced", "api_channel"."is_active", "api_chann...
+                                                             ^
+
+ERROR 2026-04-26 15:50:19,717 basehttp 27300 18096 "GET /api/youtube/channels/ HTTP/1.1" 500 161900
+ERROR 2026-04-26 15:50:19,850 log 27300 18096 Internal Server Error: /api/youtube/channels/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column api_channel.is_default does not exist
+LINE 1: ...hannel"."last_synced", "api_channel"."is_active", "api_chann...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py", line 264, in get
+    channels_data = [{
+                    ^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column api_channel.is_default does not exist
+LINE 1: ...hannel"."last_synced", "api_channel"."is_active", "api_chann...
+                                                             ^
+
+ERROR 2026-04-26 15:50:19,854 basehttp 27300 18096 "GET /api/youtube/channels/ HTTP/1.1" 500 161900
+ERROR 2026-04-26 15:50:19,974 log 27300 32932 Internal Server Error: /api/youtube/channels/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column api_channel.is_default does not exist
+LINE 1: ...hannel"."last_synced", "api_channel"."is_active", "api_chann...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py", line 264, in get
+    channels_data = [{
+                    ^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column api_channel.is_default does not exist
+LINE 1: ...hannel"."last_synced", "api_channel"."is_active", "api_chann...
+                                                             ^
+
+ERROR 2026-04-26 15:50:19,980 basehttp 27300 32932 "GET /api/youtube/channels/ HTTP/1.1" 500 161900
+ERROR 2026-04-26 15:50:20,099 log 27300 18096 Internal Server Error: /api/youtube/channels/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column api_channel.is_default does not exist
+LINE 1: ...hannel"."last_synced", "api_channel"."is_active", "api_chann...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py", line 264, in get
+    channels_data = [{
+                    ^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column api_channel.is_default does not exist
+LINE 1: ...hannel"."last_synced", "api_channel"."is_active", "api_chann...
+                                                             ^
+
+ERROR 2026-04-26 15:50:20,102 basehttp 27300 18096 "GET /api/youtube/channels/ HTTP/1.1" 500 161900
+ERROR 2026-04-26 15:50:20,216 log 27300 32932 Internal Server Error: /api/youtube/channels/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column api_channel.is_default does not exist
+LINE 1: ...hannel"."last_synced", "api_channel"."is_active", "api_chann...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py", line 264, in get
+    channels_data = [{
+                    ^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column api_channel.is_default does not exist
+LINE 1: ...hannel"."last_synced", "api_channel"."is_active", "api_chann...
+                                                             ^
+
+ERROR 2026-04-26 15:50:20,220 basehttp 27300 32932 "GET /api/youtube/channels/ HTTP/1.1" 500 161900
+ERROR 2026-04-26 15:50:20,329 log 27300 18096 Internal Server Error: /api/youtube/channels/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column api_channel.is_default does not exist
+LINE 1: ...hannel"."last_synced", "api_channel"."is_active", "api_chann...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py", line 264, in get
+    channels_data = [{
+                    ^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column api_channel.is_default does not exist
+LINE 1: ...hannel"."last_synced", "api_channel"."is_active", "api_chann...
+                                                             ^
+
+ERROR 2026-04-26 15:50:20,338 basehttp 27300 18096 "GET /api/youtube/channels/ HTTP/1.1" 500 161900
+ERROR 2026-04-26 15:50:31,059 log 27300 18096 Internal Server Error: /api/youtube/channels/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column api_channel.is_default does not exist
+LINE 1: ...hannel"."last_synced", "api_channel"."is_active", "api_chann...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py", line 264, in get
+    channels_data = [{
+                    ^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column api_channel.is_default does not exist
+LINE 1: ...hannel"."last_synced", "api_channel"."is_active", "api_chann...
+                                                             ^
+
+ERROR 2026-04-26 15:50:31,064 basehttp 27300 18096 "GET /api/youtube/channels/ HTTP/1.1" 500 161900
+ERROR 2026-04-26 15:50:31,166 log 27300 32932 Internal Server Error: /api/youtube/channels/
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column api_channel.is_default does not exist
+LINE 1: ...hannel"."last_synced", "api_channel"."is_active", "api_chann...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py", line 264, in get
+    channels_data = [{
+                    ^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\hp\AppData\Roaming\Python\Python312\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column api_channel.is_default does not exist
+LINE 1: ...hannel"."last_synced", "api_channel"."is_active", "api_chann...
+                                                             ^
+
+ERROR 2026-04-26 15:50:31,168 basehttp 27300 32932 "GET /api/youtube/channels/ HTTP/1.1" 500 161900
+INFO 2026-04-26 15:51:51,308 basehttp 27300 32932 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:51:51,362 basehttp 27300 18096 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:51:51,412 basehttp 27300 32932 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:51:51,463 basehttp 27300 18096 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:51:51,490 basehttp 27300 32932 "GET /api/youtube/dashboard/?channel_id=UC-2Mn1v6KM5OCdr0mauE0Jg&period=all_time HTTP/1.1" 200 2238
+INFO 2026-04-26 15:51:51,514 basehttp 27300 18096 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:51:51,560 basehttp 27300 32932 "GET /api/youtube/channels/ HTTP/1.1" 200 1035
+INFO 2026-04-26 15:51:52,242 autoreload 27300 26548 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\views.py changed, reloading.
+INFO 2026-04-26 15:51:53,056 autoreload 25928 21644 Watching for file changes with StatReloader
+INFO 2026-04-26 15:52:01,442 basehttp 25928 16728 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:52:01,493 basehttp 25928 33168 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:52:01,720 basehttp 25928 34848 "GET /api/youtube/channels/ HTTP/1.1" 200 1111
+INFO 2026-04-26 15:52:01,773 basehttp 25928 34848 "GET /api/youtube/channels/ HTTP/1.1" 200 1111
+INFO 2026-04-26 15:52:12,942 basehttp 25928 33168 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:52:12,942 basehttp 25928 34848 "GET /api/youtube/channels/ HTTP/1.1" 200 1111
+INFO 2026-04-26 15:52:12,997 basehttp 25928 16728 "GET /api/user/profile/ HTTP/1.1" 200 52
+INFO 2026-04-26 15:52:13,004 basehttp 25928 19636 "GET /api/youtube/channels/ HTTP/1.1" 200 1111
+INFO 2026-04-26 15:52:13,052 basehttp 25928 34848 "GET /api/youtube/channels/ HTTP/1.1" 200 1111
+INFO 2026-04-26 15:52:13,096 basehttp 25928 19636 "GET /api/youtube/channels/ HTTP/1.1" 200 1111
+INFO 2026-04-26 15:52:13,147 basehttp 25928 34848 "GET /api/youtube/channels/ HTTP/1.1" 200 1111
+INFO 2026-04-26 15:52:13,193 basehttp 25928 19636 "GET /api/youtube/channels/ HTTP/1.1" 200 1111
+INFO 2026-04-26 15:52:21,340 autoreload 25928 21644 D:\laragon\www\python\Django-React-Full-Stack-App\backend\api\urls.py changed, reloading.
+INFO 2026-04-26 15:52:22,115 autoreload 2976 17424 Watching for file changes with StatReloader

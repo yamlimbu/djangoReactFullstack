@@ -287,15 +287,41 @@ function SettingsPage() {
               <p className="text-gray-500">No YouTube channels linked yet.</p>
             ) : (
               channels.map(channel => (
-                <div key={channel.id} className="p-4 bg-gray-50 rounded-lg border border-gray-200 flex justify-between items-center">
-                  <div className="flex items-center gap-4">
-                    {channel.thumbnail && <img src={channel.thumbnail} alt="Thumbnail" className="w-12 h-12 rounded-full" />}
-                    <div>
-                      <p className="font-medium text-gray-900">{channel.title}</p>
-                      <p className="text-sm text-gray-600">ID: {channel.id}</p>
+                <div key={channel.id} className={`p-4 rounded-lg border flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 ${channel.is_default ? 'bg-blue-50 border-blue-200' : 'bg-gray-50 border-gray-200'}`}>
+                  <div className="flex items-center gap-4 w-full sm:w-auto">
+                    {channel.thumbnail && <img src={channel.thumbnail} alt="Thumbnail" className="w-12 h-12 rounded-full flex-shrink-0" />}
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center gap-2">
+                        <p className="font-medium text-gray-900 truncate">{channel.title}</p>
+                        {channel.is_default && (
+                          <span className="text-[10px] bg-blue-600 text-white px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">Default</span>
+                        )}
+                      </div>
+                      <p className="text-sm text-gray-600 truncate">ID: {channel.id}</p>
                     </div>
                   </div>
-                  <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded font-medium">Linked</span>
+                  
+                  <div className="flex items-center gap-2 w-full sm:w-auto justify-end">
+                    <span className="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded font-medium">Linked</span>
+                    {!channel.is_default && (
+                      <button 
+                        onClick={async () => {
+                          try {
+                            await youtubeApi.post('/youtube/channels/set-default/', { channel_id: channel.id });
+                            fetchChannels();
+                            // Also update localStorage so it takes effect immediately
+                            localStorage.setItem('selectedChannelId', channel.id);
+                          } catch (err) {
+                            console.error("Failed to set default channel:", err);
+                            alert("Failed to set default channel.");
+                          }
+                        }}
+                        className="text-xs bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 hover:text-blue-600 px-3 py-1 rounded font-medium transition-colors"
+                      >
+                        Set as Default
+                      </button>
+                    )}
+                  </div>
                 </div>
               ))
             )}

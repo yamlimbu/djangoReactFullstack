@@ -99,15 +99,27 @@ class Command(BaseCommand):
             
             # Get videos
             self.stdout.write('\nFetching videos...')
-            videos_response = youtube.search().list(
-                part='id',
-                channelId=channel_id,
-                maxResults=50,
-                type='video'
-            ).execute()
+            video_ids = []
+            next_page_token = None
             
-            video_ids = [item['id']['videoId'] for item in videos_response.get('items', [])]
-            self.stdout.write(f'Found {len(video_ids)} videos')
+            # Fetch all videos (up to 500 to protect API quota)
+            while True:
+                videos_response = youtube.search().list(
+                    part='id',
+                    channelId=channel_id,
+                    maxResults=50,
+                    type='video',
+                    pageToken=next_page_token
+                ).execute()
+                
+                new_ids = [item['id']['videoId'] for item in videos_response.get('items', [])]
+                video_ids.extend(new_ids)
+                
+                next_page_token = videos_response.get('nextPageToken')
+                if not next_page_token or len(video_ids) >= 500:
+                    break
+            
+            self.stdout.write(f'Found {len(video_ids)} videos to sync')
             
             if not video_ids:
                 self.stdout.write(self.style.WARNING('No videos found for this channel'))
@@ -155,11 +167,8 @@ class Command(BaseCommand):
             
             self.stdout.write(self.style.SUCCESS(f'\n✅ Sync completed! Processed {videos_processed} videos'))
             
-            # Update channel video count if it doesn't match
-            if channel.video_count != videos_processed:
-                channel.video_count = videos_processed
-                channel.save()
-                self.stdout.write(f'Updated channel video count to {videos_processed}')
+            # We explicitly do NOT overwrite channel.video_count here, 
+            # as it was correctly pulled from YouTube's total channel statistics earlier.
             
         except Exception as e:
             self.stdout.write(self.style.ERROR(f'Error: {str(e)}'))
