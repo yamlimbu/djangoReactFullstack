@@ -48,7 +48,9 @@ function Trends() {
     fetchTrendsData();
   };
 
-  const totalViews = trendsData.dashboard?.statistics?.total_views || 0;
+  const totalViews = timeRange === "all_time" 
+    ? (trendsData.dashboard?.statistics?.total_views || 0)
+    : (trendsData.dashboard?.period_statistics?.period_views || 0);
   const totalSubscribers = trendsData.dashboard?.statistics?.subscribers || 0;
   const estimatedRevenue = trendsData.dashboard?.quick_metrics?.estimated_revenue || 0;
 

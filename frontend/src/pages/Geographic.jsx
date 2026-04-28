@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Globe, Download, RefreshCw, AlertCircle } from "lucide-react";
 import { youtubeApi } from "../api.js";
+import { 
+  PieChart, Pie, Cell, Tooltip as RechartsTooltip, ResponsiveContainer, Legend,
+  BarChart, Bar, XAxis, YAxis, CartesianGrid
+} from 'recharts';
 
 function Geographic() {
   const [timeRange, setTimeRange] = useState("last30days");
@@ -45,7 +49,9 @@ function Geographic() {
     fetchGeoData();
   };
 
-  const totalViews = geoData?.statistics?.total_views || 0;
+  const totalViews = timeRange === "all_time" 
+    ? (geoData?.statistics?.total_views || 0)
+    : (geoData?.period_statistics?.period_views || 0);
 
   // Derive mock proportions based on real total views
   const countries = [
@@ -65,6 +71,8 @@ function Geographic() {
     if (num >= 1000) return (num / 1000).toFixed(1) + 'K';
     return num.toLocaleString();
   };
+
+  const COLORS = ['#3b82f6', '#10b981', '#8b5cf6', '#f59e0b', '#ec4899', '#14b8a6', '#f43f5e', '#64748b'];
 
   return (
     <div className="p-6">
@@ -113,6 +121,58 @@ function Geographic() {
             {period === "all_time" ? "Lifetime" : period.replace("last", "").replace("days", "d")}
           </button>
         ))}
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+        {/* Pie Chart */}
+        <div className="bg-white rounded-lg shadow-lg p-6">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">🌍 Regional Distribution</h2>
+          <div className="h-72 w-full">
+            <ResponsiveContainer width="100%" height="100%">
+              <PieChart>
+                <Pie
+                  data={countries}
+                  cx="50%"
+                  cy="50%"
+                  labelLine={false}
+                  outerRadius={100}
+                  fill="#8884d8"
+                  dataKey="views"
+                  nameKey="name"
+                  label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+                >
+                  {countries.map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                  ))}
+                </Pie>
+                <RechartsTooltip formatter={(value) => new Intl.NumberFormat().format(value)} />
+              </PieChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+
+        {/* Bar Chart */}
+        <div className="bg-white rounded-lg shadow-lg p-6">
+          <h2 className="text-xl font-bold text-gray-900 mb-4">📊 Estimated Views by Country</h2>
+          <div className="h-72 w-full">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={countries} margin={{ top: 5, right: 20, bottom: 25, left: 0 }} layout="vertical">
+                <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" horizontal={false} />
+                <XAxis type="number" tickFormatter={(val) => formatNumber(val)} tick={{fontSize: 12}} />
+                <YAxis dataKey="name" type="category" tick={{fontSize: 12}} width={100} />
+                <RechartsTooltip 
+                  formatter={(value) => new Intl.NumberFormat().format(value)}
+                  labelStyle={{ color: '#374151', fontWeight: 'bold' }}
+                />
+                <Bar dataKey="views" fill="#10b981" name="Views" radius={[0, 4, 4, 0]}>
+                  {countries.map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                  ))}
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
       </div>
 
       <div className="bg-white rounded-lg shadow-lg p-6">

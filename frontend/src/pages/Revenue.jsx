@@ -47,7 +47,9 @@ function Revenue() {
 
   // Derive revenue from backend or default to 0
   const totalRev = revenueData?.quick_metrics?.estimated_revenue || 0;
-  const totalViews = revenueData?.statistics?.total_views || 0;
+  const totalViews = timeRange === "all_time" 
+    ? (revenueData?.statistics?.total_views || 0)
+    : (revenueData?.period_statistics?.period_views || 0);
   // Calculate RPM correctly (Revenue per Mille)
   const rpm = totalViews > 0 ? (totalRev / (totalViews / 1000)) : 0;
   const cpm = rpm * 1.4; // Rough estimate for CPM based on RPM
