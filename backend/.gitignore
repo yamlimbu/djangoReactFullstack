@@ -1,2 +1,12 @@
 .env
+*.env
 db.sqlite3
+__pycache__/
+*.pyc
+local_settings.py
+staticfiles/
+media/
+*.log
+.vscode/
+secrets.json
+credentials.json

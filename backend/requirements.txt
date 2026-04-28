@@ -1,10 +1,62 @@
-asgiref
-Django
-django-cors-headers
-djangorestframework
-djangorestframework-simplejwt
-PyJWT
-pytz
-sqlparse
-psycopg2-binary
-python-dotenv
+# Django & DRF
+Django==4.2.0
+djangorestframework==3.14.0
+django-cors-headers==4.0.0
+django-filter==23.1
+django-extensions==3.2.3
+
+# Database
+psycopg2-binary==2.9.6
+dj-database-url==1.3.0
+
+# Authentication & Security
+djangorestframework-simplejwt==5.2.2
+PyJWT==2.6.0
+cryptography==40.0.2
+bcrypt==4.0.1
+
+# YouTube API
+google-auth-oauthlib==1.0.0
+google-auth-httplib2==0.1.0
+google-api-python-client==2.86.0
+
+# Data Processing & ML
+pandas==2.0.1
+numpy==1.24.2
+scikit-learn==1.2.2
+scipy==1.10.1
+dask==2023.3.2
+
+# NLP & Sentiment Analysis
+textblob==0.17.1
+nltk==3.8.1
+transformers==4.28.1
+
+# Caching & Task Queue
+redis==4.5.4
+celery==5.2.7
+
+# API Documentation
+drf-spectacular==0.26.1
+drf-yasg==1.21.5
+
+# Utilities
+python-dotenv==1.0.0
+requests==2.31.0
+Pillow==9.5.0
+python-dateutil==2.8.2
+
+# Logging & Monitoring
+sentry-sdk==1.25.0
+
+# Development
+black==23.3.0
+flake8==6.0.0
+isort==5.12.0
+pytest==7.3.1
+pytest-django==4.5.2
+pytest-cov==4.0.1
+
+# Production
+gunicorn==20.1.0
+whitenoise==6.4.0
