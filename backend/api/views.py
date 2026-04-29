@@ -18,7 +18,7 @@ from django.conf import settings
 import googleapiclient.discovery
 from googleapiclient.errors import HttpError
 
-from .serializers import UserSerializer, NoteSerializer
+from .serializers import UserSerializer, UserRegistrationSerializer, NoteSerializer
 from .models import Note, Channel, Video
 from django.core.management import call_command
 from .youtube_service import YouTubeService
@@ -30,7 +30,7 @@ from .youtube_service import YouTubeService
 
 class CreateUserView(generics.CreateAPIView):
     queryset = User.objects.all()
-    serializer_class = UserSerializer
+    serializer_class = UserRegistrationSerializer
     permission_classes = [AllowAny]
 
 

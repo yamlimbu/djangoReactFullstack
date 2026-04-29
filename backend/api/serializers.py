@@ -40,7 +40,7 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 class UserRegistrationSerializer(serializers.ModelSerializer):
-    password = serializers.CharField(write_only=True, min_length=8)
+    password = serializers.CharField(write_only=True, min_length=8, error_messages={'min_length': 'Password must be at least 8 characters long.'})
     password_confirm = serializers.CharField(write_only=True, min_length=8)
 
     class Meta:
@@ -55,7 +55,9 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         validated_data.pop('password_confirm')
         user = User.objects.create_user(**validated_data)
-        UserProfile.objects.create(user=user)
+        user.is_active = True  # Ensure new users can login
+        user.save()
+        UserProfile.objects.get_or_create(user=user)  # Use get_or_create to avoid duplication
         return user
 
 

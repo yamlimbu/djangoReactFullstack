@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Landing from "./pages/Landing";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
@@ -34,6 +35,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Public Landing */}
+        <Route path="/" element={<Landing />} />
+        
         {/* Protected Area */}
         <Route
           element={
@@ -42,7 +46,7 @@ function App() {
             </ProtectedRoute>
           }
         >
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard />} /> 
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/audience" element={<Audience />} />

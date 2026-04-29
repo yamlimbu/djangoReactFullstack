@@ -1,7 +1,15 @@
 import Form from "../components/Form";
 
-function Login() {
-    return <Form route="/api/token/" method="login" />;
-}
+import { useNavigate } from 'react-router-dom';
 
-export default Login;
+function Login() {
+    const navigate = useNavigate();
+  
+    const handleSuccess = () => {
+      navigate('/dashboard');
+    };
+  
+    return <Form route="/api/token/" method="login" onSuccess={handleSuccess} />;
+  }
+
+  export default Login;

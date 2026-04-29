@@ -3,7 +3,7 @@ import api from "../api";
 import { useNavigate } from "react-router-dom";
 import { ACCESS_TOKEN, REFRESH_TOKEN } from "../constants";
 
-function Form({ route, method }) {
+function Form({ route, method, onSuccess }) {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [loading, setLoading] = useState(false);
@@ -17,7 +17,8 @@ function Form({ route, method }) {
         e.preventDefault();
 
         try {
-            const res = await api.post(route, { username, password });
+            const payload = method === "register" ? { username, password, password_confirm: password } : { username, password };
+            const res = await api.post(route, payload);
             if (method === "login") {
                 localStorage.setItem(ACCESS_TOKEN, res.data.access);
                 localStorage.setItem(REFRESH_TOKEN, res.data.refresh);
@@ -27,12 +28,21 @@ function Form({ route, method }) {
                     localStorage.setItem("rememberedUser", username);
                 }
                 
-                navigate("/");
+                if (onSuccess) {
+                    onSuccess();
+                  } else {
+                    navigate("/dashboard");
+                  }
             } else {
-                navigate("/login");
+                if (onSuccess) {
+                    onSuccess();
+                } else {
+                    navigate("/login");
+                }
             }
         } catch (error) {
-            alert(error.response?.data?.detail || "An error occurred");
+                            const errorMsg = error.response?.data?.detail || error.response?.data?.non_field_errors?.[0] || error.response?.data?.password?.[0] || "An error occurred";
+                            alert(errorMsg);
         } finally {
             setLoading(false);
         }
