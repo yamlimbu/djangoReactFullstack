@@ -3,7 +3,7 @@ import api from "../api";
 import { useNavigate } from "react-router-dom";
 import { ACCESS_TOKEN, REFRESH_TOKEN } from "../constants";
 
-function Form({ route, method }) {
+function Form({ route, method, onSuccess }) {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [loading, setLoading] = useState(false);
@@ -27,9 +27,17 @@ function Form({ route, method }) {
                     localStorage.setItem("rememberedUser", username);
                 }
                 
-                navigate("/");
+                if (onSuccess) {
+                    onSuccess();
+                  } else {
+                    navigate("/dashboard");
+                  }
             } else {
-                navigate("/login");
+                if (onSuccess) {
+                    onSuccess();
+                } else {
+                    navigate("/login");
+                }
             }
         } catch (error) {
             alert(error.response?.data?.detail || "An error occurred");

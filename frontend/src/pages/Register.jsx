@@ -1,7 +1,14 @@
-import Form from "../components/Form"
+import { useNavigate } from 'react-router-dom';
+import Form from "../components/Form";
 
 function Register() {
-    return <Form route="/api/user/register/" method="register" />
+    const navigate = useNavigate();
+  
+    const handleSuccess = () => {
+      navigate('/login');
+    };
+  
+    return <Form route="/api/user/register/" method="register" onSuccess={handleSuccess} />;
 }
 
-export default Register
+export default Register;
