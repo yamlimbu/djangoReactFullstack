@@ -52,13 +52,12 @@ python-dateutil==2.8.2
 # Logging & Monitoring
 sentry-sdk==1.25.0
 
-# Development
-black==23.3.0
-flake8==6.0.0
-isort==5.12.0
-pytest==7.3.1
-pytest-django==4.5.2
-pytest-cov==4.0.1
+# Development (optional for prod, loose versions)
+black
+isort
+pytest
+pytest-django
+pytest-cov
 
 # Production
 gunicorn==20.1.0
