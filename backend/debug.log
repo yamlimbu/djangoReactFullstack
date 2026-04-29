@@ -11140,3 +11140,164 @@ INFO 2026-04-29 14:27:16,821 basehttp 24632 8076 "GET /api/youtube/channels/ HTT
 INFO 2026-04-29 14:27:16,855 basehttp 24632 23988 "GET /api/youtube/channels/ HTTP/1.1" 200 582
 INFO 2026-04-29 14:27:16,889 basehttp 24632 8076 "GET /api/youtube/channels/ HTTP/1.1" 200 582
 INFO 2026-04-29 14:27:16,933 basehttp 24632 23988 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 14:40:07,526 basehttp 24632 27872 "OPTIONS /api/token/ HTTP/1.1" 200 0
+WARNING 2026-04-29 14:40:08,204 log 24632 27872 Unauthorized: /api/token/
+WARNING 2026-04-29 14:40:08,204 basehttp 24632 27872 "POST /api/token/ HTTP/1.1" 401 63
+WARNING 2026-04-29 14:40:24,724 log 24632 27872 Unauthorized: /api/token/
+WARNING 2026-04-29 14:40:24,738 basehttp 24632 27872 "POST /api/token/ HTTP/1.1" 401 63
+INFO 2026-04-29 15:02:19,956 basehttp 24632 25100 "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO 2026-04-29 15:02:19,965 basehttp 24632 25100 "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO 2026-04-29 15:02:20,024 basehttp 24632 25100 "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2026-04-29 15:02:20,127 basehttp 24632 23064 "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2026-04-29 15:02:20,539 basehttp 24632 944 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 15:02:20,584 basehttp 24632 944 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 15:02:20,626 basehttp 24632 944 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 15:02:20,666 basehttp 24632 944 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 15:02:20,721 basehttp 24632 944 "GET /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=last30days HTTP/1.1" 200 2057
+INFO 2026-04-29 15:02:20,772 basehttp 24632 944 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 15:02:20,816 basehttp 24632 16520 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+WARNING 2026-04-29 15:11:30,870 log 24632 8176 Unauthorized: /api/token/
+WARNING 2026-04-29 15:11:30,870 basehttp 24632 8176 "POST /api/token/ HTTP/1.1" 401 63
+WARNING 2026-04-29 15:11:53,143 log 24632 25952 Method Not Allowed: /api/user/register/
+WARNING 2026-04-29 15:11:53,143 basehttp 24632 25952 "GET /api/user/register/ HTTP/1.1" 405 8237
+INFO 2026-04-29 15:35:41,920 autoreload 24632 4844 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-04-29 15:35:42,799 autoreload 10884 3668 Watching for file changes with StatReloader
+INFO 2026-04-29 15:36:44,006 autoreload 10884 3668 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-04-29 15:36:44,656 autoreload 13948 25676 Watching for file changes with StatReloader
+INFO 2026-04-29 15:37:24,872 autoreload 13948 25676 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-04-29 15:37:25,460 autoreload 15744 14684 Watching for file changes with StatReloader
+INFO 2026-04-29 15:38:21,005 autoreload 15744 14684 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-04-29 15:38:21,658 autoreload 10428 28816 Watching for file changes with StatReloader
+INFO 2026-04-29 15:38:25,004 autoreload 10428 28816 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-04-29 15:38:25,596 autoreload 12760 27348 Watching for file changes with StatReloader
+INFO 2026-04-29 15:39:11,245 autoreload 12760 27348 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-04-29 15:39:11,911 autoreload 26612 26352 Watching for file changes with StatReloader
+INFO 2026-04-29 15:41:28,174 autoreload 26612 26352 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-04-29 15:41:28,952 autoreload 5180 31276 Watching for file changes with StatReloader
+INFO 2026-04-29 15:44:17,804 autoreload 5180 31276 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-04-29 15:44:18,479 autoreload 2852 8148 Watching for file changes with StatReloader
+WARNING 2026-04-29 15:44:28,321 log 2852 28044 Method Not Allowed: /api/user/register/
+WARNING 2026-04-29 15:44:28,321 basehttp 2852 28044 "GET /api/user/register/ HTTP/1.1" 405 8237
+INFO 2026-04-29 15:44:31,799 basehttp 2852 30196 "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2026-04-29 15:44:31,905 basehttp 2852 15644 "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2026-04-29 15:44:32,256 basehttp 2852 9884 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-29 15:44:32,256 basehttp 2852 28736 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-29 15:44:32,256 basehttp 2852 31016 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-29 15:44:32,256 basehttp 2852 4496 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-29 15:44:32,256 basehttp 2852 27572 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-29 15:44:32,256 basehttp 2852 21108 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-29 15:44:32,303 basehttp 2852 21108 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 15:44:32,362 basehttp 2852 27572 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 15:44:32,409 basehttp 2852 21108 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 15:44:32,451 basehttp 2852 27572 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 15:44:32,454 basehttp 2852 27572 "OPTIONS /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=last30days HTTP/1.1" 200 0
+INFO 2026-04-29 15:44:32,503 basehttp 2852 21108 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 15:44:32,521 basehttp 2852 27572 "GET /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=last30days HTTP/1.1" 200 2057
+INFO 2026-04-29 15:44:32,551 basehttp 2852 4496 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 17:32:59,300 basehttp 2852 14096 "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO 2026-04-29 17:32:59,362 basehttp 2852 7568 "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2026-04-29 17:32:59,362 basehttp 2852 14096 "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2026-04-29 17:32:59,996 basehttp 2852 26432 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 17:33:00,049 basehttp 2852 26432 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 17:33:00,100 basehttp 2852 26432 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 17:33:00,135 basehttp 2852 26432 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 17:33:00,197 basehttp 2852 26432 "GET /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=last30days HTTP/1.1" 200 2057
+INFO 2026-04-29 17:33:00,239 basehttp 2852 26432 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 17:33:00,269 basehttp 2852 32276 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 17:37:20,245 basehttp 2852 32868 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 17:37:20,295 basehttp 2852 32868 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 17:37:20,345 basehttp 2852 32868 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 17:37:20,412 basehttp 2852 32868 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 17:37:20,489 basehttp 2852 32868 "GET /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=last30days HTTP/1.1" 200 2057
+INFO 2026-04-29 17:37:20,514 basehttp 2852 31188 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 17:37:20,565 basehttp 2852 32868 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 20:51:04,428 autoreload 31776 28676 Watching for file changes with StatReloader
+INFO 2026-04-29 20:51:13,775 basehttp 31776 32096 "OPTIONS /api/token/ HTTP/1.1" 200 0
+INFO 2026-04-29 20:51:16,050 basehttp 31776 32096 "POST /api/token/ HTTP/1.1" 200 483
+INFO 2026-04-29 20:51:16,483 basehttp 31776 9716 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-29 20:51:16,493 basehttp 31776 9716 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-29 20:51:16,493 basehttp 31776 29948 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-29 20:51:16,501 basehttp 31776 9716 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-29 20:51:16,501 basehttp 31776 2728 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-29 20:51:16,513 basehttp 31776 25940 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-29 20:51:16,659 basehttp 31776 18124 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 20:51:16,841 basehttp 31776 25940 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 20:51:17,013 basehttp 31776 18124 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 20:51:17,034 basehttp 31776 18124 "OPTIONS /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=last30days HTTP/1.1" 200 0
+INFO 2026-04-29 20:51:17,166 basehttp 31776 25940 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 20:51:17,245 basehttp 31776 18124 "GET /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=last30days HTTP/1.1" 200 2057
+INFO 2026-04-29 20:51:17,322 basehttp 31776 2728 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 20:51:17,504 basehttp 31776 18124 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 20:51:35,992 basehttp 31776 18124 "OPTIONS /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A HTTP/1.1" 200 0
+INFO 2026-04-29 20:51:35,998 basehttp 31776 2728 "OPTIONS /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A HTTP/1.1" 200 0
+INFO 2026-04-29 20:51:36,253 basehttp 31776 2728 "GET /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A HTTP/1.1" 200 2057
+INFO 2026-04-29 20:51:36,405 basehttp 31776 18124 "GET /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A HTTP/1.1" 200 2057
+INFO 2026-04-29 20:51:37,621 basehttp 31776 2728 "OPTIONS /api/youtube/videos/?channel_id=UCKS34cSMNaXaySe2xgXH-3A HTTP/1.1" 200 0
+INFO 2026-04-29 20:51:37,621 basehttp 31776 25940 "OPTIONS /api/youtube/videos/?channel_id=UCKS34cSMNaXaySe2xgXH-3A HTTP/1.1" 200 0
+INFO 2026-04-29 20:51:37,839 basehttp 31776 25940 "GET /api/youtube/videos/?channel_id=UCKS34cSMNaXaySe2xgXH-3A HTTP/1.1" 200 794
+INFO 2026-04-29 20:51:37,858 basehttp 31776 18124 "GET /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=last30days HTTP/1.1" 200 2057
+INFO 2026-04-29 20:51:38,086 basehttp 31776 2728 "GET /api/youtube/videos/?channel_id=UCKS34cSMNaXaySe2xgXH-3A HTTP/1.1" 200 794
+INFO 2026-04-29 20:51:38,125 basehttp 31776 25940 "GET /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=last30days HTTP/1.1" 200 2057
+INFO 2026-04-29 20:51:42,788 basehttp 31776 25940 "OPTIONS /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=all_time HTTP/1.1" 200 0
+INFO 2026-04-29 20:51:42,983 basehttp 31776 2728 "GET /api/youtube/videos/?channel_id=UCKS34cSMNaXaySe2xgXH-3A HTTP/1.1" 200 794
+INFO 2026-04-29 20:51:42,993 basehttp 31776 25940 "GET /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=all_time HTTP/1.1" 200 2076
+INFO 2026-04-29 20:51:44,778 basehttp 31776 25940 "OPTIONS /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=last7days HTTP/1.1" 200 0
+INFO 2026-04-29 20:51:44,916 basehttp 31776 2728 "GET /api/youtube/videos/?channel_id=UCKS34cSMNaXaySe2xgXH-3A HTTP/1.1" 200 794
+INFO 2026-04-29 20:51:44,936 basehttp 31776 25940 "GET /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=last7days HTTP/1.1" 200 2056
+INFO 2026-04-29 20:51:46,613 basehttp 31776 2728 "GET /api/youtube/videos/?channel_id=UCKS34cSMNaXaySe2xgXH-3A HTTP/1.1" 200 794
+INFO 2026-04-29 20:51:46,616 basehttp 31776 25940 "GET /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=last30days HTTP/1.1" 200 2057
+INFO 2026-04-29 20:51:48,485 basehttp 31776 25940 "OPTIONS /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=last90days HTTP/1.1" 200 0
+INFO 2026-04-29 20:51:48,627 basehttp 31776 2728 "GET /api/youtube/videos/?channel_id=UCKS34cSMNaXaySe2xgXH-3A HTTP/1.1" 200 794
+INFO 2026-04-29 20:51:48,650 basehttp 31776 25940 "GET /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=last90days HTTP/1.1" 200 2057
+INFO 2026-04-29 20:51:52,562 basehttp 31776 25940 "GET /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=last30days HTTP/1.1" 200 2057
+INFO 2026-04-29 20:51:52,747 basehttp 31776 2728 "GET /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=last30days HTTP/1.1" 200 2057
+INFO 2026-04-29 20:52:19,480 basehttp 31776 32096 "OPTIONS /api/user/profile/ HTTP/1.1" 200 0
+INFO 2026-04-29 20:52:19,527 basehttp 31776 18120 "OPTIONS /api/user/profile/ HTTP/1.1" 200 0
+INFO 2026-04-29 20:52:19,688 basehttp 31776 2728 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 20:52:19,700 basehttp 31776 32096 "GET /api/user/profile/ HTTP/1.1" 200 77
+INFO 2026-04-29 20:52:19,848 basehttp 31776 18120 "GET /api/user/profile/ HTTP/1.1" 200 77
+INFO 2026-04-29 20:52:19,853 basehttp 31776 25940 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 20:52:43,043 basehttp 31776 18120 "POST /api/token/ HTTP/1.1" 200 486
+INFO 2026-04-29 20:52:43,354 basehttp 31776 25940 "GET /api/youtube/channels/ HTTP/1.1" 200 292
+INFO 2026-04-29 20:52:43,503 basehttp 31776 2728 "GET /api/youtube/channels/ HTTP/1.1" 200 292
+INFO 2026-04-29 20:52:43,649 basehttp 31776 25940 "GET /api/youtube/channels/ HTTP/1.1" 200 292
+INFO 2026-04-29 20:52:43,762 basehttp 31776 25940 "OPTIONS /api/youtube/dashboard/?channel_id=UCkkY9KSZOE1ZACTS371NbsA&period=last30days HTTP/1.1" 200 0
+INFO 2026-04-29 20:52:43,823 basehttp 31776 2728 "GET /api/youtube/channels/ HTTP/1.1" 200 292
+INFO 2026-04-29 20:52:43,935 basehttp 31776 25940 "GET /api/youtube/dashboard/?channel_id=UCkkY9KSZOE1ZACTS371NbsA&period=last30days HTTP/1.1" 200 1003
+INFO 2026-04-29 20:52:43,968 basehttp 31776 18124 "GET /api/youtube/channels/ HTTP/1.1" 200 292
+INFO 2026-04-29 20:52:44,109 basehttp 31776 25940 "GET /api/youtube/channels/ HTTP/1.1" 200 292
+INFO 2026-04-29 20:52:44,250 basehttp 31776 18124 "GET /api/youtube/channels/ HTTP/1.1" 200 292
+INFO 2026-04-29 20:52:44,365 basehttp 31776 25940 "GET /api/youtube/channels/ HTTP/1.1" 200 292
+INFO 2026-04-29 20:52:44,507 basehttp 31776 18124 "GET /api/youtube/channels/ HTTP/1.1" 200 292
+INFO 2026-04-29 20:52:44,653 basehttp 31776 25940 "GET /api/youtube/channels/ HTTP/1.1" 200 292
+INFO 2026-04-29 20:52:44,755 basehttp 31776 18124 "GET /api/youtube/channels/ HTTP/1.1" 200 292
+INFO 2026-04-29 20:52:44,868 basehttp 31776 25940 "GET /api/youtube/channels/ HTTP/1.1" 200 292
+INFO 2026-04-29 20:52:44,999 basehttp 31776 18124 "GET /api/youtube/channels/ HTTP/1.1" 200 292
+INFO 2026-04-29 20:52:45,130 basehttp 31776 25940 "GET /api/youtube/channels/ HTTP/1.1" 200 292
+INFO 2026-04-29 20:52:45,248 basehttp 31776 18124 "GET /api/youtube/channels/ HTTP/1.1" 200 292
+INFO 2026-04-29 20:52:45,366 basehttp 31776 25940 "GET /api/youtube/channels/ HTTP/1.1" 200 292
+INFO 2026-04-29 20:52:45,486 basehttp 31776 18124 "GET /api/youtube/channels/ HTTP/1.1" 200 292
+INFO 2026-04-29 20:52:45,620 basehttp 31776 25940 "GET /api/youtube/channels/ HTTP/1.1" 200 292
+INFO 2026-04-29 20:52:59,552 basehttp 31776 25940 "OPTIONS /api/youtube/dashboard/?channel_id=UCkkY9KSZOE1ZACTS371NbsA&period=all_time HTTP/1.1" 200 0
+INFO 2026-04-29 20:52:59,750 basehttp 31776 25940 "GET /api/youtube/dashboard/?channel_id=UCkkY9KSZOE1ZACTS371NbsA&period=all_time HTTP/1.1" 200 2078
+INFO 2026-04-29 20:53:11,215 basehttp 31776 25940 "OPTIONS /api/youtube/dashboard/?channel_id=UCkkY9KSZOE1ZACTS371NbsA&period=last90days HTTP/1.1" 200 0
+INFO 2026-04-29 20:53:11,376 basehttp 31776 25940 "GET /api/youtube/dashboard/?channel_id=UCkkY9KSZOE1ZACTS371NbsA&period=last90days HTTP/1.1" 200 2078
+INFO 2026-04-29 20:53:13,549 basehttp 31776 25940 "GET /api/youtube/dashboard/?channel_id=UCkkY9KSZOE1ZACTS371NbsA&period=last30days HTTP/1.1" 200 1003
+INFO 2026-04-29 20:53:14,726 basehttp 31776 25940 "OPTIONS /api/youtube/dashboard/?channel_id=UCkkY9KSZOE1ZACTS371NbsA&period=last7days HTTP/1.1" 200 0
+INFO 2026-04-29 20:53:14,877 basehttp 31776 25940 "GET /api/youtube/dashboard/?channel_id=UCkkY9KSZOE1ZACTS371NbsA&period=last7days HTTP/1.1" 200 728
+INFO 2026-04-29 20:53:18,048 basehttp 31776 18124 "OPTIONS /api/youtube/videos/?channel_id=UCkkY9KSZOE1ZACTS371NbsA HTTP/1.1" 200 0
+INFO 2026-04-29 20:53:18,051 basehttp 31776 2728 "OPTIONS /api/youtube/videos/?channel_id=UCkkY9KSZOE1ZACTS371NbsA HTTP/1.1" 200 0
+INFO 2026-04-29 20:53:18,235 basehttp 31776 25940 "GET /api/youtube/dashboard/?channel_id=UCkkY9KSZOE1ZACTS371NbsA&period=last30days HTTP/1.1" 200 1003
+INFO 2026-04-29 20:53:18,275 basehttp 31776 2728 "GET /api/youtube/videos/?channel_id=UCkkY9KSZOE1ZACTS371NbsA HTTP/1.1" 200 2497
+INFO 2026-04-29 20:53:18,431 basehttp 31776 18124 "GET /api/youtube/dashboard/?channel_id=UCkkY9KSZOE1ZACTS371NbsA&period=last30days HTTP/1.1" 200 1003
+INFO 2026-04-29 20:53:18,475 basehttp 31776 25940 "GET /api/youtube/videos/?channel_id=UCkkY9KSZOE1ZACTS371NbsA HTTP/1.1" 200 2497
+INFO 2026-04-29 20:53:33,437 basehttp 31776 25940 "GET /api/youtube/channels/ HTTP/1.1" 200 292
+INFO 2026-04-29 20:53:33,632 basehttp 31776 25940 "GET /api/youtube/dashboard/?channel_id=UCkkY9KSZOE1ZACTS371NbsA&period=last30days HTTP/1.1" 200 1003
+INFO 2026-04-29 20:53:33,728 basehttp 31776 18124 "GET /api/youtube/channels/ HTTP/1.1" 200 292
+INFO 2026-04-29 20:56:56,250 basehttp 31776 32532 "OPTIONS /api/token/ HTTP/1.1" 200 0
+WARNING 2026-04-29 20:56:57,801 log 31776 32532 Unauthorized: /api/token/
+WARNING 2026-04-29 20:56:57,806 basehttp 31776 32532 "POST /api/token/ HTTP/1.1" 401 63
+INFO 2026-04-29 21:21:01,239 autoreload 31776 28676 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-04-29 21:21:08,037 autoreload 33564 10364 Watching for file changes with StatReloader
+INFO 2026-04-29 21:43:52,447 autoreload 33564 10364 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-04-29 21:43:53,972 autoreload 19004 14740 Watching for file changes with StatReloader
