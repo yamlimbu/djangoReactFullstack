@@ -11140,3 +11140,39 @@ INFO 2026-04-29 14:27:16,821 basehttp 24632 8076 "GET /api/youtube/channels/ HTT
 INFO 2026-04-29 14:27:16,855 basehttp 24632 23988 "GET /api/youtube/channels/ HTTP/1.1" 200 582
 INFO 2026-04-29 14:27:16,889 basehttp 24632 8076 "GET /api/youtube/channels/ HTTP/1.1" 200 582
 INFO 2026-04-29 14:27:16,933 basehttp 24632 23988 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 14:40:07,526 basehttp 24632 27872 "OPTIONS /api/token/ HTTP/1.1" 200 0
+WARNING 2026-04-29 14:40:08,204 log 24632 27872 Unauthorized: /api/token/
+WARNING 2026-04-29 14:40:08,204 basehttp 24632 27872 "POST /api/token/ HTTP/1.1" 401 63
+WARNING 2026-04-29 14:40:24,724 log 24632 27872 Unauthorized: /api/token/
+WARNING 2026-04-29 14:40:24,738 basehttp 24632 27872 "POST /api/token/ HTTP/1.1" 401 63
+INFO 2026-04-29 15:02:19,956 basehttp 24632 25100 "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO 2026-04-29 15:02:19,965 basehttp 24632 25100 "OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+INFO 2026-04-29 15:02:20,024 basehttp 24632 25100 "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2026-04-29 15:02:20,127 basehttp 24632 23064 "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2026-04-29 15:02:20,539 basehttp 24632 944 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 15:02:20,584 basehttp 24632 944 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 15:02:20,626 basehttp 24632 944 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 15:02:20,666 basehttp 24632 944 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 15:02:20,721 basehttp 24632 944 "GET /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=last30days HTTP/1.1" 200 2057
+INFO 2026-04-29 15:02:20,772 basehttp 24632 944 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 15:02:20,816 basehttp 24632 16520 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+WARNING 2026-04-29 15:11:30,870 log 24632 8176 Unauthorized: /api/token/
+WARNING 2026-04-29 15:11:30,870 basehttp 24632 8176 "POST /api/token/ HTTP/1.1" 401 63
+WARNING 2026-04-29 15:11:53,143 log 24632 25952 Method Not Allowed: /api/user/register/
+WARNING 2026-04-29 15:11:53,143 basehttp 24632 25952 "GET /api/user/register/ HTTP/1.1" 405 8237
+INFO 2026-04-29 15:35:41,920 autoreload 24632 4844 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-04-29 15:35:42,799 autoreload 10884 3668 Watching for file changes with StatReloader
+INFO 2026-04-29 15:36:44,006 autoreload 10884 3668 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-04-29 15:36:44,656 autoreload 13948 25676 Watching for file changes with StatReloader
+INFO 2026-04-29 15:37:24,872 autoreload 13948 25676 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-04-29 15:37:25,460 autoreload 15744 14684 Watching for file changes with StatReloader
+INFO 2026-04-29 15:38:21,005 autoreload 15744 14684 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-04-29 15:38:21,658 autoreload 10428 28816 Watching for file changes with StatReloader
+INFO 2026-04-29 15:38:25,004 autoreload 10428 28816 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-04-29 15:38:25,596 autoreload 12760 27348 Watching for file changes with StatReloader
+INFO 2026-04-29 15:39:11,245 autoreload 12760 27348 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-04-29 15:39:11,911 autoreload 26612 26352 Watching for file changes with StatReloader
+INFO 2026-04-29 15:41:28,174 autoreload 26612 26352 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-04-29 15:41:28,952 autoreload 5180 31276 Watching for file changes with StatReloader
+INFO 2026-04-29 15:44:17,804 autoreload 5180 31276 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
+INFO 2026-04-29 15:44:18,479 autoreload 2852 8148 Watching for file changes with StatReloader

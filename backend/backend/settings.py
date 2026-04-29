@@ -19,10 +19,10 @@ SECRET_KEY = os.getenv("SECRET_KEY", "django-insecure-nma=xi6x2p-crjg^ifqqkapyu1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", "True") == "True"
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "localhost,127.0.0.1").split(",")
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "localhost,127.0.0.1,utube-analytics-api.onrender.com").split(",")
 if not DEBUG:
     # Railway auto-assigns domain
-    ALLOWED_HOSTS += [".up.railway.app", ".railway.app"]
+    ALLOWED_HOSTS += ["utube-analytics.vercel.app", "utube-analytics-api.onrender.com"]
 
 # ==================== YOUTUBE API CONFIGURATION ====================
 YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY", "")
@@ -177,25 +177,65 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # CORS Configuration - IMPORTANT FOR FRONTEND CONNECTION
 CORS_ALLOW_CREDENTIALS = True
 
+# ==================== CORS CONFIGURATION ====================
+
+CORS_ALLOW_CREDENTIALS = True
+
 CORS_ALLOWED_ORIGINS = [
+    # Local development
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "http://localhost:5173",    # Vite default
+    "http://localhost:5173",
     "http://127.0.0.1:5173",
     "http://localhost:8080",
     "http://127.0.0.1:8080",
+
+    # Production frontend (Vercel)
+    "https://utube-analytics.vercel.app",
 ]
 
-# Production: Render + Vercel + local
+CORS_ALLOW_METHODS = [
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+]
+
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "accept-encoding",
+    "authorization",
+    "content-type",
+    "dnt",
+    "origin",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+]
+
+# ==================== ALLOWED HOSTS ====================
+
+ALLOWED_HOSTS = os.getenv(
+    "ALLOWED_HOSTS",
+    "localhost,127.0.0.1,utube-analytics-api.onrender.com"
+).split(",")
+
 if not DEBUG:
-    CORS_ALLOWED_ORIGINS += [
-        "https://*.vercel.app",
-        "https://*.onrender.com",
+    ALLOWED_HOSTS += [
+        "utube-analytics-api.onrender.com",
+        "utube-analytics.vercel.app",
     ]
-    ALLOWED_HOSTS += [".vercel.app", ".onrender.com", "your-app.onrender.com"]
-    CORS_ALLOW_ALL_ORIGINS = False
-else:
+
+# ==================== DEV VS PROD ====================
+
+if DEBUG:
     CORS_ALLOW_ALL_ORIGINS = True
+else:
+    CORS_ALLOW_ALL_ORIGINS = False
+
+    
 
 CORS_ALLOW_METHODS = [
     "DELETE",
