@@ -1,1 +1,9 @@
 python manage.py sync_youtube_data --channel-id UCkkY9KSZOE1ZACTS371NbsA --username yamlimbu
+NEON
+pgsql 'postgresql://neondb_owner:npg_6AUqOvVDSwN4@ep-withered-math-ao4ogan6.c-2.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require' < backup.sql
+
+Front
+https://utube-analytics.vercel.app/login
+
+Back
+https://utube-analytics-api.onrender.com/
