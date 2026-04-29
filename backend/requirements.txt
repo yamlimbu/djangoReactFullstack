@@ -20,17 +20,21 @@ google-auth-oauthlib==1.0.0
 google-auth-httplib2==0.1.0
 google-api-python-client==2.86.0
 
-# Data Processing & ML
-pandas==2.0.1
-numpy==1.24.2
-scikit-learn==1.2.2
-scipy==1.10.1
-dask==2023.3.2
+# Data Processing & ML - Render/Python3.12+ compatible wheels
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.1
+scipy==1.14.1
+dask==2024.5.0
 
 # NLP & Sentiment Analysis
-textblob==0.17.1
+textblob==0.18.0.post0
 nltk==3.8.1
-transformers==4.28.1
+transformers==4.44.2
+
+# Build deps
+setuptools
+wheel
 
 # Caching & Task Queue
 redis==4.5.4
