@@ -11176,3 +11176,21 @@ INFO 2026-04-29 15:41:28,174 autoreload 26612 26352 D:\laragon\www\python\Django
 INFO 2026-04-29 15:41:28,952 autoreload 5180 31276 Watching for file changes with StatReloader
 INFO 2026-04-29 15:44:17,804 autoreload 5180 31276 D:\laragon\www\python\Django-React-Full-Stack-App\backend\backend\settings.py changed, reloading.
 INFO 2026-04-29 15:44:18,479 autoreload 2852 8148 Watching for file changes with StatReloader
+WARNING 2026-04-29 15:44:28,321 log 2852 28044 Method Not Allowed: /api/user/register/
+WARNING 2026-04-29 15:44:28,321 basehttp 2852 28044 "GET /api/user/register/ HTTP/1.1" 405 8237
+INFO 2026-04-29 15:44:31,799 basehttp 2852 30196 "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2026-04-29 15:44:31,905 basehttp 2852 15644 "POST /api/token/refresh/ HTTP/1.1" 200 483
+INFO 2026-04-29 15:44:32,256 basehttp 2852 9884 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-29 15:44:32,256 basehttp 2852 28736 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-29 15:44:32,256 basehttp 2852 31016 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-29 15:44:32,256 basehttp 2852 4496 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-29 15:44:32,256 basehttp 2852 27572 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-29 15:44:32,256 basehttp 2852 21108 "OPTIONS /api/youtube/channels/ HTTP/1.1" 200 0
+INFO 2026-04-29 15:44:32,303 basehttp 2852 21108 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 15:44:32,362 basehttp 2852 27572 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 15:44:32,409 basehttp 2852 21108 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 15:44:32,451 basehttp 2852 27572 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 15:44:32,454 basehttp 2852 27572 "OPTIONS /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=last30days HTTP/1.1" 200 0
+INFO 2026-04-29 15:44:32,503 basehttp 2852 21108 "GET /api/youtube/channels/ HTTP/1.1" 200 582
+INFO 2026-04-29 15:44:32,521 basehttp 2852 27572 "GET /api/youtube/dashboard/?channel_id=UCKS34cSMNaXaySe2xgXH-3A&period=last30days HTTP/1.1" 200 2057
+INFO 2026-04-29 15:44:32,551 basehttp 2852 4496 "GET /api/youtube/channels/ HTTP/1.1" 200 582
