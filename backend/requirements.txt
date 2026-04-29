@@ -20,11 +20,11 @@ google-auth-oauthlib==1.0.0
 google-auth-httplib2==0.1.0
 google-api-python-client==2.115.0
 
-# Data Processing & ML - Render prebuilt wheels only (no scipy heavy C)
-pandas
-numpy
-scikit-learn
-dask[complete]
+# Data Processing & ML - DISABLED for Render free tier (OOM/memory limit)
+# pandas
+# numpy
+# scikit-learn
+# dask[complete]
 
 # NLP & Sentiment Analysis (disabled for Render build)
 # textblob==0.18.0.post0

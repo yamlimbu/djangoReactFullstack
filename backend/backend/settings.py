@@ -19,10 +19,10 @@ SECRET_KEY = os.getenv("SECRET_KEY", "django-insecure-nma=xi6x2p-crjg^ifqqkapyu1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", "True") == "True"
 
+# Single ALLOWED_HOSTS definition (removed duplicate)
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "localhost,127.0.0.1,utube-analytics-api.onrender.com").split(",")
 if not DEBUG:
-    # Railway auto-assigns domain
-    ALLOWED_HOSTS += ["utube-analytics.vercel.app", "utube-analytics-api.onrender.com"]
+    ALLOWED_HOSTS += ["utube-analytics.vercel.app", "utube-analytics-api.onrender.com", "*.onrender.com"]
 
 # ==================== YOUTUBE API CONFIGURATION ====================
 YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY", "")
