@@ -60,6 +60,6 @@ pytest-django
 pytest-cov
 
 # Production
-gunicorn==20.1.0
+# gunicorn==20.1.0  # Removed: incompatible with Python 3.14 on Render
 uvicorn[standard]==0.30.6
 whitenoise==6.4.0
