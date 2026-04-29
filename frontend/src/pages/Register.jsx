@@ -8,7 +8,7 @@ function Register() {
       navigate('/login');
     };
   
-    return <Form route="/api/user/register/" method="register" onSuccess={handleSuccess} />;
+    return <Form route="/api/register/" method="register" onSuccess={handleSuccess} />;
 }
 
 export default Register;

@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from django.http import HttpResponse
+from api.views import CreateUserView
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 def home(request):
@@ -18,4 +19,6 @@ urlpatterns = [
     # API routes
     path("api-auth/", include("rest_framework.urls")),
     path("api/", include("api.urls")),
+    # path("api/user/register/", CreateUserView.as_view(), name="register"),  # Duplicate - removed
+
 ]

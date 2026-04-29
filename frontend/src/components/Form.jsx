@@ -17,7 +17,8 @@ function Form({ route, method, onSuccess }) {
         e.preventDefault();
 
         try {
-            const res = await api.post(route, { username, password });
+            const payload = method === "register" ? { username, password, password_confirm: password } : { username, password };
+            const res = await api.post(route, payload);
             if (method === "login") {
                 localStorage.setItem(ACCESS_TOKEN, res.data.access);
                 localStorage.setItem(REFRESH_TOKEN, res.data.refresh);
@@ -40,7 +41,8 @@ function Form({ route, method, onSuccess }) {
                 }
             }
         } catch (error) {
-            alert(error.response?.data?.detail || "An error occurred");
+                            const errorMsg = error.response?.data?.detail || error.response?.data?.non_field_errors?.[0] || error.response?.data?.password?.[0] || "An error occurred";
+                            alert(errorMsg);
         } finally {
             setLoading(false);
         }
