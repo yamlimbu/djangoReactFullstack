@@ -32,7 +32,7 @@ dask[complete]
 # transformers==4.44.2
 
 # Build deps
-setuptools
+setuptools==65.5.1
 wheel
 
 # Caching & Task Queue
@@ -60,5 +60,6 @@ pytest-django
 pytest-cov
 
 # Production
-gunicorn==20.1.0
+# gunicorn==20.1.0
+uvicorn[standard]==0.30.6
 whitenoise==6.4.0
