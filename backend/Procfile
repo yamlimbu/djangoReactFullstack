@@ -1,2 +1,2 @@
-web: uvicorn backend.asgi:application --host 0.0.0.0 --port $PORT --workers 2
+web: gunicorn backend.wsgi:application --workers 1 --threads 4 --timeout 120 --preload
 release: python manage.py migrate

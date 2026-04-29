@@ -3,7 +3,7 @@ services:
     name: django-api
     env: python
     buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput
-    startCommand: uvicorn backend.asgi:application --host 0.0.0.0 --port $PORT --workers 2
+    startCommand: gunicorn backend.wsgi:application --workers 1 --threads 4 --timeout 120 --preload
     envVars:
       - key: PYTHON_VERSION
         value: 3.12.7
