@@ -1,12 +1,63 @@
-.env
-*.env
-db.sqlite3
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-local_settings.py
-staticfiles/
-media/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+coverage.xml
+*.cover
+*.hypothesis/
+.cache
+nosetests.xml
+coverage.xml
 *.log
+nosetests.xml
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# Virtualenv
+venv/
+env/
+ENV/
+
+# IDE
 .vscode/
-secrets.json
-credentials.json
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Runtime data
+pids
+run/
+logs/
+
+# Deployment
+.DS_Store?
+.DS_Store?
+
+# Debug
+debug.log

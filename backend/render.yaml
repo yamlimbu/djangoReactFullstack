@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: django-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn backend.wsgi:application --workers 2 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12
+      - key: DJANGO_SETTINGS_MODULE
+        value: backend.settings
+      - fromDatabase:
+          name: neondb
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: false
+      - key: ALLOWED_HOSTS
+        value: .onrender.com,localhost
+    healthCheckPath: /health/
+    autoDeploy: false

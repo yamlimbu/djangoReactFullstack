@@ -6,6 +6,7 @@ from pathlib import Path
 from datetime import timedelta
 from dotenv import load_dotenv
 import os
+import dj_database_url
 
 load_dotenv()
 
@@ -104,26 +105,40 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "backend.wsgi.application"
 
-# Database
-import dj_database_url
-
-# Railway provides DATABASE_URL automatically
+# Database - Local SQLite, Prod conditional dj_database_url
 DATABASE_URL = os.getenv("DATABASE_URL")
+
 if DATABASE_URL:
     DATABASES = {
-        "default": dj_database_url.config(conn_max_age=600, ssl_require=True)
+        "default": dj_database_url.parse(
+            DATABASE_URL,
+            conn_max_age=600,
+            ssl_require=True
+        )
     }
 else:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.postgresql",
-            "NAME": os.getenv("DB_NAME", "youtube_analytics"),
-            "USER": os.getenv("DB_USER", "postgres"),
-            "PASSWORD": os.getenv("DB_PWD", "postgres"),
-            "HOST": os.getenv("DB_HOST", "localhost"),
-            "PORT": os.getenv("DB_PORT", "5432"),
+            "NAME": os.getenv("DB_NAME"),
+            "USER": os.getenv("DB_USER"),
+            "PASSWORD": os.getenv("DB_PWD"),
+            "HOST": os.getenv("DB_HOST"),
+            "PORT": os.getenv("DB_PORT"),
         }
     }
+
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
+# if DATABASE_URL:
+#     import dj_database_url
+#     DATABASES["default"] = dj_database_url.config(
+#         conn_max_age=600, ssl_require=not DEBUG
+#     )
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
@@ -171,12 +186,13 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:8080",
 ]
 
-# In production, allow Railway domains
+# Production: Render + Vercel + local
 if not DEBUG:
     CORS_ALLOWED_ORIGINS += [
-        "https://*.up.railway.app",
-        "https://*.railway.app",
+        "https://*.vercel.app",
+        "https://*.onrender.com",
     ]
+    ALLOWED_HOSTS += [".vercel.app", ".onrender.com", "your-app.onrender.com"]
     CORS_ALLOW_ALL_ORIGINS = False
 else:
     CORS_ALLOW_ALL_ORIGINS = True
