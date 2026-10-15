@@ -235,15 +235,19 @@ CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = TIME_ZONE
 
 # Celery Beat Schedule Configuration
-from celery.schedules import crontab
+try:
+    from celery.schedules import crontab
+except ImportError:
+    crontab = None
+
 CELERY_BEAT_SCHEDULE = {
     'sync-all-channels-daily': {
         'task': 'api.tasks.sync_all_channels',
-        'schedule': crontab(hour=2, minute=0), # Run daily at 2:00 AM
+        'schedule': crontab(hour=2, minute=0) if crontab else 86400.0,  # Run daily at 2:00 AM or every 24h
     },
     'evaluate-system-alerts-hourly': {
         'task': 'api.tasks.evaluate_system_alerts',
-        'schedule': crontab(minute=0), # Run hourly
+        'schedule': crontab(minute=0) if crontab else 3600.0,  # Run hourly or every 1h
     },
 }
 # ======================================================================
