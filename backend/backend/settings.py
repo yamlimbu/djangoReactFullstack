@@ -13,7 +13,7 @@ load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-nma=xi6x2p-crjg^ifqqkapyu1qjd0l=+wn)-rijk_o%$!k3w_"
+SECRET_KEY = os.getenv("SECRET_KEY", "django-insecure-nma=xi6x2p-crjg^ifqqkapyu1qjd0l=+wn)-rijk_o%$!k3w_")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -21,14 +21,12 @@ DEBUG = True
 ALLOWED_HOSTS = ["*"]
 
 # ==================== YOUTUBE API CONFIGURATION ====================
-# ⚠️ IMPORTANT: Replace with your API key (rotate the exposed one!)
-YOUTUBE_API_KEY = "AIzaSyDRWmXc6OV4vRYoIhEhHCUurfgQCwzbsD0"  # Your key
-
+YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY", "")
 
 # For OAuth (if needed later)
-YOUTUBE_CLIENT_ID = "7107628914-53mn93fqjcaui766gejphukqgm6vug6v.apps.googleusercontent.com"
-YOUTUBE_CLIENT_SECRET = "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"
-YOUTUBE_REDIRECT_URI = "http://localhost:8000/oauth/callback"
+YOUTUBE_CLIENT_ID = os.getenv("YOUTUBE_CLIENT_ID", "")
+YOUTUBE_CLIENT_SECRET = os.getenv("YOUTUBE_CLIENT_SECRET", "")
+YOUTUBE_REDIRECT_URI = os.getenv("YOUTUBE_REDIRECT_URI", "http://localhost:8000/oauth/callback")
 # ===================================================================
 
 # REST Framework Configuration
@@ -227,3 +225,25 @@ LOGGING = {
         },
     },
 }
+
+# ==================== CELERY & REDIS CONFIGURATION ====================
+CELERY_BROKER_URL = os.getenv("CELERY_BROKER_URL", "redis://localhost:6379/0")
+CELERY_RESULT_BACKEND = os.getenv("CELERY_RESULT_BACKEND", "redis://localhost:6379/0")
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TIMEZONE = TIME_ZONE
+
+# Celery Beat Schedule Configuration
+from celery.schedules import crontab
+CELERY_BEAT_SCHEDULE = {
+    'sync-all-channels-daily': {
+        'task': 'api.tasks.sync_all_channels',
+        'schedule': crontab(hour=2, minute=0), # Run daily at 2:00 AM
+    },
+    'evaluate-system-alerts-hourly': {
+        'task': 'api.tasks.evaluate_system_alerts',
+        'schedule': crontab(minute=0), # Run hourly
+    },
+}
+# ======================================================================

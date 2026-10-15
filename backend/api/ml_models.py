@@ -11,6 +11,19 @@ from datetime import timedelta
 from django.utils import timezone
 from .models import Video, VideoStatistics, PerformancePrediction, ContentRecommendation
 import logging
+import joblib
+import os
+from django.conf import settings
+
+# Attempt to download VADER lexicon if not present
+try:
+    import nltk
+    from nltk.sentiment.vader import SentimentIntensityAnalyzer
+    nltk.data.find('sentiment/vader_lexicon.zip')
+except LookupError:
+    import nltk
+    nltk.download('vader_lexicon')
+    from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 logger = logging.getLogger(__name__)
 
@@ -54,39 +67,95 @@ class PerformancePredictor:
         return np.array(features).reshape(1, -1)
 
     @staticmethod
+    def get_model_path():
+        """Get path to the trained model file"""
+        model_dir = os.path.join(settings.BASE_DIR, 'models')
+        os.makedirs(model_dir, exist_ok=True)
+        return os.path.join(model_dir, 'view_predictor_rf.pkl')
+
+    @staticmethod
+    def train_view_prediction_model():
+        """Train a RandomForest model based on historical data"""
+        try:
+            videos = Video.objects.filter(view_count__gt=0)
+            if videos.count() < 10:
+                logger.warning("Not enough data to train model. Need at least 10 videos.")
+                return False
+
+            X = []
+            y = []
+
+            for video in videos:
+                features = PerformancePredictor.extract_features(video)[0]
+                X.append(features)
+                y.append(video.view_count)
+
+            X = np.array(X)
+            y = np.array(y)
+
+            # Scale features
+            scaler = StandardScaler()
+            X_scaled = scaler.fit_transform(X)
+
+            # Train Random Forest
+            model = RandomForestRegressor(n_estimators=100, random_state=42)
+            model.fit(X_scaled, y)
+            
+            # Save model and scaler
+            model_path = PerformancePredictor.get_model_path()
+            scaler_path = model_path.replace('.pkl', '_scaler.pkl')
+            joblib.dump(model, model_path)
+            joblib.dump(scaler, scaler_path)
+
+            logger.info("Successfully trained and saved view prediction model")
+            return True
+        except Exception as e:
+            logger.error(f"Error training model: {str(e)}")
+            return False
+
+    @staticmethod
     def predict_final_views(video_id):
-        """Predict final view count for a video"""
+        """Predict final view count for a video using trained ML model"""
         try:
             video = Video.objects.get(id=video_id)
             
             # Extract features
             features = PerformancePredictor.extract_features(video)
             
-            # Simple prediction model (in production, use trained model)
-            # This is a simplified version
-            base_views = video.view_count
-            engagement_factor = (video.like_count + video.comment_count) / max(video.view_count, 1)
+            model_path = PerformancePredictor.get_model_path()
+            scaler_path = model_path.replace('.pkl', '_scaler.pkl')
+
+            if os.path.exists(model_path) and os.path.exists(scaler_path):
+                # Use trained ML model
+                model = joblib.load(model_path)
+                scaler = joblib.load(scaler_path)
+                
+                features_scaled = scaler.transform(features)
+                predicted_views = max(model.predict(features_scaled)[0], video.view_count)
+                
+                # Estimate confidence based on random forest trees variance
+                preds = np.array([tree.predict(features_scaled)[0] for tree in model.estimators_])
+                std_dev = np.std(preds)
+                # Lower standard deviation means higher confidence
+                confidence = max(0.5, min(0.95, 1.0 - (std_dev / (predicted_views + 1))))
+            else:
+                # Fallback to heuristic if model not trained yet
+                base_views = video.view_count
+                engagement_factor = (video.like_count + video.comment_count) / max(video.view_count, 1)
+                predicted_views = base_views * (1 + engagement_factor * 0.5)
+                days_old = (timezone.now() - video.published_at).days
+                if days_old < 7: predicted_views *= 1.5
+                elif days_old < 30: predicted_views *= 1.2
+                confidence = min(0.95, 0.5 + (days_old / 100))
             
-            # Estimate final views based on current performance
-            predicted_views = base_views * (1 + engagement_factor * 0.5)
-            
-            # Add some randomness based on video age
-            days_old = (timezone.now() - video.published_at).days
-            if days_old < 7:
-                # Video is new, higher growth potential
-                predicted_views *= 1.5
-            elif days_old < 30:
-                predicted_views *= 1.2
-            
-            # Calculate confidence score
-            confidence = min(0.95, 0.5 + (days_old / 100))
+            engagement_rate = (video.like_count + video.comment_count) / max(video.view_count, 1) * 100
             
             # Create prediction record
             prediction, created = PerformancePrediction.objects.update_or_create(
                 video_id=video_id,
                 defaults={
                     'predicted_final_views': int(predicted_views),
-                    'predicted_engagement_rate': (video.like_count + video.comment_count) / max(video.view_count, 1) * 100,
+                    'predicted_engagement_rate': engagement_rate,
                     'confidence_score': confidence,
                 }
             )
@@ -351,6 +420,55 @@ class AnomalyDetector:
         except Exception as e:
             logger.error(f"Error detecting engagement anomaly: {str(e)}")
             return None
+
+
+class SentimentAnalyzer:
+    """Analyze sentiment of comments using NLTK VADER"""
+    
+    @staticmethod
+    def analyze_comment(text):
+        """Analyze sentiment of a single text string"""
+        try:
+            sia = SentimentIntensityAnalyzer()
+            scores = sia.polarity_scores(text)
+            
+            compound = scores['compound']
+            
+            if compound >= 0.05:
+                label = 'positive'
+            elif compound <= -0.05:
+                label = 'negative'
+            else:
+                label = 'neutral'
+                
+            return {
+                'label': label,
+                'score': compound
+            }
+        except Exception as e:
+            logger.error(f"Error analyzing sentiment: {str(e)}")
+            return {'label': 'neutral', 'score': 0.0}
+
+    @staticmethod
+    def analyze_video_comments(video_id):
+        """Analyze all unanalyzed comments for a video"""
+        try:
+            from .models import Comment
+            
+            comments = Comment.objects.filter(video_id=video_id, sentiment_score=0.0, sentiment_label='neutral')
+            analyzed = 0
+            
+            for comment in comments:
+                result = SentimentAnalyzer.analyze_comment(comment.text_display)
+                comment.sentiment_label = result['label']
+                comment.sentiment_score = result['score']
+                comment.save()
+                analyzed += 1
+                
+            return analyzed
+        except Exception as e:
+            logger.error(f"Error analyzing video comments: {str(e)}")
+            return 0
 
 
 from django.db import models

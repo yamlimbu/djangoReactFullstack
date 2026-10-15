@@ -10,8 +10,37 @@ import os
 from django.conf import settings
 from datetime import datetime, timedelta
 import logging
+import time
+import random
+from functools import wraps
 
 logger = logging.getLogger(__name__)
+
+def youtube_retry(max_retries=3, base_delay=1.0):
+    """Decorator for exponential backoff on YouTube API calls"""
+    def decorator(func):
+        @wraps(func)
+        def wrapper(*args, **kwargs):
+            retries = 0
+            while retries < max_retries:
+                try:
+                    return func(*args, **kwargs)
+                except HttpError as e:
+                    # 403 usually means Quota Exceeded, 429 means Too Many Requests
+                    if e.resp.status in [403, 429] and retries < max_retries - 1:
+                        delay = base_delay * (2 ** retries) + random.uniform(0, 1)
+                        logger.warning(f"YouTube API rate limit hit. Retrying in {delay:.2f}s (Attempt {retries + 1}/{max_retries})")
+                        time.sleep(delay)
+                        retries += 1
+                    else:
+                        logger.error(f"YouTube API error: {str(e)}")
+                        return None if 'videos' not in func.__name__ and 'comments' not in func.__name__ else []
+                except Exception as e:
+                    logger.error(f"Unexpected error in {func.__name__}: {str(e)}")
+                    return None if 'videos' not in func.__name__ and 'comments' not in func.__name__ else []
+            return None
+        return wrapper
+    return decorator
 
 
 class YouTubeService:
@@ -40,6 +69,7 @@ class YouTubeService:
             logger.error(f"Error initializing YouTube service: {str(e)}")
             raise
 
+    @youtube_retry()
     def get_channel_stats(self, channel_id):
         """Get channel statistics"""
         try:
@@ -71,6 +101,7 @@ class YouTubeService:
             logger.error(f"YouTube API error: {str(e)}")
             return None
 
+    @youtube_retry()
     def get_channel_videos(self, channel_id, max_results=50):
         """Get videos from a channel"""
         try:
@@ -116,6 +147,7 @@ class YouTubeService:
             logger.error(f"Error fetching channel videos: {str(e)}")
             return []
 
+    @youtube_retry()
     def get_video_stats(self, video_id):
         """Get statistics for a specific video"""
         try:
@@ -150,6 +182,7 @@ class YouTubeService:
             logger.error(f"Error fetching video stats: {str(e)}")
             return None
 
+    @youtube_retry()
     def get_video_comments(self, video_id, max_results=100):
         """Get comments from a video"""
         try:
@@ -197,6 +230,7 @@ class YouTubeService:
             logger.error(f"Error fetching video comments: {str(e)}")
             return []
 
+    @youtube_retry()
     def search_channels(self, query, max_results=10):
         """Search for YouTube channels"""
         try:
@@ -236,6 +270,7 @@ class YouTubeService:
             logger.error(f"Error searching channels: {str(e)}")
             return []
 
+    @youtube_retry()
     def search_videos(self, query, max_results=10):
         """Search for YouTube videos"""
         try:
@@ -283,6 +318,7 @@ class YouTubeService:
             logger.error(f"Error searching videos: {str(e)}")
             return []
 
+    @youtube_retry()
     def get_trending_videos(self, region_code='US', max_results=10):
         """Get trending videos for a region"""
         try:
@@ -311,6 +347,7 @@ class YouTubeService:
             logger.error(f"Error fetching trending videos: {str(e)}")
             return []
 
+    @youtube_retry()
     def get_video_categories(self, region_code='US'):
         """Get video categories for a region"""
         try:

@@ -1,1 +1,26 @@
+# Environments
 env/
+venv/
+backend/venv/
+.venv/
+
+# Environment variables
+.env
+*.env
+backend/.env
+frontend/.env
+
+# Python cache & compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Logs
+*.log
+debug.log
+backend/debug.log
+
+# Database
+db.sqlite3
+*.sqlite3

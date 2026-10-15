@@ -1,6 +1,18 @@
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { ACCESS_TOKEN } from '../constants';
 
 function Landing() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    const token = localStorage.getItem(ACCESS_TOKEN);
+    if (token) {
+      navigate('/dashboard' + location.search);
+    }
+  }, [navigate, location]);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50">
       {/* Header */}
